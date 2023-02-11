@@ -148,10 +148,10 @@ MainView {
                   //console.warn(result[i].speed)
                   var mi
                   mi = result[i].distance * 0.62137
-                  result[i].distance = i18n.tr("Distance: ")+mi.toFixed(2) + "mi"
+                  result[i].distance = i18n.tr("Distance: ") + mi.toFixed(2).toString().replace(".",Qt.locale().decimalPoint) + "mi"
                }
                else if (runits == "kilometers"){
-                  result[i].distance = i18n.tr("Distance: ")+result[i].distance + "km"
+                  result[i].distance = i18n.tr("Distance: ")+result[i].distance.toString().replace(".",Qt.locale().decimalPoint) + "km"
                }
                var seconds = parseFloat(result[i].speed) * 60
                result[i].speed = i18n.tr("Time: ") + stopwatch(seconds)
