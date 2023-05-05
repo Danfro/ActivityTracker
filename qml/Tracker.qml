@@ -22,20 +22,41 @@ Rectangle {
       }
    }
 
+   function start_recording() {
+         // loggingpoints.interval = persistentSettings.pointsInterval //useful or not ?
+         //listModel.clear()
+         if (!src.active){
+             src.start()
+         }
+         timer.start()
+         if (src.valid){
+             pygpx.create_gpx()
+             map.addMapItem(pline)
+             am_running = true
+             is_paused = false
+         }
+   }
+
+   function pause_recording() {
+         timer.stop()
+         am_running = false
+         is_paused = true
+   }
+
    Page {
       id: newrunPage
       anchors.fill: parent
       header: PageHeader {
-         title: (am_running) ? i18n.tr("Activity in Progress") : i18n.tr("New Activity")
+         title: (am_running) ? i18n.tr("Activity in Progress") : is_paused ? i18n.tr("Paused") : i18n.tr("New Activity")
          leadingActionBar.actions: [
          Action {
-            iconName: "down"
+            iconName: (am_running) ? "media-playback-pause" : "media-playback-start" //"media-record"
             onTriggered: {
                if (am_running) {
-                  PopupUtils.open(areyousure)
+                  pause_recording()
                }
                else {
-                  newrunEdge.collapse()
+                  start_recording()
                }
             }
          }
@@ -58,42 +79,6 @@ Rectangle {
          onTriggered: {
             counter++
             pygpx.format_timer(counter)
-         }
-      }
-      Component {
-         id: areyousure
-         Dialog {
-            id: areyousuredialog
-            title: i18n.tr("Do you want to cancel the activity?")
-            PopUpButton {
-               id: yesimsure
-               texth: i18n.tr("Yes, cancel")
-               color: LomiriColors.red
-               onClicked: {
-                  PopupUtils.close(areyousuredialog)
-                  timer.start()
-                  counter = 0
-                  pygpx.format_timer(0)
-                  var distfloat
-                  distfloat = parseFloat(dist.slice(0,-2)) //clean up the gpx array but not the maps / path
-                  map.removeMapItem(pline)
-                  timer.restart()
-                  timer.stop()
-                  am_running = false
-                  sportsComp.reset()
-                  newrunEdge.collapse()
-               }
-            }
-            PopUpButton {
-               id: noooooooodb
-               texth: i18n.tr("No, continue")
-               color: LomiriColors.green
-               onClicked: {
-                  PopupUtils.close(areyousuredialog)
-                  am_running = true
-                  timer.start()
-               }
-            }
          }
       }
 
@@ -191,12 +176,47 @@ Rectangle {
          path: []
       }
       Component {
+         id: areyousure
+         Dialog {
+            id: areyousuredialog
+            title: i18n.tr("Do you want to cancel the activity?")
+            PopUpButton {
+               id: yesimsure
+               texth: i18n.tr("Yes, stop and discard")
+               color: LomiriColors.red
+               onClicked: {
+                  PopupUtils.close(areyousuredialog)
+                  timer.start()
+                  counter = 0
+                  pygpx.format_timer(0)
+                  var distfloat
+                  distfloat = parseFloat(dist.slice(0,-2)) //clean up the gpx array but not the maps / path
+                  map.removeMapItem(pline)
+                  timer.restart()
+                  timer.stop()
+                  am_running = false
+                  sportsComp.reset()
+                  newrunEdge.collapse()
+               }
+            }
+            PopUpButton {
+               id: noooooooodb
+               texth: i18n.tr("No, go back")
+               onClicked: {
+                  PopupUtils.close(areyousuredialog)
+                  PopupUtils.close(dialogue)
+                  am_running = true
+                  timer.start()
+               }
+            }
+         }
+      }
+      Component {
          id: dialog
          Dialog {
             id: dialogue
-            title: i18n.tr("Do you want to stop the recording?")
             PopUpButton {
-               texth: i18n.tr("Yes, stop!")
+               texth: i18n.tr("Stop and save track")
                color: LomiriColors.green
                onClicked: {
                   PopupUtils.close(dialogue)
@@ -217,8 +237,27 @@ Rectangle {
                }
             }
             PopUpButton {
-               texth: i18n.tr("No, continue")
+               texth: i18n.tr("Stop and discard track")
                color: LomiriColors.red
+               onClicked: {
+                   PopupUtils.close(dialogue) // close dialogue regardless of later choice
+                   PopupUtils.open(areyousure) // show confirmation dialog
+               }
+            }
+            PopUpButton {
+               texth: (am_running) ? i18n.tr("Pause recording") : i18n.tr("Resume recording") //Resume recording? Implement where? Here or "stop" button?
+               onClicked: {
+                    if (am_running) {
+                       pause_recording()
+                    }
+                    else {
+                       start_recording()
+                       PopupUtils.close(dialogue)
+                    }
+                }
+            }
+            PopUpButton {
+               texth: i18n.tr("Nothing, go back")
                onClicked: PopupUtils.close(dialogue)
             }
          }
@@ -298,25 +337,13 @@ Rectangle {
             }
 
             Button {
-               text: i18n.tr("Start")
+               text: is_paused ? i18n.tr("Resume") : i18n.tr("Start")
                color: LomiriColors.green
                visible: !am_running
                height: units.gu(10)
                //   width:parent.width/2
                //   height:parent.height
-               onClicked: {
-                  // loggingpoints.interval = persistentSettings.pointsInterval //useful or not ?
-                  //listModel.clear()
-                  if (!src.active){
-                     src.start()
-                  }
-                  timer.start()
-                  if (src.valid){
-                     pygpx.create_gpx()
-                     map.addMapItem(pline)
-                     am_running=true
-                  }
-               }
+               onClicked: start_recording()
             }
             Button {
                text: i18n.tr("Stop")

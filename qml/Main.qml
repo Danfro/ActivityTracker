@@ -34,6 +34,7 @@ MainView {
    property var polyline;
    property string day;
    property bool am_running;
+   property bool is_paused;
    property string runits;
    property string timestring : "00:00"
    property string smashkey;
