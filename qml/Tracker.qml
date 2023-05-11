@@ -329,7 +329,6 @@ Rectangle {
                 height: units.gu(10)
                 Button {
                    text: i18n.tr("Pause")
-                   // color: LomiriColors.red
                    visible:am_running
                    height: parent.height/2
                    onClicked: pause_recording()
