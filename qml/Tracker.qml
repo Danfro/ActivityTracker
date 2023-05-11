@@ -47,18 +47,12 @@ Rectangle {
       id: newrunPage
       anchors.fill: parent
       header: PageHeader {
-         title: (am_running) ? i18n.tr("Activity in Progress") : is_paused ? i18n.tr("Paused") : i18n.tr("New Activity")
+         title: (am_running) ? i18n.tr("Activity in Progress") : (is_paused) ? i18n.tr("Paused") : i18n.tr("New Activity")
          leadingActionBar.actions: [
          Action {
-            iconName: (am_running) ? "media-playback-pause" : "media-playback-start" //"media-record"
-            onTriggered: {
-               if (am_running) {
-                  pause_recording()
-               }
-               else {
-                  start_recording()
-               }
-            }
+                iconName: "down"
+                enabled: !(am_running) && !(is_paused)
+                onTriggered: newrunEdge.collapse()
          }
          ]
 
@@ -245,18 +239,6 @@ Rectangle {
                }
             }
             PopUpButton {
-               texth: (am_running) ? i18n.tr("Pause recording") : i18n.tr("Resume recording") //Resume recording? Implement where? Here or "stop" button?
-               onClicked: {
-                    if (am_running) {
-                       pause_recording()
-                    }
-                    else {
-                       start_recording()
-                       PopupUtils.close(dialogue)
-                    }
-                }
-            }
-            PopUpButton {
                texth: i18n.tr("Nothing, go back")
                onClicked: PopupUtils.close(dialogue)
             }
@@ -341,22 +323,25 @@ Rectangle {
                color: LomiriColors.green
                visible: !am_running
                height: units.gu(10)
-               //   width:parent.width/2
-               //   height:parent.height
                onClicked: start_recording()
             }
-            Button {
-               text: i18n.tr("Stop")
-               color: LomiriColors.red
-               visible:am_running
-               height: units.gu(10)
-               //   width:parent.width/2
-               //   height:parent.height
-               onClicked: {
-                  PopupUtils.open(dialog)
-
-               }
-            }//Button
+            Column {
+                height: units.gu(10)
+                Button {
+                   text: i18n.tr("Pause")
+                   // color: LomiriColors.red
+                   visible:am_running
+                   height: parent.height/2
+                   onClicked: pause_recording()
+                }//Button
+                Button {
+                   text: i18n.tr("Stop")
+                   color: LomiriColors.red
+                   visible:am_running
+                   height: parent.height/2
+                   onClicked: PopupUtils.open(dialog)
+                }//Button
+            }
             Column {
                Label {
                   text: "Distance"
