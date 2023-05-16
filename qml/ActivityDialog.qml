@@ -35,6 +35,15 @@ Dialog {
    Row {
       spacing: units.gu(1)
       PopUpButton {
+         id: cancel_button
+         texth: i18n.tr("Cancel")
+         height: units.gu(8)
+         width: parent.width /2 -units.gu(0.5)
+         onClicked: {
+           PopupUtils.close(activity_dialogue)
+        }
+      }
+      PopUpButton {
          id: save_button
          texth: i18n.tr("Save")
          height: units.gu(8)
@@ -42,17 +51,6 @@ Dialog {
          color: LomiriColors.green
          enabled: sportsComponent.selected != -1
          // on clicked event is handled in Tracker.qml
-      }
-
-      PopUpButton {
-         id: cancel_button
-         texth: i18n.tr("Cancel")
-         height: units.gu(8)
-         width: parent.width /2 -units.gu(0.5)
-         color: LomiriColors.red
-         onClicked: {
-           PopupUtils.close(activity_dialogue)
-        }
       }
    }
 }
