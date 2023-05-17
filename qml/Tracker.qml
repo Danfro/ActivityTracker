@@ -325,11 +325,13 @@ Rectangle {
             }
 
             Button {
+               id: startButton
                text: is_paused ? i18n.tr("Resume") : i18n.tr("Start")
                color: LomiriColors.green
                visible: !am_running
                height: units.gu(10)
-               onClicked: start_recording()
+               width: units.gu(15)
+               onClicked: is_paused ? pause_recording() : start_recording()
             }
             Column {
                 height: units.gu(10)
@@ -337,6 +339,7 @@ Rectangle {
                    text: i18n.tr("Pause")
                    visible:am_running
                    height: parent.height/2
+                   width: startButton.width
                    onClicked: pause_recording()
                 }//Button
                 Button {
@@ -344,6 +347,7 @@ Rectangle {
                    color: LomiriColors.red
                    visible:am_running
                    height: parent.height/2
+                   width: startButton.width
                    onClicked: PopupUtils.open(dialog)
                 }//Button
             }
