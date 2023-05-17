@@ -38,9 +38,15 @@ Rectangle {
    }
 
    function pause_recording() {
-         timer.stop()
-         am_running = false
-         is_paused = true
+       if (is_paused) {
+           timer.start()
+           src.start()
+       } else {
+           timer.stop()
+           src.stop()
+       }
+       am_running = !am_running
+       is_paused = !is_paused
    }
 
    Page {
@@ -90,7 +96,7 @@ Rectangle {
             map.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
             circle.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
 
-            if (gpxx && am_running){
+            if (gpxx && am_running && !is_paused){
 
                if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
                   //pygpx.addpoint(gpxx,coord.latitude,coord.longitude,coord.altitude)
@@ -261,7 +267,7 @@ Rectangle {
                pygpx.format_timer(0)
                timer.restart()
                timer.stop()
-
+               map.removeMapItem(pline)
                //  listModel.append({"name": tf.displayText, "act_type": sportsComp.name[sportsComp.selected]})
                //   pygpx.addrun(tf.displayText)
                listModel.clear()
