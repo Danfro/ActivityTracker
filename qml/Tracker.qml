@@ -1,4 +1,5 @@
-import QtQuick 2.4
+import QtQuick 2.12
+import QtQuick.Layouts 1.12
 import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
 import QtPositioning 5.9
@@ -289,90 +290,112 @@ Rectangle {
          }
       }
 
-      Rectangle {
-         width: parent.width
+       Button {
+          id: floatingPauseButton
+          visible: !is_paused & am_running
+          anchors.bottom: dataRect.top
+          anchors.bottomMargin: units.gu(2)
+          anchors.horizontalCenter: dataRect.horizontalCenter
+          height: units.gu(8)
+          implicitWidth: units.gu(10)
+          text: i18n.tr("Pause")
+          z: parent.z + 1
+          onClicked: pause_recording()
+      }
 
-         height: units.gu(10)
-         // z:100
-         anchors.bottom: parent.bottom
-         color: theme.palette.normal.background
-         opacity: 0.8
-         Row{
-            anchors.horizontalCenter: parent.horizontalCenter
-            spacing: units.gu(2)
-            id: stuffrow
-
+        Rectangle {
+            id: dataRect
+            width: parent.width
+            height: units.gu(13.5)
+            // z:100
+            anchors.bottom: parent.bottom
+            color: theme.palette.normal.background
+            opacity: 0.8
+            property var marginsize: units.gu(2)
+            property var availableWidth: dataRect.width - (5 * marginsize) // full width minus 5 times the spacing of the layout
 
             Column {
-               Label {
-                  text: "Time"
-                  //fontSize: "small"
-               }
-               Label {
-                  text: timestring
-                  fontSize: "large"
-                  //text: "00:00"
-               }
-               Label {
-                  text: "Speed"
-                  fontSize: "small"
-               }
-               Label {
-                  id: speedlabel
-                  text: "No data"
-                  fontSize: "large"
-               }
-            }
-
-            Button {
-               id: startButton
-               text: is_paused ? i18n.tr("Resume") : i18n.tr("Start")
-               color: LomiriColors.green
-               visible: !am_running
-               height: units.gu(10)
-               width: units.gu(15)
-               onClicked: is_paused ? pause_recording() : start_recording()
+                id: leftColumn
+                anchors.left: parent.left
+                anchors.leftMargin: dataRect.marginsize
+                bottomPadding: units.gu(3.5)
+                topPadding: units.gu(1)
+                width: dataRect.availableWidth / 3
+                Label {
+                   text: "Time"
+                   //fontSize: "small"
+                }
+                Label {
+                   text: timestring
+                   fontSize: "large"
+                   //text: "00:00"
+                }
+                Label {
+                   text: "Speed"
+                   fontSize: "small"
+                }
+                Label {
+                   id: speedlabel
+                   text: "No data"
+                   fontSize: "large"
+                }
             }
             Column {
-                height: units.gu(10)
+                id: buttonColumn
+                anchors {
+                    left: leftColumn.right
+                    right: rightColumn.left
+                }
+                bottomPadding: units.gu(3.5)
+                topPadding: units.gu(1)
+                width: dataRect.availableWidth / 3
                 Button {
-                   text: i18n.tr("Pause")
-                   visible:am_running
-                   height: parent.height/2
-                   width: startButton.width
-                   onClicked: pause_recording()
-                }//Button
+                   id: startButton
+                   anchors.horizontalCenter: parent.horizontalCenter
+                   text: is_paused ? i18n.tr("Resume") : i18n.tr("Start")
+                   color: LomiriColors.green
+                   visible: !am_running
+                   height: units.gu(10)
+                   onClicked: is_paused ? pause_recording() : start_recording()
+                }
                 Button {
+                   id: stopButton
+                   anchors.horizontalCenter: parent.horizontalCenter
                    text: i18n.tr("Stop")
                    color: LomiriColors.red
                    visible:am_running
-                   height: parent.height/2
+                   height: startButton.height
                    width: startButton.width
                    onClicked: PopupUtils.open(dialog)
                 }//Button
             }
-            Column {
-               Label {
-                  text: "Distance"
-                  //fontSize: "small"
-               }
-               Label {
-                  id: distlabel
-                  text: "0"
-                  fontSize: "large"
-               }
-               Label {
-                  text: "Altitude"
-                  //  fontSize: "small"
-               }
-               Label {
-                  id: altlabel
-                  text: "No data"
-                  fontSize: "large"
-               }
-            }
 
-         }
-      }//Item (buttons)
-   }
+            Column {
+                id: rightColumn
+                anchors.right: parent.right
+                anchors.rightMargin: dataRect.marginsize
+                bottomPadding: units.gu(3.5)
+                topPadding: units.gu(1)
+                width: dataRect.availableWidth / 3
+                Label {
+                    text: "Distance"
+                    //fontSize: "small"
+                }
+                Label {
+                    id: distlabel
+                    text: "0"
+                    fontSize: "large"
+                }
+                Label {
+                    text: "Altitude"
+                    //  fontSize: "small"
+                }
+                Label {
+                   id: altlabel
+                    text: "No data"
+                    fontSize: "large"
+                }
+            }
+        }
+    }
 }
