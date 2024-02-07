@@ -342,10 +342,7 @@ Rectangle {
             }
             Column {
                 id: buttonColumn
-                anchors {
-                    left: leftColumn.right
-                    right: rightColumn.left
-                }
+                anchors.horizontalCenter: parent.horizontalCenter
                 bottomPadding: units.gu(3.5)
                 topPadding: units.gu(1)
                 width: dataRect.availableWidth / 3
@@ -372,8 +369,8 @@ Rectangle {
 
             Column {
                 id: rightColumn
-                anchors.right: parent.right
-                anchors.rightMargin: dataRect.marginsize
+                anchors.left: buttonColumn.right
+                anchors.leftMargin: buttonColumn.marginsize
                 bottomPadding: units.gu(3.5)
                 topPadding: units.gu(1)
                 width: dataRect.availableWidth / 3
