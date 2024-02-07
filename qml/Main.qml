@@ -1,10 +1,10 @@
 import QtQuick 2.4
-import QtPositioning 5.9
+import QtPositioning 5.12
 import Lomiri.Components 1.3
 import QtQuick.Layouts 1.1
 import io.thp.pyotherside 1.5
 import QtSystemInfo 5.0
-import QtLocation 5.9
+import QtLocation 5.12
 import Lomiri.Components.Popups 1.3
 import Qt.labs.settings 1.0
 import Lomiri.Content 1.3

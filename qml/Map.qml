@@ -1,10 +1,10 @@
 import QtQuick 2.4
-import QtPositioning 5.9
+import QtPositioning 5.12
 import Lomiri.Components 1.3
 import QtQuick.Layouts 1.1
 import io.thp.pyotherside 1.5
 import QtSystemInfo 5.0
-import QtLocation 5.9
+import QtLocation 5.12
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
 import Morph.Web 0.1

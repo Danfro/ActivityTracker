@@ -2,8 +2,8 @@ import QtQuick 2.12
 import QtQuick.Layouts 1.12
 import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
-import QtPositioning 5.9
-import QtLocation 5.9
+import QtPositioning 5.12
+import QtLocation 5.12
 import "components"
 
 Rectangle {
