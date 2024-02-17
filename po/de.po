@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 10:17+0000\n"
+"POT-Creation-Date: 2024-02-17 20:29+0000\n"
 "PO-Revision-Date: 2024-02-17 20:31+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
@@ -30,7 +30,7 @@ msgstr "Aktivitäten-Aufzeichner"
 #: ../qml/About.qml:41
 #, fuzzy
 #| msgid "Version %1"
-msgid "Version"
+msgid "Version %1"
 msgstr "Version %1"
 
 #: ../qml/About.qml:79

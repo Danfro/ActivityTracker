@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 10:17+0000\n"
+"POT-Creation-Date: 2024-02-17 20:29+0000\n"
 "PO-Revision-Date: 2020-06-29 10:41+0000\n"
 "Last-Translator: aitzol berasategi <aitzol@disroot.org>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/activity-tracker/"
@@ -28,7 +28,9 @@ msgid "Activity Tracker"
 msgstr "Activity Tracker"
 
 #: ../qml/About.qml:41
-msgid "Version"
+#, fuzzy
+#| msgid "Version"
+msgid "Version %1"
 msgstr "Bertsioa"
 
 #: ../qml/About.qml:79
