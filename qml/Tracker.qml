@@ -216,6 +216,7 @@ Rectangle {
          id: dialog
          Dialog {
             id: dialogue
+            title: i18n.tr("What would you like to do?")
             PopUpButton {
                texth: i18n.tr("Stop and save track")
                color: LomiriColors.green
