@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 20:29+0000\n"
-"PO-Revision-Date: 2024-02-17 20:32+0000\n"
+"PO-Revision-Date: 2024-02-17 20:33+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -212,7 +212,7 @@ msgstr "Ja, anhalten und verwerfen"
 
 #: ../qml/Tracker.qml:205
 msgid "No, go back"
-msgstr "Nein, gehe zurück"
+msgstr "Nein, zurück gehen"
 
 #: ../qml/Tracker.qml:220
 msgid "Stop and save track"
@@ -224,7 +224,7 @@ msgstr "Anhalten und Track verwerfen"
 
 #: ../qml/Tracker.qml:249
 msgid "Nothing, go back"
-msgstr "Nichts, gehe zurück"
+msgstr "Nichts, zurück gehen"
 
 #: ../qml/Tracker.qml:301
 msgid "Pause"
