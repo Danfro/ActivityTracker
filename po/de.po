@@ -216,7 +216,7 @@ msgstr "Nein, zurück gehen"
 
 #: ../qml/Tracker.qml:219
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Was möchtest du tun?"
 
 #: ../qml/Tracker.qml:221
 msgid "Stop and save track"
