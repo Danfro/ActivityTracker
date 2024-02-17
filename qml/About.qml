@@ -57,8 +57,17 @@ Page {
             width: parent.width
 
             Label {
-               text: "© 2018-2019 Erne st & Michele Castellazzi"
+               textFormat: Text.RichText
+               text: "<a "+about_column.linkColor+" href=\"https://github.com/Danfro/ActivityTracker\"> © 2024 Daniel Frost</a>"
                anchors.horizontalCenter: parent.horizontalCenter
+               color: theme.palette.normal.activity
+            }
+
+            Label {
+               textFormat: Text.RichText
+               text: "<a "+about_column.linkColor+" href=\"https://github.com/ernesst/ActivityTracker\"> © 2018-2023 Erne st & Michele Castellazzi</a>"
+               anchors.horizontalCenter: parent.horizontalCenter
+               color: theme.palette.normal.activity
             }
 
             Label {
@@ -76,7 +85,7 @@ Page {
             Label {
                textFormat: Text.RichText
                font.underline: false
-               text: i18n.tr("Released under the terms of the GNU GPL v3.<br>Source code available on") + " <a "+about_column.linkColor+"\" href=\"https://github.com/ernesst/ActivityTracker\">GitHub.com</a>"
+               text: i18n.tr("Released under the terms of the GNU GPL v3.<br>Source code available on") + " <a "+about_column.linkColor+"\" href=\"https://github.com/Danfro/ActivityTracker\">GitHub.com</a>"
                font.pointSize: units.gu(1)
                horizontalAlignment: Text.AlignHCenter
                anchors.horizontalCenter: parent.horizontalCenter
@@ -120,7 +129,7 @@ Page {
             Button {
                id: translate
                text: i18n.tr("Translate this app on Weblate!")
-               onClicked: Qt.openUrlExternally("https://hosted.weblate.org/projects/activity-tracker/")
+               onClicked: Qt.openUrlExternally("https://hosted.weblate.org/projects/ubports/activitytracker/")
             }
          }
          Row {
