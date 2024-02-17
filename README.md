@@ -1,11 +1,11 @@
 
 
 # ActivityTracker
-This repository is a fork of the [Xenial app version](https://github.com/ernesst/ActivityTracker) by @ernesst and @mymike00, which itself is a fork of the original app created by [@cwayne18](https://github.com/cwayne18/ActivityTracker).
+This repository is a fork of the [Xenial app version](https://github.com/ernesst/ActivityTracker) by @ernesst and @mymike00, which itself is a fork of the original app created by [@cwayne18](https://github.com/cwayne18/ActivityTracker). Thanks everyone who made this app possible!
 
 
-Due to older QML lib on the original 15.04 version, the changes cannot be retrofitted.
-The app has been upgraded by Michele and Ernes_t to work on 16.04 Ubuntu Touch. They did develop it until v0.15
+Due to older QML lib on the original 15.04 version, the changes couldn't be retrofitted.
+The app had been upgraded by Michele and Ernes_t to work on 16.04 Ubuntu Touch. They did develop it up to v0.15.
 @Danfro (myself) did now update the app to work on focal.
 
 Please see the [changelog](https://github.com/Danfro/ActivityTracker/blob/master/CHANGELOG.md) for a detailed list of changes.
@@ -25,7 +25,8 @@ We welcome translators from all different languages. Thank you for your contribu
 You can easily contribute to the localization of this project (i.e. the translation into your language) by visiting (and signing up with) the Hosted Weblate service as linked above and start translating by using the webinterface. To add a new language, log into weblate, goto tools --> start new translation.
 
  ## Thanks
-  - Michele for the logo and his contributions,
+  - Michele for the logo and contributions,
+  - Ernesst for all contributions,
   - Joan CiberSheep for the icons,
   - Anne for the French translation: https://github.com/cwayne18/ActivityTracker/pull/14,
   - Wagafo for the Catalan translation,
