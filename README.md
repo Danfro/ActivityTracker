@@ -1,23 +1,28 @@
 
 
 # ActivityTracker
-This repo is a fork of the original app created by CWayne18.
+This repository is a fork of the [Xenial app version](https://github.com/ernesst/ActivityTracker) by @ernesst and @mymike00, which itself is a fork of the original app created by [@cwayne18](https://github.com/cwayne18/ActivityTracker).
 
-The app has been upgraded by Michele and Ernes_t to work only on 16.04 Ubuntu Touch.
-Due to older QML lib on 15.04, the changes cannot be retrofitted.
 
-Please see the [changelog](https://github.com/ernesst/ActivityTracker/blob/master/CHANGELOG.md) for a detailed list of changes.
+Due to older QML lib on the original 15.04 version, the changes cannot be retrofitted.
+The app has been upgraded by Michele and Ernes_t to work on 16.04 Ubuntu Touch. They did develop it until v0.15
+@Danfro (myself) did now update the app to work on focal.
+
+Please see the [changelog](https://github.com/Danfro/ActivityTracker/blob/master/CHANGELOG.md) for a detailed list of changes.
 
 ## Download
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/activitytracker.cwayne18)
 
 ## General information
- - Due to a OS limitation the recording must occur with the screen on
- - The GPX files are located in .local/share/activitytracker.cwayne18/
- - Translations are welcome on [weblate](https://hosted.weblate.org/projects/activity-tracker/translations/)
+ - due to a OS limitation the recording must occur with the screen on, otherwise the app is send to background and can not receive position information anymore
+ - the GPX files are located in .local/share/activitytracker.cwayne18/
+ - currently the map shows "api key required", this is know and hopefully can be fixed soon
+
+## Translations
+ Translations are welcome on [weblate](https://hosted.weblate.org/projects/activity-tracker/translations/).
 
  ## Thanks
-  - Michele for the logo,
+  - Michele for the logo and his contributions,
   - Joan CiberSheep for the icons,
   - Anne for the French translation: https://github.com/cwayne18/ActivityTracker/pull/14,
   - Wagafo for the Catalan translation,
