@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 20:29+0000\n"
+"POT-Creation-Date: 2024-02-17 20:41+0000\n"
 "PO-Revision-Date: 2024-02-17 20:43+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
@@ -105,7 +105,7 @@ msgstr "Filter"
 msgid "Import"
 msgstr "Importieren"
 
-#: ../qml/Main.qml:277 ../qml/Tracker.qml:260
+#: ../qml/Main.qml:277 ../qml/Tracker.qml:261
 msgid "Select the type and the name of your activity"
 msgstr "Wählen Sie die Art und den Namen Ihrer Aktivität aus"
 
@@ -214,31 +214,35 @@ msgstr "Ja, anhalten und verwerfen"
 msgid "No, go back"
 msgstr "Nein, zurück gehen"
 
-#: ../qml/Tracker.qml:220
+#: ../qml/Tracker.qml:219
+msgid "What would you like to do?"
+msgstr ""
+
+#: ../qml/Tracker.qml:221
 msgid "Stop and save track"
 msgstr "Anhalten und Aktivität speichern"
 
-#: ../qml/Tracker.qml:241
+#: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
 msgstr "Anhalten und Aktivität verwerfen"
 
-#: ../qml/Tracker.qml:249
+#: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
 msgstr "Nichts, zurück gehen"
 
-#: ../qml/Tracker.qml:301
+#: ../qml/Tracker.qml:302
 msgid "Pause"
 msgstr "Pause"
 
-#: ../qml/Tracker.qml:352
+#: ../qml/Tracker.qml:353
 msgid "Resume"
 msgstr "Fortsetzen"
 
-#: ../qml/Tracker.qml:352
+#: ../qml/Tracker.qml:353
 msgid "Start"
 msgstr "Start"
 
-#: ../qml/Tracker.qml:361
+#: ../qml/Tracker.qml:362
 msgid "Stop"
 msgstr "Stopp"
 

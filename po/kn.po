@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 20:29+0000\n"
+"POT-Creation-Date: 2024-02-17 20:41+0000\n"
 "PO-Revision-Date: 2020-09-03 06:36+0000\n"
 "Last-Translator: msri <msriharitasa@gmail.com>\n"
 "Language-Team: Kannada <https://hosted.weblate.org/projects/activity-tracker/"
@@ -108,7 +108,7 @@ msgstr "ಹೆಚ್ಚಿನ ಆಯ್ಕೆಗಳು"
 msgid "Import"
 msgstr "ಆಮದು ಮಾಡಿ"
 
-#: ../qml/Main.qml:277 ../qml/Tracker.qml:260
+#: ../qml/Main.qml:277 ../qml/Tracker.qml:261
 msgid "Select the type and the name of your activity"
 msgstr "ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಪ್ರಕಾರ ಮತ್ತು ಹೆಸರನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
@@ -223,31 +223,35 @@ msgstr ""
 msgid "No, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:220
+#: ../qml/Tracker.qml:219
+msgid "What would you like to do?"
+msgstr ""
+
+#: ../qml/Tracker.qml:221
 msgid "Stop and save track"
 msgstr ""
 
-#: ../qml/Tracker.qml:241
+#: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
 msgstr ""
 
-#: ../qml/Tracker.qml:249
+#: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:301
+#: ../qml/Tracker.qml:302
 msgid "Pause"
 msgstr ""
 
-#: ../qml/Tracker.qml:352
+#: ../qml/Tracker.qml:353
 msgid "Resume"
 msgstr ""
 
-#: ../qml/Tracker.qml:352
+#: ../qml/Tracker.qml:353
 msgid "Start"
 msgstr "ಪ್ರಾರಂಭಿಸಿ"
 
-#: ../qml/Tracker.qml:361
+#: ../qml/Tracker.qml:362
 msgid "Stop"
 msgstr "ನಿಲ್ಲಿಸಿ"
 
