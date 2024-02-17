@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 20:29+0000\n"
-"PO-Revision-Date: 2024-02-17 20:33+0000\n"
+"PO-Revision-Date: 2024-02-17 20:43+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -123,7 +123,7 @@ msgstr "Nach oben wischen, um eine neue Aktivität zu aufzuzeichnen"
 
 #: ../qml/Main.qml:398
 msgid "Track information"
-msgstr "Weginformation"
+msgstr "Aktivitätsinformation"
 
 #: ../qml/Main.qml:412
 msgid "Close"
@@ -143,7 +143,7 @@ msgstr "Info"
 
 #: ../qml/Settings.qml:36
 msgid "Distance unit:"
-msgstr "Entfernungseinheit: "
+msgstr "Entfernungseinheit:"
 
 #: ../qml/Settings.qml:37
 msgid "Kilometers"
@@ -216,11 +216,11 @@ msgstr "Nein, zurück gehen"
 
 #: ../qml/Tracker.qml:220
 msgid "Stop and save track"
-msgstr "Anhalten und Track speichern"
+msgstr "Anhalten und Aktivität speichern"
 
 #: ../qml/Tracker.qml:241
 msgid "Stop and discard track"
-msgstr "Anhalten und Track verwerfen"
+msgstr "Anhalten und Aktivität verwerfen"
 
 #: ../qml/Tracker.qml:249
 msgid "Nothing, go back"
