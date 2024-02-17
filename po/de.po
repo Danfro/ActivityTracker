@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-12 10:17+0000\n"
-"PO-Revision-Date: 2022-09-19 23:15+0200\n"
+"PO-Revision-Date: 2024-02-17 20:31+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/activity-tracker/"
-"translations/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -185,10 +185,8 @@ msgid "Choose sport:"
 msgstr "Sportart wählen:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Auswählen"
+msgstr "Später auswählen"
 
 #: ../qml/Tracker.qml:57
 msgid "Activity in Progress"
@@ -200,7 +198,7 @@ msgstr "Neue Aktivität"
 
 #: ../qml/Tracker.qml:57
 msgid "Paused"
-msgstr ""
+msgstr "Angehalten"
 
 #: ../qml/Tracker.qml:114 ../qml/Tracker.qml:119
 msgid "No data"
@@ -212,31 +210,31 @@ msgstr "Möchten Sie die Aktivität abbrechen?"
 
 #: ../qml/Tracker.qml:186
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Ja, anhalten und verwerfen"
 
 #: ../qml/Tracker.qml:205
 msgid "No, go back"
-msgstr ""
+msgstr "Nein, gehe zurück"
 
 #: ../qml/Tracker.qml:220
 msgid "Stop and save track"
-msgstr ""
+msgstr "Anhalten und Track speichern"
 
 #: ../qml/Tracker.qml:241
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Anhalten und Track verwerfen"
 
 #: ../qml/Tracker.qml:249
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Nichts, gehe zurück"
 
 #: ../qml/Tracker.qml:301
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../qml/Tracker.qml:352
 msgid "Resume"
-msgstr ""
+msgstr "Fortsetzen"
 
 #: ../qml/Tracker.qml:352
 msgid "Start"
@@ -268,11 +266,11 @@ msgstr "Wandern"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Nordic Walking"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
