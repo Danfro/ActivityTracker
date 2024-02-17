@@ -19,7 +19,10 @@ Please see the [changelog](https://github.com/Danfro/ActivityTracker/blob/master
  - currently the map shows "api key required", this is know and hopefully can be fixed soon
 
 ## Translations
- Translations are welcome on [weblate](https://hosted.weblate.org/projects/activity-tracker/translations/).
+ This app can be translated on [Hosted Weblate](https://hosted.weblate.org/projects/ubports/activitytracker/). The localization platform of this project is sponsored by Hosted Weblate via their free hosting plan for Libre and Open Source Projects.
+
+We welcome translators from all different languages. Thank you for your contribution!
+You can easily contribute to the localization of this project (i.e. the translation into your language) by visiting (and signing up with) the Hosted Weblate service as linked above and start translating by using the webinterface. To add a new language, log into weblate, goto tools --> start new translation.
 
  ## Thanks
   - Michele for the logo and his contributions,
