@@ -149,10 +149,11 @@ MainView {
                   //console.warn(result[i].speed)
                   var mi
                   mi = result[i].distance * 0.62137
-                  result[i].distance = i18n.tr("Distance: ") + mi.toFixed(2).toString().replace(".",Qt.locale().decimalPoint) + "mi"
+                  //TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
+                  result[i].distance = i18n.tr("Distance: %1 %2").arg(mi.toFixed(2).toString().replace(".",Qt.locale().decimalPoint)).arg("mi")
                }
                else if (runits == "kilometers"){
-                  result[i].distance = i18n.tr("Distance: ")+result[i].distance.toString().replace(".",Qt.locale().decimalPoint) + "km"
+                  result[i].distance = i18n.tr("Distance: %1 %2").arg(result[i].distance.toString().replace(".",Qt.locale().decimalPoint)).arg("km")
                }
                var seconds = parseFloat(result[i].speed) * 60
                result[i].speed = i18n.tr("Time: ") + stopwatch(seconds)
