@@ -397,7 +397,7 @@ MainView {
          Dialog {
             id: infogpxdialog
             title: i18n.tr("Track information")
-            text: infodis
+            text: infodis  // info derived from gpxinfo.py via info_display and function info_run in this file
             onTextChanged: {
                refreshIndicator.visible = false
                refreshIndicator.running = false
