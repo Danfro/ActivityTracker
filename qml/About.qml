@@ -38,7 +38,7 @@ Page {
             }
 
             Label {
-               text: i18n.tr("Version") + " 0.15.1"
+               text: i18n.tr("Version %1").arg(Qt.application.version)
                anchors.horizontalCenter: parent.horizontalCenter
             }
          }
