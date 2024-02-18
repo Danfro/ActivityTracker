@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2019-12-05 22:06+0000\n"
-"Last-Translator: Jano Sharangia <janosharangia2@gmail.com>\n"
-"Language-Team: Georgian <https://hosted.weblate.org/projects/activity-"
-"tracker/translations/ka/>\n"
+"PO-Revision-Date: 2024-02-18 23:22+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 5.4\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -181,10 +181,8 @@ msgid "Choose sport:"
 msgstr "აირჩიეთ სპორტი:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose sport:"
 msgid "Choose later"
-msgstr "აირჩიეთ სპორტი:"
+msgstr "მოგვიანებით არჩევა"
 
 #: ../qml/Tracker.qml:57
 msgid "Activity in Progress"
