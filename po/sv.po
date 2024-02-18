@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
 "PO-Revision-Date: 2024-02-18 14:23+0000\n"
-"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/sv/>\n"
 "Language: sv\n"
@@ -33,11 +33,11 @@ msgstr "Version %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
-msgstr ""
+msgstr "Släppt under villkoren i GNU GPL v3.<br>Källkod tillgänglig på"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
-msgstr ""
+msgstr "En del av ikonerna skapades med %1 från %2 och är licensierad som %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
 #: ../qml/About.qml:110
@@ -45,6 +45,8 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
+"Tack till %1 för ikonerna baserade på:<br>%3 med %8 från %2,<br>%4 med %9 "
+"från %2,<br>%5 med %10 från %2,<br>% 6 av %11 från %2,<br>%7 av %12 från %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
@@ -85,7 +87,7 @@ msgstr "Avstånd: %1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
-msgstr ""
+msgstr "Tid: "
 
 #: ../qml/Main.qml:234
 msgid "Recent Activities"
@@ -166,7 +168,7 @@ msgstr "ms"
 
 #: ../qml/Settings.qml:93
 msgid "Altitude offset:"
-msgstr ""
+msgstr "Höjdförskjutning:"
 
 #: ../qml/Settings.qml:94
 msgid "between -100 and 100"
