@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2024-02-17 20:43+0000\n"
+"PO-Revision-Date: 2024-02-18 10:53+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -83,10 +83,8 @@ msgstr "Auswählen"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:153 ../qml/Main.qml:156
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Entfernung: "
+msgstr "Entfernung: %1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
