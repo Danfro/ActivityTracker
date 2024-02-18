@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 20:41+0000\n"
+"POT-Creation-Date: 2024-02-17 21:55+0000\n"
 "PO-Revision-Date: 2020-03-30 18:41+0000\n"
 "Last-Translator: Jaume Ortolà i Font <jaumeortola@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/activity-tracker/"
@@ -33,16 +33,16 @@ msgstr "Activity Tracker"
 msgid "Version %1"
 msgstr "Versió"
 
-#: ../qml/About.qml:79
+#: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
 msgstr "Alliberat sota la llicència GNU GPL v3.<br>Codi font disponible en"
 
-#: ../qml/About.qml:88
+#: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
 msgstr "Part de les icones estan fetes per %1 de %2 amb el permís de %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
-#: ../qml/About.qml:101
+#: ../qml/About.qml:110
 msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
@@ -50,11 +50,11 @@ msgstr ""
 "Gràcies a %1 per les icones basades en:<br>%3 per %8 de %2,<br>%4 per %9 de "
 "%2,<br>%5 per %10 de %2,<br>%6 per %11 de %2,<br>%7 per %12 de %2"
 
-#: ../qml/About.qml:122
+#: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
 msgstr "Traduïu aquesta aplicació a Weblate!"
 
-#: ../qml/About.qml:131
+#: ../qml/About.qml:140
 msgid "Support Weblate"
 msgstr "Dona suport a Weblate"
 
@@ -82,55 +82,58 @@ msgstr "Desar"
 msgid "Choose"
 msgstr "Trieu"
 
-#: ../qml/Main.qml:152 ../qml/Main.qml:155
-msgid "Distance: "
+#. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
+#: ../qml/Main.qml:153 ../qml/Main.qml:156
+#, fuzzy
+#| msgid "Distance: "
+msgid "Distance: %1 %2"
 msgstr "Distància: "
 
-#: ../qml/Main.qml:158
+#: ../qml/Main.qml:159
 msgid "Time: "
 msgstr "Temps: "
 
-#: ../qml/Main.qml:233
+#: ../qml/Main.qml:234
 msgid "Recent Activities"
 msgstr "Activitat recent"
 
-#: ../qml/Main.qml:237 ../qml/Settings.qml:14
+#: ../qml/Main.qml:238 ../qml/Settings.qml:14
 msgid "Settings"
 msgstr "Configuració"
 
-#: ../qml/Main.qml:242
+#: ../qml/Main.qml:243
 msgid "Filter"
 msgstr "Filtre"
 
-#: ../qml/Main.qml:247
+#: ../qml/Main.qml:248
 msgid "Import"
 msgstr "Importeu"
 
-#: ../qml/Main.qml:277 ../qml/Tracker.qml:261
+#: ../qml/Main.qml:278 ../qml/Tracker.qml:261
 msgid "Select the type and the name of your activity"
 msgstr "Seleccioneu el tipus i el nom de la vostra activitat"
 
-#: ../qml/Main.qml:292
+#: ../qml/Main.qml:293
 msgid "Edit the type and the name of your activity"
 msgstr "Seleccioneu el tipus i el nom de la vostra activitat"
 
-#: ../qml/Main.qml:313
+#: ../qml/Main.qml:314
 msgid "No saved activities"
 msgstr "No hi ha activitats desades"
 
-#: ../qml/Main.qml:316
+#: ../qml/Main.qml:317
 msgid "Swipe up to log a new activity"
 msgstr "Rellisqueu cap amunt per registrar una nova activitat"
 
-#: ../qml/Main.qml:398
+#: ../qml/Main.qml:393
 msgid "Track information"
 msgstr "Informació de rastreig"
 
-#: ../qml/Main.qml:412
+#: ../qml/Main.qml:407
 msgid "Close"
 msgstr "Tanqueu"
 
-#: ../qml/Main.qml:423
+#: ../qml/Main.qml:418
 msgid "Log new Activity"
 msgstr "Registra una nova activitat"
 
