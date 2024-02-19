@@ -1,0 +1,45 @@
+name: Clickable Build
+
+on:
+  push:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        arch: [all]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@latest
+      - name: Parse version
+        run: |
+          echo ARTIFACT_VERSION=$(cat manifest.json.in | grep "\"version\": "  | awk -F'"' '$0=$2') >> $GITHUB_ENV
+      - name: Install clickable
+        run: |
+          python3 -m pip install clickable-ut
+      - name: Build
+        run: |
+          clickable build --arch ${{ matrix.arch }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@latest
+        with:
+          name: activitytracker.cwayne18_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}
+          path: build/*/app/*.click
+          if-no-files-found: error
+      - name: Publish to Open Store
+        if: startsWith( github.ref, 'refs/tags/')
+        env:
+          OPENSTORE_KEY: ${{ secrets.OPENSTORE_KEY }}
+        run: clickable publish "* $(git log -1 --pretty=%B | head -1)" --apikey ${OPENSTORE_KEY}
+      - name: Create Release
+        if: startsWith( github.ref, 'refs/tags/')
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: "* $(git log -1 --pretty=%B | head -1)"
+          draft: false
+          prerelease: false
