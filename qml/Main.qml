@@ -52,7 +52,7 @@ MainView {
       property int pointsInterval: 5000
       property int altitudeOffset: 0
       // onPointsIntervalChanged: {/*console.log("pointsInterval has changed: "+pointsInterval);*/loggingpoints.interval = pointsInterval}
-      //onaltitudeOffsetChanged: {console.log("altitudeOffset has changed: "+altitudeOffset)}
+      // onaltitudeOffsetChanged: {console.log("altitudeOffset has changed: "+altitudeOffset)}
 
    }
 
@@ -143,10 +143,7 @@ MainView {
             // Load the received data into the list model
             listModel.clear()
             for (var i=0; i<result.length; i++) {
-               //console.warn(runits);
                if (runits == "miles"){
-                  console.warn(result[i].distance)
-                  //console.warn(result[i].speed)
                   var mi
                   mi = result[i].distance * 0.62137
                   //TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
@@ -215,7 +212,6 @@ MainView {
             else if (runits == "kilometers"){
                dist = result + "km"
             }
-            //dist=result
             return dist
          })
       }
@@ -319,8 +315,6 @@ MainView {
          }
       }
       Component.onCompleted: {
-         //  listModel.clear()
-         //  pygpx.get_runs(listModel)
          newrunEdge.preloadContent = true
       }
 
@@ -336,11 +330,7 @@ MainView {
          clip:true
          id:thelist
          model: filtered ? filteredModel : listModel
-         // let refresh control know when the refresh gets completed
-         // pullToRefresh {
-         //    enabled: false
-         //    onRefresh: pygpx.get_runs()
-         // }
+
          delegate: ListItem {
             id :del
             onClicked: {
