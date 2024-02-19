@@ -1,44 +1,55 @@
 name: Clickable Build
 
+# only start the script when code is pushed to main branch
 on: 
   push:
     branches:
       - main
 
+# define the build job
 jobs:
   build:
     strategy:
+    # defining some matrix variables for later usage
       matrix:
-        arch: [all]
+        arch: [all] # can also be if needed [amd64, arm64, armhf]
         appname: [activitytracker.cwayne18]
     runs-on: ubuntu-latest
+    # defining all build steps that should be executed
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # here @latest doesn't work, specific version v4 or above
       - name: Parse version
+        # extract the version number from manifest.json.in
+        # find the line with the version, split at " and take the 4th value
         run: |
-          echo ARTIFACT_VERSION=$(cat manifest.json.in | grep "\"version\": "  | awk -F'"' '$0=$2') >> $GITHUB_ENV
+          echo ARTIFACT_VERSION=$(cat manifest.json.in | grep "\"version\": "  | awk -F'"' '$0=$4') >> $GITHUB_ENV
       - name: Install clickable
+        # use python to install clickable so clickable commands can be used
         run: |
           python3 -m pip install clickable-ut
       - name: Build
+        # build the app with clickable for all specified architectures
         run: |
           clickable build --arch ${{ matrix.arch }}
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        # upload the build artifacts to github using the appname and version
+        uses: actions/upload-artifact@v4 # here @latest doesn't work, specific version v4 or above
         with:
           name: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
           path: build/*/app/*.click
           if-no-files-found: error
       - name: Publish to Open Store
+        # if a tag has been pushed, publish to OpenStore using the API key specified as Github secret with the last commit message (=changelog) as content
         if: startsWith( github.ref, 'refs/tags/')
         env:
           OPENSTORE_KEY: ${{ secrets.OPENSTORE_KEY }}
         run: clickable publish "* $(git log -1 --pretty=%B | head -1)" --apikey ${OPENSTORE_KEY}
       - name: Create Release
+        # if a tag has been pushed, create a release with the last commit message (=changelog) as content
         id: create_release
         if: startsWith( github.ref, 'refs/tags/')
-        uses: actions/create-release@latest
+        uses: actions/create-release@latest # here @latest works
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
@@ -48,12 +59,14 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload Release Asset
+        # if a tag has been pushed, upload the build artifacts as release assets
         id: upload-release-asset
         if: startsWith( github.ref, 'refs/tags/')
-        uses: actions/upload-release-asset@latest
+        uses: actions/upload-release-asset@latest # here @latest works
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          # using the id of the release above to grab it's upload_url
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
           asset_name: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
