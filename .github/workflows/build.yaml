@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
       - name: Parse version
         run: |
           echo ARTIFACT_VERSION=$(cat manifest.json.in | grep "\"version\": "  | awk -F'"' '$0=$2') >> $GITHUB_ENV
@@ -22,7 +22,7 @@ jobs:
         run: |
           clickable build --arch ${{ matrix.arch }}
       - name: Upload Artifacts
-        uses: actions/upload-artifact@latest
+        uses: actions/upload-artifact@v4
         with:
           name: activitytracker.cwayne18_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}
           path: build/*/app/*.click
