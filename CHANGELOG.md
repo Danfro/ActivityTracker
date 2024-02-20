@@ -1,4 +1,20 @@
-## Changes 0.14:
+## Changes v1.0.0
+- new maintainer @danfro
+- improved: updated app for focal/20.04
+- improved: move translations to ubports hosted weblate (Thanks to Weblate for sponsoring this service!)
+- added: sport type SUP and nordic walking
+- added: pause option
+- fixed: app icon not showing (thanks @ivoxavier)
+- improved: cancel recording dialog handling
+- improved: now distances in main screen use locale separator
+- improved: changelog and readme have been split into two separate files for easier reading
+- updated: translations, many thanks to all translators!
+
+## Changes v0.15:
+- Update the web library use to Morph.Web
+- Update translation
+
+## Changes v0.14:
 - Add the possibility to calibrate the altitude,
 - Remove JavaScript lib,
 - Thanks to the contributors to update translation,
@@ -6,10 +22,10 @@
 - Add Unicycle sport,
 - Filter activities by type,
 
-## Changes 0.13:
+## Changes v0.13:
 - Thanks to the contributors to update translation.
 
-## Changes 0.12:
+## Changes v0.12:
 - Improved sport selection
 - Missing appname substitution and removed unused images
 - Back to appname cwayne18, UX and translation improvements. Updated it.po
