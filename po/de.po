@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2024-02-18 10:53+0000\n"
+"PO-Revision-Date: 2024-02-23 05:18+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -205,7 +205,7 @@ msgstr "Keine Daten"
 
 #: ../qml/Tracker.qml:183
 msgid "Do you want to cancel the activity?"
-msgstr "Möchten Sie die Aktivität abbrechen?"
+msgstr "Willst du die Aktivität abbrechen?"
 
 #: ../qml/Tracker.qml:186
 msgid "Yes, stop and discard"
@@ -221,11 +221,11 @@ msgstr "Was möchtest du tun?"
 
 #: ../qml/Tracker.qml:221
 msgid "Stop and save track"
-msgstr "Anhalten und Aktivität speichern"
+msgstr "Stoppen und Aktivität speichern"
 
 #: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
-msgstr "Anhalten und Aktivität verwerfen"
+msgstr "Stoppen und Aktivität verwerfen"
 
 #: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
