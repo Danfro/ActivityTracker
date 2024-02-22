@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2019-10-30 01:54+0000\n"
+"PO-Revision-Date: 2024-02-23 05:18+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
-"activity-tracker/translations/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -28,10 +28,8 @@ msgid "Activity Tracker"
 msgstr "Aktivitetskartlegger"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Versjon"
+msgstr "Versjon %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -85,10 +83,8 @@ msgstr "Velg"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:153 ../qml/Main.qml:156
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Distanse: "
+msgstr "Avstand: %1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
@@ -150,20 +146,17 @@ msgid "Info"
 msgstr "Info"
 
 #: ../qml/Settings.qml:36
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Distanse: "
+msgstr "Avstandsenhet:"
+
+#: ../qml/Settings.qml:37
+msgid "Kilometers"
+msgstr "Kilometer"
 
 #: ../qml/Settings.qml:37
 #, fuzzy
-#| msgid "meter(s)"
-msgid "Kilometers"
-msgstr "meter"
-
-#: ../qml/Settings.qml:37
 msgid "Miles"
-msgstr ""
+msgstr "Miles"
 
 #: ../qml/Settings.qml:54
 msgid "Log a point every:"
@@ -197,10 +190,8 @@ msgid "Choose sport:"
 msgstr "Velg sport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Velg"
+msgstr "Velg senere"
 
 #: ../qml/Tracker.qml:57
 msgid "Activity in Progress"
@@ -212,7 +203,7 @@ msgstr "Ny aktivitet"
 
 #: ../qml/Tracker.qml:57
 msgid "Paused"
-msgstr ""
+msgstr "Pauset"
 
 #: ../qml/Tracker.qml:114 ../qml/Tracker.qml:119
 msgid "No data"
@@ -224,35 +215,35 @@ msgstr "Ønsker du å avbryte aktiviteten?"
 
 #: ../qml/Tracker.qml:186
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Ja, stopp og forkast"
 
 #: ../qml/Tracker.qml:205
 msgid "No, go back"
-msgstr ""
+msgstr "Nei, gå tilbake"
 
 #: ../qml/Tracker.qml:219
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Hva vil du gjøre?"
 
 #: ../qml/Tracker.qml:221
 msgid "Stop and save track"
-msgstr ""
+msgstr "Stopp og lagre spor"
 
 #: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Stopp og forkast spor"
 
 #: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Ingenting. Gå tilbake."
 
 #: ../qml/Tracker.qml:302
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../qml/Tracker.qml:353
 msgid "Resume"
-msgstr ""
+msgstr "Fortsett"
 
 #: ../qml/Tracker.qml:353
 msgid "Start"
@@ -284,11 +275,11 @@ msgstr "Fottur"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "Ståbrett"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Stavgang"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
