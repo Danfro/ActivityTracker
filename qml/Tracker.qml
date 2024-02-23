@@ -95,7 +95,7 @@ Rectangle {
             count++
             //  console.log("Coordinate:", coord.longitude, coord.latitude);
             map.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
-            circle.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
+            circle.coordinate = map.center
 
             if (gpxx && am_running && !is_paused){
 
@@ -105,7 +105,7 @@ Rectangle {
                   pline.addCoordinate(QtPositioning.coordinate(coord.latitude,coord.longitude, altitudeCorrected))
                   pygpx.current_distance(gpxx)
                   distlabel.text = dist
-                  console.warn("========================")
+                  // console.warn("========================")
                   //console.warn(pygpx.current_distance(gpxx))
                }
                if (src.position.altitudeValid) {
@@ -162,14 +162,14 @@ Rectangle {
          }
       }//Map
 
-      MapCircle{
-         id:circle
-         center : src.position.coordinate
-         radius : 30.0
-         opacity: .3
-         color : LomiriColors.green
-         border.width : 3
+      MapQuickItem {
+         id: circle
+         sourceItem: Rectangle { id: marker; width: 50; height: width; color: "green"; border.width: 3; border.color: "black"; smooth: true; radius: width*1.5 }
+         coordinate : map.center
+         opacity: 0.4
+         anchorPoint: Qt.point(marker.width/2, marker.height/2)
       }
+
       MapPolyline {
          id: pline
          line.width: 4
