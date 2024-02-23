@@ -4,8 +4,8 @@ name: Clickable build
 # only start the script when code is pushed to main branch
 on: 
   push:
-    branches:
-      - main
+    tags:
+      - !'v[0-9]+.[0-9]+.[0-9]+'
 
 # define the build job
 jobs:
