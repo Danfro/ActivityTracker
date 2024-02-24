@@ -61,10 +61,7 @@ Page {
          });
       }//Component.onCompleted
    }
-   Plugin {
-      id: mapPlugin
-      name: "osm"
-   }
+
    Map {
       id: map
       anchors.fill: parent
