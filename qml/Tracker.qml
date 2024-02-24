@@ -73,10 +73,10 @@ Rectangle {
       }
 
       Timer {
+         id: timer
          interval: 1000
          running: false
          repeat: true
-         id:timer
          onTriggered: {
             counter++
             pygpx.format_timer(counter)
@@ -131,8 +131,8 @@ Rectangle {
                if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
                  altitudeCorrected = coord.altitude + persistentSettings.altitudeOffset
                   pygpx.addpoint(gpxx,coord.latitude,coord.longitude,altitudeCorrected)
-                  console.log("Coordinate:", coord.longitude, coord.latitude)
-                  console.log("calibrated altitude :", altitudeCorrected, "& raw Altitude:", coord.altitude )
+                  // console.log("Coordinate:", coord.longitude, coord.latitude)
+                  // console.log("calibrated altitude :", altitudeCorrected, "& raw Altitude:", coord.altitude )
                }
 
             }
@@ -263,7 +263,7 @@ Rectangle {
                PopupUtils.close(save_dialogue)
                pygpx.writeit(gpxx,trackName,sportsComponent.name[sportsComponent.selected])
                console.log(trackName)
-               console.log("----------restart------------")
+               // console.log("----------restart------------")
                // counter & timer stuff used only here in Tracker -> why? FIXME
                counter = 0
                pygpx.format_timer(0)

@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.12
 import QtTest 1.0
 import Lomiri.Test 1.0
 import "../../"

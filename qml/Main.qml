@@ -118,20 +118,19 @@ MainView {
       id: pygpx
       Component.onCompleted: {
          function loadit(result){
-            console.warn("STARTING GPX")
             listModel.clear()
             call('geepeeex.onetime_db_fix',[])
             call('geepeeex.onetime_db_fix_again_cus_im_dumb',[])
             get_units(result)
          };
          addImportPath(Qt.resolvedUrl('../py/'));
+         console.warn("STARTING GPX")
          importModule('geepeeex', loadit);
          console.warn('imported gpxpy');
          importModule('gpximport', loadit);
          console.warn('imported gpximport');
          importModule('gpxinfo', loadit);
          console.warn('imported gpxinfo');
-
       }//Component.onCompleted
 
       function addpoint(gpx,lat,lng,alt,speed){
@@ -202,8 +201,8 @@ MainView {
       function edit_run(run,name,act_type) {call('geepeeex.edit_run', [run,name,act_type])}
       function current_distance(gpx) {
          call('geepeeex.current_distance', [gpxx], function(result) {
-            console.warn("DIST")
-            console.warn(result)
+            // console.warn("DIST")
+            // console.warn(result)
             if (runits == "miles"){
                var mi
                mi = result * 0.62137

@@ -44,7 +44,7 @@ Page {
 
          addImportPath(Qt.resolvedUrl('py/'));
          importModule("geepeeex", function() {
-            console.warn("calling python script to load the gpx file")
+            // console.warn("calling python script to load the gpx file")
             refreshmap.visible = true
             refreshmap.running = true
             refreshmap.focus = true
