@@ -6,7 +6,7 @@ import "components"
 
 Dialog {
    id: activity_dialogue
-   property Item sportsComponent    //TODO if editing, set sportsComponent.selected to the sport of the track
+   property Item sportsComponent
    property alias save: save_button
    property alias cancel: cancel_button
    property alias trackName: tf.name
@@ -24,6 +24,7 @@ Dialog {
          var d = new Date();
          day = d.toDateString();
       }
+      onCursorVisibleChanged: if (cursorVisible) { text = placeholderText }
    }
    SportSelector {
       text: i18n.tr("Activity Type")
