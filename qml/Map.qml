@@ -74,7 +74,7 @@ Page {
       plugin : Plugin {
          id: plugin
          allowExperimental: true
-         preferred: ["osm"]
+         preferred: ["osm"] //possible providers: esri,mapbox,osm,here,itemsoverlay (listed with: plugin.availableServiceProviders)
          required.mapping: Plugin.AnyMappingFeatures
          required.geocoding: Plugin.AnyGeocodingFeatures
       }
