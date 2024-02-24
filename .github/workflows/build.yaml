@@ -1,11 +1,12 @@
 # this file will build the app and create a downloadable artifact
 name: Clickable build
 
-# only start the script when code is pushed to main branch
-on: 
+on:
+  # start the script when code is pushed to main branch
   push:
-    tags:
-      - !'v[0-9]+.[0-9]+.[0-9]+'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 # define the build job
 jobs:
