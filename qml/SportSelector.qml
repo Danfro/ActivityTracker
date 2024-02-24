@@ -1,6 +1,6 @@
 import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
-import QtQuick 2.4
+import QtQuick 2.12
 import "components"
 
 OptionSelector {

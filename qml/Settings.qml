@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.12
 import Lomiri.Components 1.3
 import QtSystemInfo 5.0
 import QtLocation 5.3
