@@ -16,6 +16,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
+# source: https://github.com/astanin/gpxplot
 
 """usage: gpxplot.py [action] [options] track.gpx
 
