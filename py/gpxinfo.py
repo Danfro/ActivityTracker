@@ -2,6 +2,7 @@
 
 """
 Command line utility to extract basic statistics from gpx file(s)
+source: https://github.com/tkrajina/gpxpy/blob/dev/gpxinfo
 """
 
 import pdb
