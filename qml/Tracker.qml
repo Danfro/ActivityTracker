@@ -164,6 +164,7 @@ Rectangle {
 
       MapQuickItem {
          id: circle
+         visible: (src.position.latitudeValid && src.position.longitudeValid)
          sourceItem: Rectangle { id: marker; width: 50; height: width; color: "green"; border.width: 3; border.color: "black"; smooth: true; radius: width*1.5 }
          coordinate : map.center
          opacity: 0.4
