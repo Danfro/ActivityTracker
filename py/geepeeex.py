@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# source likely: http://geepeeex.googlepages.com/home, not available anymore
+
 import gpxpy
 import datetime
 import time
