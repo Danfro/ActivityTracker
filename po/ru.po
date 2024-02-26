@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2024-02-21 18:02+0000\n"
+"PO-Revision-Date: 2024-02-26 19:03+0000\n"
 "Last-Translator: Семёнов Герман <GermanAizek@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ru/>\n"
@@ -230,15 +230,15 @@ msgstr "Остановить и удалить путь"
 
 #: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Отменить и вернуться назад"
 
 #: ../qml/Tracker.qml:302
 msgid "Pause"
-msgstr ""
+msgstr "Пауза"
 
 #: ../qml/Tracker.qml:353
 msgid "Resume"
-msgstr ""
+msgstr "Продолжить"
 
 #: ../qml/Tracker.qml:353
 msgid "Start"
@@ -270,11 +270,11 @@ msgstr "Марш"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Скандинавская ходьба"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
