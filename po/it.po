@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2024-02-23 05:18+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2024-03-02 03:00+0000\n"
+"Last-Translator: Ermete D'Oro <liberta-combattente@paranoici.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/it/>\n"
 "Language: it\n"
@@ -25,7 +25,7 @@ msgstr "Informazioni su"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
-msgstr "Activity Tracker"
+msgstr "Rilevatore di Attività"
 
 #: ../qml/About.qml:41
 msgid "Version %1"
@@ -83,10 +83,8 @@ msgstr "Scegli"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:153 ../qml/Main.qml:156
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Distanza: "
+msgstr "Distanza: %1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
@@ -145,20 +143,16 @@ msgid "Info"
 msgstr "Info"
 
 #: ../qml/Settings.qml:36
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Distanza: "
+msgstr "Unità di distanza:"
 
 #: ../qml/Settings.qml:37
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "metri"
+msgstr "Chilometri"
 
 #: ../qml/Settings.qml:37
 msgid "Miles"
-msgstr ""
+msgstr "Miglia"
 
 #: ../qml/Settings.qml:54
 msgid "Log a point every:"
@@ -190,10 +184,8 @@ msgid "Choose sport:"
 msgstr "Scegli sport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Scegli"
+msgstr "Scegli più tardi"
 
 #: ../qml/Tracker.qml:57
 msgid "Activity in Progress"
@@ -205,7 +197,7 @@ msgstr "Nuova Attività"
 
 #: ../qml/Tracker.qml:57
 msgid "Paused"
-msgstr ""
+msgstr "In Pausa"
 
 #: ../qml/Tracker.qml:114 ../qml/Tracker.qml:119
 msgid "No data"
@@ -217,35 +209,35 @@ msgstr "Vuoi cancellare l'attività?"
 
 #: ../qml/Tracker.qml:186
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Sì, fermati e scarta"
 
 #: ../qml/Tracker.qml:205
 msgid "No, go back"
-msgstr ""
+msgstr "No, torna indietro"
 
 #: ../qml/Tracker.qml:219
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Cosa ti piacerebbe fare?"
 
 #: ../qml/Tracker.qml:221
 msgid "Stop and save track"
-msgstr ""
+msgstr "Interrompi e salva la traccia"
 
 #: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Interrompi e scarta la traccia"
 
 #: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Niente, torna indietro"
 
 #: ../qml/Tracker.qml:302
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: ../qml/Tracker.qml:353
 msgid "Resume"
-msgstr ""
+msgstr "Riprendi"
 
 #: ../qml/Tracker.qml:353
 msgid "Start"
@@ -277,11 +269,11 @@ msgstr "Escursione"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Camminata nordica"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
