@@ -1,3 +1,10 @@
+## Changes v1.0.1
+- fixed: map marker now keeps fixed size regardless of map zoom
+- improved: editing a track name when saving, now uses the placeholder text as given input
+- improved: add word wrap to button text to allow longer translations
+- improved: reduced logging in several places
+- updated: translations, many thanks to all translators!
+
 ## Changes v1.0.0
 - new maintainer @danfro
 - improved: updated app for focal/20.04
