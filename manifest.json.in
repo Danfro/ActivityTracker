@@ -9,7 +9,7 @@
             "desktop": "activitytracker.desktop"
         }
     },
-    "version": "1.0.0",
+    "version": "1.0.1",
     "maintainer": "Danfro <one@frostinfo.de>",
     "framework": "ubuntu-sdk-20.04"
 }
