@@ -51,24 +51,14 @@ jobs:
       - name: Create Release
         # if a tag has been pushed, create a release with the last commit message (=changelog) as content
         id: create_release
-        uses: actions/create-release@latest # here @latest works
+        uses: softprops/action-gh-release@latest # need to get tested if this works, otherwise use v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: "* $(git log -1 --pretty=%B | head -1)"
+          body: "* $(git log -1 --pretty=%B)"
           draft: false
           prerelease: false
-      - name: Upload Release Asset
-        # if a tag has been pushed, upload the build artifacts as release assets
-        id: upload-release-asset
-        uses: actions/upload-release-asset@latest # here @latest works
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          # using the id of the release above to grab it's upload_url
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
-          asset_name: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
-          asset_content_type: application/zip
+          files: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
+          fail_on_unmatched_files: false
