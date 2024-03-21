@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2020-10-13 12:26+0000\n"
+"PO-Revision-Date: 2024-03-22 02:15+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
-"Language-Team: Croatian <https://hosted.weblate.org/projects/activity-"
-"tracker/translations/hr/>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -29,10 +29,8 @@ msgid "Activity Tracker"
 msgstr "Praćenje aktivnosti"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Verzija"
+msgstr "Verzija %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -85,10 +83,8 @@ msgstr "Odaberi"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:153 ../qml/Main.qml:156
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Udaljenost: "
+msgstr "Udaljenost: %1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
@@ -147,20 +143,16 @@ msgid "Info"
 msgstr "Podaci"
 
 #: ../qml/Settings.qml:36
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Udaljenost: "
+msgstr "Jedinica udaljenosti:"
 
 #: ../qml/Settings.qml:37
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "m"
+msgstr "Kilometri"
 
 #: ../qml/Settings.qml:37
 msgid "Miles"
-msgstr ""
+msgstr "Milje"
 
 #: ../qml/Settings.qml:54
 msgid "Log a point every:"
@@ -192,10 +184,8 @@ msgid "Choose sport:"
 msgstr "Odaberi sport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Odaberi"
+msgstr "Odaberi kasnije"
 
 #: ../qml/Tracker.qml:57
 msgid "Activity in Progress"
@@ -207,7 +197,7 @@ msgstr "Nova aktivnost"
 
 #: ../qml/Tracker.qml:57
 msgid "Paused"
-msgstr ""
+msgstr "Pauzirano"
 
 #: ../qml/Tracker.qml:114 ../qml/Tracker.qml:119
 msgid "No data"
@@ -219,35 +209,35 @@ msgstr "Želiš li prekinuti ovu aktivnost?"
 
 #: ../qml/Tracker.qml:186
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Da, prekini i odbaci"
 
 #: ../qml/Tracker.qml:205
 msgid "No, go back"
-msgstr ""
+msgstr "Ne, vrati se natrag"
 
 #: ../qml/Tracker.qml:219
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Što želiš raditi?"
 
 #: ../qml/Tracker.qml:221
 msgid "Stop and save track"
-msgstr ""
+msgstr "Prekini i spremi put"
 
 #: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Prekini i odbaci put"
 
 #: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Ništa, vrati se natrag"
 
 #: ../qml/Tracker.qml:302
 msgid "Pause"
-msgstr ""
+msgstr "Zaustavi"
 
 #: ../qml/Tracker.qml:353
 msgid "Resume"
-msgstr ""
+msgstr "Nastavi"
 
 #: ../qml/Tracker.qml:353
 msgid "Start"
@@ -279,15 +269,15 @@ msgstr "Pješaćenje"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "Stojeće veslanje na dasci (SUP)"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Nordijsko hodanje"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
-msgstr "Vožnja monociklom"
+msgstr "Monocikl"
 
 #~ msgid "After"
 #~ msgstr "Nakon"
