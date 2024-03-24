@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2020-05-04 08:11+0000\n"
-"Last-Translator: Hacker1245 <kacper12455@gmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/activity-tracker/"
-"translations/pl/>\n"
+"PO-Revision-Date: 2024-03-25 13:01+0000\n"
+"Last-Translator: marcin mikołajczak <me@mkljczk.pl>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -29,10 +29,8 @@ msgid "Activity Tracker"
 msgstr "Monitor aktywności"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Wersja"
+msgstr "Wersja %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -85,10 +83,8 @@ msgstr "Wybierz"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:153 ../qml/Main.qml:156
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Dystans: "
+msgstr "Odległoś: %1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
@@ -147,16 +143,12 @@ msgid "Info"
 msgstr "Info"
 
 #: ../qml/Settings.qml:36
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Dystans: "
+msgstr "Jednostka odległości:"
 
 #: ../qml/Settings.qml:37
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "metr(y)"
+msgstr "Kilometry"
 
 #: ../qml/Settings.qml:37
 msgid "Miles"
