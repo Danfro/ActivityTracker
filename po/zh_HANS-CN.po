@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-17 21:55+0000\n"
-"PO-Revision-Date: 2019-12-13 17:57+0000\n"
-"Last-Translator: Kyle <hughka@163.com>\n"
+"PO-Revision-Date: 2024-04-01 02:24+0000\n"
+"Last-Translator: 复予 <clonewith@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"activity-tracker/translations/zh_Hans/>\n"
+"ubports/activitytracker/zh_Hans/>\n"
 "Language: zh_HANS-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:18
 msgid "About"
@@ -28,10 +28,8 @@ msgid "Activity Tracker"
 msgstr "活动追踪器"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "版本"
+msgstr "版本 %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -84,10 +82,8 @@ msgstr "选择"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:153 ../qml/Main.qml:156
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "距离： "
+msgstr "距离：%1 %2"
 
 #: ../qml/Main.qml:159
 msgid "Time: "
@@ -146,20 +142,16 @@ msgid "Info"
 msgstr "信息"
 
 #: ../qml/Settings.qml:36
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "距离： "
+msgstr "距离单位："
 
 #: ../qml/Settings.qml:37
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "仪表"
+msgstr "千米"
 
 #: ../qml/Settings.qml:37
 msgid "Miles"
-msgstr ""
+msgstr "英里"
 
 #: ../qml/Settings.qml:54
 msgid "Log a point every:"
@@ -191,10 +183,8 @@ msgid "Choose sport:"
 msgstr "选择运动："
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "选择"
+msgstr "稍后选择"
 
 #: ../qml/Tracker.qml:57
 msgid "Activity in Progress"
@@ -206,7 +196,7 @@ msgstr "新建活动"
 
 #: ../qml/Tracker.qml:57
 msgid "Paused"
-msgstr ""
+msgstr "已暂停"
 
 #: ../qml/Tracker.qml:114 ../qml/Tracker.qml:119
 msgid "No data"
@@ -218,35 +208,35 @@ msgstr "您想取消活动吗？"
 
 #: ../qml/Tracker.qml:186
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "是的，停止并放弃"
 
 #: ../qml/Tracker.qml:205
 msgid "No, go back"
-msgstr ""
+msgstr "不，返回"
 
 #: ../qml/Tracker.qml:219
 msgid "What would you like to do?"
-msgstr ""
+msgstr "您想要做什么？"
 
 #: ../qml/Tracker.qml:221
 msgid "Stop and save track"
-msgstr ""
+msgstr "停止并保存路径"
 
 #: ../qml/Tracker.qml:242
 msgid "Stop and discard track"
-msgstr ""
+msgstr "停止并放弃路径"
 
 #: ../qml/Tracker.qml:250
 msgid "Nothing, go back"
-msgstr ""
+msgstr "没有，返回"
 
 #: ../qml/Tracker.qml:302
 msgid "Pause"
-msgstr ""
+msgstr "暂停"
 
 #: ../qml/Tracker.qml:353
 msgid "Resume"
-msgstr ""
+msgstr "继续"
 
 #: ../qml/Tracker.qml:353
 msgid "Start"
@@ -278,11 +268,11 @@ msgstr "远足"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "北欧式健走"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
