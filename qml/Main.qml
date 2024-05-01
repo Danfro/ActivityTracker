@@ -122,15 +122,15 @@ MainView {
             call('geepeeex.onetime_db_fix',[])
             call('geepeeex.onetime_db_fix_again_cus_im_dumb',[])
             get_units(result)
+            console.log('python module geepeeex loaded')
          };
+         importModule('os', function() { console.log("python module os loaded"); });
+         importModule('shutil', function() { console.log("python loaded"); });
          addImportPath(Qt.resolvedUrl('../py/'));
          console.warn("STARTING GPX")
          importModule('geepeeex', loadit);
-         console.warn('imported gpxpy');
-         importModule('gpximport', loadit);
-         console.warn('imported gpximport');
-         importModule('gpxinfo', loadit);
-         console.warn('imported gpxinfo');
+         importModule('gpximport', function() { console.log("python module gpximport loaded"); });
+         importModule('gpxinfo', function() { console.log("python module gpxinfo loaded"); });
       }//Component.onCompleted
 
       function addpoint(gpx,lat,lng,alt,speed){
