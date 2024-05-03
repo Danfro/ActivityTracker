@@ -15,6 +15,7 @@ Rectangle {
    width: page1.width
    height: page1.height
    property int altitudeCorrected
+   property bool fixedMarker: true
 
    Component {
       id:sportselect
@@ -33,6 +34,7 @@ Rectangle {
          if (src.valid){
              pygpx.create_gpx()
              map.addMapItem(pline)
+             map.center = src.position.coordinate
              am_running = true
              is_paused = false
          }
@@ -64,11 +66,15 @@ Rectangle {
          ]
 
          trailingActionBar.actions: [
-         Action {
-            iconSource: "../images/"+sportsComp.name[sportsComp.selected]+"-symbolic.svg"
-            visible: sportsComp.selected != -1
-            onTriggered: PopupUtils.open(sportselect)
-         }
+            Action {
+                iconSource: "../images/"+sportsComp.name[sportsComp.selected]+"-symbolic.svg"
+                visible: sportsComp.selected != -1
+                onTriggered: PopupUtils.open(sportselect)
+            }
+            ,Action {
+                iconName: fixedMarker ? "gps" : "gps-disabled"
+                onTriggered: fixedMarker = !fixedMarker
+            }
          ]
       }
 
@@ -94,11 +100,12 @@ Rectangle {
             var coord = src.position.coordinate;
             count++
             //  console.log("Coordinate:", coord.longitude, coord.latitude);
-            map.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
-            circle.coordinate = map.center
 
-            if (gpxx && am_running && !is_paused){
+            // only center position when tracking is active, otherwise allow zoom and pan
+            if (fixedMarker) map.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
+            circle.coordinate = QtPositioning.coordinate(coord.latitude, coord.longitude)
 
+            if (gpxx && am_running && !is_paused) {
                if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
                   //pygpx.addpoint(gpxx,coord.latitude,coord.longitude,coord.altitude)
                   altitudeCorrected = coord.altitude + persistentSettings.altitudeOffset
@@ -145,7 +152,6 @@ Rectangle {
       Map {
          id: map
          anchors.fill: parent
-         center: src.position.coordinate
          zoomLevel: map.maximumZoomLevel - 2
          color: Theme.palette.normal.background
          plugin : Plugin {
@@ -158,7 +164,7 @@ Rectangle {
 
          Component.onCompleted: {
             map.addMapItem(circle)
-            map.center = src.position.coordinate
+
          }
       }//Map
 
@@ -166,7 +172,7 @@ Rectangle {
          id: circle
          visible: (src.position.latitudeValid && src.position.longitudeValid)
          sourceItem: Rectangle { id: marker; width: 50; height: width; color: "green"; border.width: 3; border.color: "black"; smooth: true; radius: width*1.5 }
-         coordinate : map.center
+         coordinate : src.position.coordinate
          opacity: 0.4
          anchorPoint: Qt.point(marker.width/2, marker.height/2)
       }
