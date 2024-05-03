@@ -331,7 +331,7 @@ MainView {
          model: filtered ? filteredModel : listModel
 
          delegate: ListItem {
-            id :del
+            id: del
             onClicked: {
                stack.push(Qt.resolvedUrl('Map.qml'), {polyline: filename, index: id})
             }
@@ -364,7 +364,7 @@ MainView {
                  iconName: "edit"
                  onTriggered: {
                       indexrun = id;
-                      print(indexrun);
+                     //  print(indexrun);
                       PopupUtils.open(edit_dialog)
                  }
               },

@@ -10,7 +10,7 @@ Rectangle {
    id: trackerroot
    property bool openDialog: false
    onOpenDialogChanged: openDialog == true ? PopupUtils.open(sportselect) : ""
-   Sports {id:sportsComp}
+   Sports {id: sportsComp}
    color: Theme.palette.normal.background
    width: page1.width
    height: page1.height
