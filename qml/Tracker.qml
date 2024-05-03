@@ -377,6 +377,7 @@ Rectangle {
                    text: is_paused ? i18n.tr("Resume") : i18n.tr("Start")
                    color: LomiriColors.green
                    visible: !am_running
+                   enabled: (src.position.latitudeValid && src.position.longitudeValid)
                    height: units.gu(10)
                    onClicked: is_paused ? pause_recording() : start_recording()
                 }
