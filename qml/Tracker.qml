@@ -305,6 +305,23 @@ Rectangle {
           onClicked: pause_recording()
       }
 
+      Rectangle {
+          id: floatingWaitingForFixRect
+          visible: !(src.position.latitudeValid && src.position.longitudeValid)
+          anchors.bottom: dataRect.top
+          anchors.bottomMargin: units.gu(2)
+          anchors.horizontalCenter: dataRect.horizontalCenter
+          height: units.gu(4)
+          width: parent.width - units.gu(4)
+          color: theme.palette.normal.base
+          radius: 30
+          Label {
+            text: i18n.tr("Waiting for position...")
+            anchors.centerIn: parent
+          }
+          z: parent.z + 1
+      }
+
         Rectangle {
             id: dataRect
             width: parent.width

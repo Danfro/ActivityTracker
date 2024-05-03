@@ -230,7 +230,11 @@ msgstr ""
 msgid "Pause"
 msgstr ""
 
-#: ../qml/Tracker.qml:353
+#: ../qml/Tracker.qml:452
+msgid "Waiting for position..."
+msgstr ""
+
+#: ../qml/Tracker.qml:504
 msgid "Resume"
 msgstr ""
 
