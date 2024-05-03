@@ -331,7 +331,7 @@ Rectangle {
         Rectangle {
             id: dataRect
             width: parent.width
-            height: units.gu(13.5)
+            height: units.gu(14)
             // z:100
             anchors.bottom: parent.bottom
             color: theme.palette.normal.background
@@ -416,6 +416,44 @@ Rectangle {
                    id: altlabel
                     text: "No data"
                     fontSize: "large"
+                }
+            }
+
+            Row {
+                id: copyrightNotice
+                anchors.bottom: parent.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                width: parent.width
+                height: units.gu(2)
+                Label {
+                    id: mapText
+                    text: "Map © "
+                }
+                Label {
+                    id: thunderforest
+                    text: "www.thunderforest.com"
+                    color: theme.palette.normal.activity
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally('https://www.thunderforest.com/')
+                    }
+                }
+                Label {
+                    text: " | "
+                }
+                Label {
+                    id: dataText
+                    text: "Data © "
+                }
+                Label {
+                    id: osm
+                    text: "www.osm.org/copyright"
+                    color: theme.palette.normal.activity
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally('https://www.osm.org/copyright')
+                    }
                 }
             }
         }
