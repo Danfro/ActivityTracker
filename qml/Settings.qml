@@ -285,12 +285,14 @@ Page {
                     by deleting files one by one there should be a write lock on used files
                     */
                     console.log("start clearing cached tiles")
-                    for (var i = 0; i < folderModel.count; i ++) {
-                        pygpx.call('os.remove', [folderModel.get (i, "fileURL").toString().replace("file://","")], function (result) {
-                        //TODO: add error handling
-                        });
-                        if (i == folderModel.count-1) {
-                            console.log("finished clearing %1 cached tiles").arg(folderModel.count)
+                    if (folderModel.count > 0) {
+                        for (var i = 0; i < folderModel.count; i ++) {
+                            pygpx.call('os.remove', [folderModel.get (i, "fileURL").toString().replace("file://","")], function (result) {
+                            //TODO: add error handling
+                            });
+                            if (i == folderModel.count-1) {
+                                console.log("finished clearing %1 cached tiles").arg(folderModel.count)
+                            }
                         }
                     }
                 }
