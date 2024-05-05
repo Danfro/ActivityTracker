@@ -202,6 +202,7 @@ Page {
                                 onClicked: {
                                     persistentSettings.myApiKey = apiKeyInput.text
                                     mapTypeSelector.enabled = true
+                                    mapTypeSelector.selectedIndex = 2
                                 }
                             }
                         }
