@@ -1,9 +1,10 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
 import Lomiri.Components 1.3
-import Lomiri.Components.Popups 1.3
+import Lomiri.Components.Popups 1.3 as Dialogs
 import QtPositioning 5.12
 import QtLocation 5.12
+import Qt.labs.platform 1.0 //for StandardPaths
 import "components"
 
 Rectangle {
@@ -154,17 +155,75 @@ Rectangle {
          anchors.fill: parent
          zoomLevel: map.maximumZoomLevel - 2
          color: Theme.palette.normal.background
+         activeMapType: supportedMapTypes[supportedMapTypes.length-1]  // zero is Street map, only this style for free/hobby plan is allowed, the very last one is custom map
          plugin : Plugin {
             id: plugin
-            allowExperimental: true
-            preferred: ["osm"]
+            name: "osm"
+
             required.mapping: Plugin.AnyMappingFeatures
             required.geocoding: Plugin.AnyGeocodingFeatures
-         }
 
+            // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
+            // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
+
+            // url structure: "http://tile.thunderforest.com/landscape/%z/%x/%y.png?apikey=YOURAPIKEY&fake=.png"
+
+            PluginParameter {
+               id: mapTypeParameter
+               name: "osm.mapping.custom.host"
+               value: "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+            }
+            PluginParameter {
+               name: "osm.mapping.custom.datacopyright"
+               value: "www.osm.org/copyright"
+            }
+            PluginParameter {
+               name: "osm.mapping.custom.mapcopyright"
+               value: "www.thunderforest.com"
+            }
+            PluginParameter {
+               name: "osm.mapping.offline.directory"
+               value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
+            }
+
+            // example code for HERE map plugin
+            // name: "here"
+            // https://www.here.com/docs/bundle/raster-tile-api-migration-guide/page/README.html
+            // https://doc.qt.io/qt-5/location-plugin-here.html
+            // PluginParameter { name: "here.app_id"; value: "YOURAPP_ID" }
+            // PluginParameter { name: "here.token"; value: "YOURAPIKEY" }
+            // PluginParameter { name: "here.proxy"; value: "system" }
+
+            // PluginParameter { name: "here.places.api_version"; value: 2 }
+            // PluginParameter {
+            //    name: "here.mapping.host"
+            //    value: "https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/11/1100/671/256/png8?style=default"
+            // }
+            // PluginParameter {
+            //    name: "here.mapping.host.aerial"
+            //    value: "https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/satellite.day/11/1100/671/256/png8?apiKey=YOURAPIKEY"
+            // }
+
+            // PluginParameter { name: "here.places.api_version"; value: 3 }
+            // PluginParameter {
+            //    name: "here.mapping.host"
+            //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=explore.day&apiKey=YOURAPIKEY"
+            // }
+            // PluginParameter {
+            //    name: "here.mapping.host.aerial"
+            //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=satellite.day&apiKey=YOURAPIKEY"
+            // }
+
+         }
          Component.onCompleted: {
             map.addMapItem(circle)
 
+            // example code for retrieving supported map types
+            // let supportedMapTypes = map.supportedMapTypes
+            // for (let i = 0; i < supportedMapTypes.length; ++i) {
+            //     console.log("id: " + i + " name: " + supportedMapTypes[i].name + " value: " + supportedMapTypes[i])
+            // }
+            // console.log("current map type: " + map.activeMapType)
          }
       }//Map
 
@@ -185,7 +244,7 @@ Rectangle {
       }
       Component {
          id: areyousure
-         Dialog {
+         Dialogs.Dialog {
             id: areyousuredialog
             title: i18n.tr("Do you want to cancel the activity?")
             PopUpButton {
@@ -221,7 +280,7 @@ Rectangle {
       }
       Component {
          id: dialog
-         Dialog {
+         Dialogs.Dialog {
             id: dialogue
             title: i18n.tr("What would you like to do?")
             PopUpButton {
@@ -288,12 +347,16 @@ Rectangle {
                newrunEdge.preloadContent = false
                newrunEdge.contentUrl = ""
                newrunEdge.contentUrl = Qt.resolvedUrl("Tracker.qml")
+               // for some reason this needs to be set again when the page is opened again
+               mapTypeParameter.value = "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
             }
             cancel.onClicked: {
                PopupUtils.close(save_dialogue)
                am_running = true
                timer.start()
                sportsComp.selected=sportsComp.previous
+               // for some reason this needs to be set again when the page is opened again
+               mapTypeParameter.value = "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
             }
          }
       }

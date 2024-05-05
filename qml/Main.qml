@@ -49,6 +49,8 @@ MainView {
    }
    Settings {
       id: persistentSettings
+      property string myApiKey: ""
+      property string mapType: "free"
       property int pointsInterval: 5000
       property int altitudeOffset: 0
       // onPointsIntervalChanged: {/*console.log("pointsInterval has changed: "+pointsInterval);*/loggingpoints.interval = pointsInterval}

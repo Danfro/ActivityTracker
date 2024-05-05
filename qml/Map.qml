@@ -8,7 +8,7 @@ import QtLocation 5.12
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
 import Morph.Web 0.1
-
+import Qt.labs.platform 1.0 //for StandardPaths
 
 
 Page {
@@ -68,12 +68,32 @@ Page {
       center: QtPositioning.coordinate(29.62289936, -95.64410114) // Oslo
       zoomLevel: map.maximumZoomLevel - 5
       color: Theme.palette.normal.background
+      activeMapType: supportedMapTypes[supportedMapTypes.length-1]  // zero is Street map, only this style for free/hobby plan is allowed, the very last one is custom map
       plugin : Plugin {
-         id: plugin
-         allowExperimental: true
-         preferred: ["osm"] //possible providers: esri,mapbox,osm,here,itemsoverlay (listed with: plugin.availableServiceProviders)
-         required.mapping: Plugin.AnyMappingFeatures
-         required.geocoding: Plugin.AnyGeocodingFeatures
+            id: plugin
+            name: "osm"
+
+            required.mapping: Plugin.AnyMappingFeatures
+            required.geocoding: Plugin.AnyGeocodingFeatures
+
+            // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
+            // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
+            PluginParameter {
+               name: "osm.mapping.custom.host"
+               value: "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+            }
+            PluginParameter {
+               name: "osm.mapping.custom.datacopyright"
+               value: "www.osm.org/copyright"
+            }
+            PluginParameter {
+               name: "osm.mapping.custom.mapcopyright"
+               value: "www.thunderforest.com"
+            }
+            PluginParameter {
+               name: "osm.mapping.offline.directory"
+               value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
+            }
       }
 
       MapPolyline {
