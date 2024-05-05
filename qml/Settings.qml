@@ -205,13 +205,6 @@ Page {
                                 }
                             }
                         }
-                        Label {
-                            id: noAPIvalidationNote
-                            text: "\n" + i18n.tr("Note: There is currently no validation of the API key except by the length (32 characters). So if the map comes up black, it might be wrong. Then please clear and reenter your API key.")
-                            font.italic: true
-                            width: parent.width - units.gu(4)
-                            wrapMode: QQC.Text.WordWrap
-                        }
                         Button {
                             id: clearApiKeyButton
                             visible: persistentSettings.myApiKey
@@ -224,6 +217,14 @@ Page {
                         }
                     }
                 }
+            }
+
+            Label {
+                id: thanksLabel
+                text: i18n.tr("A big thanks to Thunderforest.com for providing the free map!")
+                font.bold: true
+                width: parent.width - units.gu(4)
+                wrapMode: QQC.Text.WordWrap
             }
 
             LI.ItemSelector {
@@ -308,18 +309,39 @@ Page {
 
                 Label {
                     id: restartAppNote
-                    text: "\n" + i18n.tr("After changing the map type please restart the app for the changes to be applied. Otherwise cached map tiles of the map type used before may be displayed.")
+                    text: "\n" + i18n.tr("After changing the map type, please restart the app for the changes to be applied. Otherwise cached map tiles of the map type used before may be displayed.")
                     font.italic: true
                     color: theme.palette.normal.negative
                     width: parent.width - units.gu(4)
                     wrapMode: QQC.Text.WordWrap
                 }
                 Label {
-                    id: about
+                    id: noAPIvalidationNote
+                    text: "\n" + i18n.tr("Note: If the map comes up black, the API key might be wrong.")
+                    font.italic: true
+                    width: parent.width - units.gu(4)
+                    wrapMode: QQC.Text.WordWrap
+                }
+                Label {
+                    id: apiKeyDescription
+                    text: "\n" + i18n.tr("Please get your own API key:")
+                }
+                Label {
+                    id: apiKeylink
+                    text: "https://manage.thunderforest.com/"
+                    color: theme.palette.normal.activity
+                    wrapMode: QQC.Text.WordWrap
+                    QQC.MouseArea {
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally('https://manage.thunderforest.com/')
+                    }
+                }
+                Label {
+                    id: mapTypeDescription
                     text: "\n" + i18n.tr("Description of map types:")
                 }
                 Label {
-                    id: aboutlink
+                    id: mapTypeDescriptionlink
                     text: "https://www.thunderforest.com/maps/"
                     color: theme.palette.normal.activity
                     wrapMode: QQC.Text.WordWrap

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-05 19:54+0000\n"
+"POT-Creation-Date: 2024-05-05 20:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:387
+#: ../qml/Main.qml:275 ../qml/Tracker.qml:327
 msgid "Select the type and the name of your activity"
 msgstr ""
 
@@ -182,77 +182,82 @@ msgstr ""
 msgid "Apply"
 msgstr ""
 
-#: ../qml/Settings.qml:210
-msgid ""
-"Note: There is currently no validation of the API key except by the length "
-"(32 characters). So if the map comes up black, it might be wrong. Then "
-"please clear and reenter your API key."
-msgstr ""
-
-#: ../qml/Settings.qml:218
+#: ../qml/Settings.qml:211
 msgid "Clear API key"
 msgstr ""
 
-#: ../qml/Settings.qml:236
-msgid "API key required for other map types"
-msgstr ""
-
-#: ../qml/Settings.qml:236
-msgid "Select map type:"
-msgstr ""
-
-#: ../qml/Settings.qml:238
-msgid "Free Thunderforest OSM street map"
+#: ../qml/Settings.qml:224
+msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
 
 #: ../qml/Settings.qml:239
-msgid "Thunderforest cycle map"
+msgid "API key required for other map types"
 msgstr ""
 
-#: ../qml/Settings.qml:240
-msgid "Thunderforest landscape map"
+#: ../qml/Settings.qml:239
+msgid "Select map type:"
 msgstr ""
 
 #: ../qml/Settings.qml:241
-msgid "Thunderforest outdoors map"
+msgid "Free Thunderforest OSM street map"
 msgstr ""
 
 #: ../qml/Settings.qml:242
-msgid "Thunderforest transport map"
+msgid "Thunderforest cycle map"
 msgstr ""
 
 #: ../qml/Settings.qml:243
-msgid "Thunderforest transport-dark map"
+msgid "Thunderforest landscape map"
 msgstr ""
 
 #: ../qml/Settings.qml:244
-msgid "Thunderforest spinal map"
+msgid "Thunderforest outdoors map"
 msgstr ""
 
 #: ../qml/Settings.qml:245
-msgid "Thunderforest pioneer map"
+msgid "Thunderforest transport map"
 msgstr ""
 
 #: ../qml/Settings.qml:246
-msgid "Thunderforest atlas map"
+msgid "Thunderforest transport-dark map"
 msgstr ""
 
 #: ../qml/Settings.qml:247
-msgid "Thunderforest mobile atlas map"
+msgid "Thunderforest spinal map"
 msgstr ""
 
 #: ../qml/Settings.qml:248
+msgid "Thunderforest pioneer map"
+msgstr ""
+
+#: ../qml/Settings.qml:249
+msgid "Thunderforest atlas map"
+msgstr ""
+
+#: ../qml/Settings.qml:250
+msgid "Thunderforest mobile atlas map"
+msgstr ""
+
+#: ../qml/Settings.qml:251
 msgid "Thunderforest neighbourhood map"
 msgstr ""
 
-#: ../qml/Settings.qml:309
+#: ../qml/Settings.qml:314
 msgid ""
-"After changing the map type please restart the app for the changes to be "
+"After changing the map type, please restart the app for the changes to be "
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
 
-#: ../qml/Settings.qml:317
+#: ../qml/Settings.qml:322
+msgid "Note: If the map comes up black, the API key might be wrong."
+msgstr ""
+
+#: ../qml/Settings.qml:329
+msgid "Please get your own API key:"
+msgstr ""
+
+#: ../qml/Settings.qml:343
 msgid "Description of map types:"
 msgstr ""
 
@@ -280,51 +285,51 @@ msgstr ""
 msgid "No data"
 msgstr ""
 
-#: ../qml/Tracker.qml:309
+#: ../qml/Tracker.qml:249
 msgid "Do you want to cancel the activity?"
 msgstr ""
 
-#: ../qml/Tracker.qml:312
+#: ../qml/Tracker.qml:252
 msgid "Yes, stop and discard"
 msgstr ""
 
-#: ../qml/Tracker.qml:331
+#: ../qml/Tracker.qml:271
 msgid "No, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:345
+#: ../qml/Tracker.qml:285
 msgid "What would you like to do?"
 msgstr ""
 
-#: ../qml/Tracker.qml:347
+#: ../qml/Tracker.qml:287
 msgid "Stop and save track"
 msgstr ""
 
-#: ../qml/Tracker.qml:368
+#: ../qml/Tracker.qml:308
 msgid "Stop and discard track"
 msgstr ""
 
-#: ../qml/Tracker.qml:376
+#: ../qml/Tracker.qml:316
 msgid "Nothing, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:432
+#: ../qml/Tracker.qml:372
 msgid "Pause"
 msgstr ""
 
-#: ../qml/Tracker.qml:448
+#: ../qml/Tracker.qml:388
 msgid "Waiting for position..."
 msgstr ""
 
-#: ../qml/Tracker.qml:500
+#: ../qml/Tracker.qml:440
 msgid "Resume"
 msgstr ""
 
-#: ../qml/Tracker.qml:500
+#: ../qml/Tracker.qml:440
 msgid "Start"
 msgstr ""
 
-#: ../qml/Tracker.qml:510
+#: ../qml/Tracker.qml:450
 msgid "Stop"
 msgstr ""
 
