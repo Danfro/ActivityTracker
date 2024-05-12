@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-12 19:54+0000\n"
-"PO-Revision-Date: 2024-02-23 05:18+0000\n"
+"PO-Revision-Date: 2024-05-12 21:00+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.4\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -181,73 +181,73 @@ msgstr "Meter"
 
 #: ../qml/Settings.qml:163
 msgid "Enter API key"
-msgstr ""
+msgstr "API Schlüssel eingeben"
 
 #: ../qml/Settings.qml:201
 msgid "Apply"
-msgstr ""
+msgstr "Anwenden"
 
 #: ../qml/Settings.qml:212
 msgid "Clear API key"
-msgstr ""
+msgstr "API Schlüssel löschen"
 
 #: ../qml/Settings.qml:230
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Für andere Kartentypen ist ein API Schlüssel nötig"
 
 #: ../qml/Settings.qml:230
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Wählen Sie unten eine Sportart aus"
+msgstr "Kartentyp auswählen:"
 
 #: ../qml/Settings.qml:232
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Kostenfreie Thunderforest OSM Straßenkarte"
 
 #: ../qml/Settings.qml:233
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Thunderforest Fahrradkarte"
 
 #: ../qml/Settings.qml:234
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Thunderforest Karte Landschaft"
 
 #: ../qml/Settings.qml:235
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Thunderforest Karte Outdoor"
 
 #: ../qml/Settings.qml:236
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Thunderforest Karte ÖPNV"
 
 #: ../qml/Settings.qml:237
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Thunderforest Karte ÖPNV dunkel"
 
 #: ../qml/Settings.qml:238
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Thunderforest Karte Spinal (Gothic)"
 
 #: ../qml/Settings.qml:239
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Thunderforest Karte Pionier (historisch)"
 
 #: ../qml/Settings.qml:240
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Thunderforest Karte Atlas"
 
 #: ../qml/Settings.qml:241
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Thunderforest Karte Atlas mobil"
 
 #: ../qml/Settings.qml:242
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Thunderforest Karte Nachbarschaft"
 
 #: ../qml/Settings.qml:305
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
+"Ein großes Dankeschön an Thunderforest.com für das Bereitstellen der "
+"kostenfreien Karte!"
 
 #: ../qml/Settings.qml:314
 msgid ""
@@ -255,18 +255,23 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Nach dem Wechsel des Kartentyps bitte die App neu starten um die Änderungen "
+"anzuwenden. Sonst werden evtl. im Cache gespeicherte Karten des vorherigen "
+"Kartentyps angezeigt."
 
 #: ../qml/Settings.qml:322
 msgid "Note: If the map comes up black, the API key might be wrong."
 msgstr ""
+"Hinweis: Wenn eine leere Karte angezeigt wird, ist evtl. der API Schlüssel "
+"falsch."
 
 #: ../qml/Settings.qml:329
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Bitte hole dir deinen persönlichen API Schlüssel:"
 
 #: ../qml/Settings.qml:343
 msgid "Description of map types:"
-msgstr ""
+msgstr "Beschreibung der Kartentypen:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -326,7 +331,7 @@ msgstr "Pause"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Warte auf Positionslösung..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
