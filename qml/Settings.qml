@@ -293,7 +293,7 @@ Page {
                             //TODO: add error handling
                             });
                             if (i == folderModel.count-1) {
-                                console.log("finished clearing %1 cached tiles").arg(folderModel.count)
+                                console.log("finished clearing %1 cached tiles").arg(i)
                             }
                         }
                     }
