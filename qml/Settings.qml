@@ -328,12 +328,14 @@ Page {
                 Label {
                     id: apiKeyDescription
                     text: "\n" + i18n.tr("Please get your own API key:")
+                    visible: persistentSettings.myApiKey == ""
                 }
                 Label {
                     id: apiKeylink
                     text: "https://manage.thunderforest.com/"
                     color: theme.palette.normal.activity
                     wrapMode: QQC.Text.WordWrap
+                    visible: persistentSettings.myApiKey == ""
                     QQC.MouseArea {
                         anchors.fill: parent
                         onClicked: Qt.openUrlExternally('https://manage.thunderforest.com/')
