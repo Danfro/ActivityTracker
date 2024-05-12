@@ -171,7 +171,7 @@ Rectangle {
             PluginParameter {
                id: mapTypeParameter
                name: "osm.mapping.custom.host"
-               value: "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+               value: "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
             }
             PluginParameter {
                name: "osm.mapping.custom.datacopyright"
@@ -348,7 +348,7 @@ Rectangle {
                newrunEdge.contentUrl = ""
                newrunEdge.contentUrl = Qt.resolvedUrl("Tracker.qml")
                // for some reason this needs to be set again when the page is opened again
-               mapTypeParameter.value = "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+               mapTypeParameter.value = "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
             }
             cancel.onClicked: {
                PopupUtils.close(save_dialogue)
@@ -356,7 +356,7 @@ Rectangle {
                timer.start()
                sportsComp.selected=sportsComp.previous
                // for some reason this needs to be set again when the page is opened again
-               mapTypeParameter.value = "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+               mapTypeParameter.value = "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
             }
          }
       }
