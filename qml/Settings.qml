@@ -323,6 +323,7 @@ Page {
                     font.italic: true
                     width: parent.width - units.gu(4)
                     wrapMode: QQC.Text.WordWrap
+                    visible: !persistentSettings.mapType == "free"
                 }
                 Label {
                     id: apiKeyDescription
