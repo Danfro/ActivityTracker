@@ -220,14 +220,6 @@ Page {
                 }
             }
 
-            Label {
-                id: thanksLabel
-                text: i18n.tr("A big thanks to Thunderforest.com for providing the free map!")
-                font.bold: true
-                width: parent.width - units.gu(4)
-                wrapMode: QQC.Text.WordWrap
-            }
-
             LI.ItemSelector {
                 id: mapTypeSelector
                 enabled: persistentSettings.myApiKey
@@ -307,6 +299,15 @@ Page {
                 anchors.margins: units.gu(2)
                 width: parent.width
                 spacing: units.gu(1)
+
+                Label {
+                    id: thanksLabel
+                    text: "\n" + i18n.tr("A big thanks to Thunderforest.com for providing the free map!")
+                    font.bold: true
+                    width: parent.width - units.gu(4)
+                    wrapMode: QQC.Text.WordWrap
+                    visible: persistentSettings.mapType == "free"
+                }
 
                 Label {
                     id: restartAppNote
