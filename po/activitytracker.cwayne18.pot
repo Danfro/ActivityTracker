@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-05 20:55+0000\n"
+"POT-Creation-Date: 2024-05-12 19:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:327
+#: ../qml/Main.qml:275 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
 msgstr ""
 
@@ -182,64 +182,64 @@ msgstr ""
 msgid "Apply"
 msgstr ""
 
-#: ../qml/Settings.qml:211
+#: ../qml/Settings.qml:212
 msgid "Clear API key"
 msgstr ""
 
-#: ../qml/Settings.qml:224
-msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
-
-#: ../qml/Settings.qml:239
+#: ../qml/Settings.qml:230
 msgid "API key required for other map types"
 msgstr ""
 
-#: ../qml/Settings.qml:239
+#: ../qml/Settings.qml:230
 msgid "Select map type:"
 msgstr ""
 
-#: ../qml/Settings.qml:241
+#: ../qml/Settings.qml:232
 msgid "Free Thunderforest OSM street map"
 msgstr ""
 
-#: ../qml/Settings.qml:242
+#: ../qml/Settings.qml:233
 msgid "Thunderforest cycle map"
 msgstr ""
 
-#: ../qml/Settings.qml:243
+#: ../qml/Settings.qml:234
 msgid "Thunderforest landscape map"
 msgstr ""
 
-#: ../qml/Settings.qml:244
+#: ../qml/Settings.qml:235
 msgid "Thunderforest outdoors map"
 msgstr ""
 
-#: ../qml/Settings.qml:245
+#: ../qml/Settings.qml:236
 msgid "Thunderforest transport map"
 msgstr ""
 
-#: ../qml/Settings.qml:246
+#: ../qml/Settings.qml:237
 msgid "Thunderforest transport-dark map"
 msgstr ""
 
-#: ../qml/Settings.qml:247
+#: ../qml/Settings.qml:238
 msgid "Thunderforest spinal map"
 msgstr ""
 
-#: ../qml/Settings.qml:248
+#: ../qml/Settings.qml:239
 msgid "Thunderforest pioneer map"
 msgstr ""
 
-#: ../qml/Settings.qml:249
+#: ../qml/Settings.qml:240
 msgid "Thunderforest atlas map"
 msgstr ""
 
-#: ../qml/Settings.qml:250
+#: ../qml/Settings.qml:241
 msgid "Thunderforest mobile atlas map"
 msgstr ""
 
-#: ../qml/Settings.qml:251
+#: ../qml/Settings.qml:242
 msgid "Thunderforest neighbourhood map"
+msgstr ""
+
+#: ../qml/Settings.qml:305
+msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
 
 #: ../qml/Settings.qml:314
@@ -285,51 +285,51 @@ msgstr ""
 msgid "No data"
 msgstr ""
 
-#: ../qml/Tracker.qml:249
+#: ../qml/Tracker.qml:264
 msgid "Do you want to cancel the activity?"
 msgstr ""
 
-#: ../qml/Tracker.qml:252
+#: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
 msgstr ""
 
-#: ../qml/Tracker.qml:271
+#: ../qml/Tracker.qml:286
 msgid "No, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:285
+#: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
 msgstr ""
 
-#: ../qml/Tracker.qml:287
+#: ../qml/Tracker.qml:302
 msgid "Stop and save track"
 msgstr ""
 
-#: ../qml/Tracker.qml:308
+#: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
 msgstr ""
 
-#: ../qml/Tracker.qml:316
+#: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:372
+#: ../qml/Tracker.qml:387
 msgid "Pause"
 msgstr ""
 
-#: ../qml/Tracker.qml:388
+#: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
 msgstr ""
 
-#: ../qml/Tracker.qml:440
+#: ../qml/Tracker.qml:455
 msgid "Resume"
 msgstr ""
 
-#: ../qml/Tracker.qml:440
+#: ../qml/Tracker.qml:455
 msgid "Start"
 msgstr ""
 
-#: ../qml/Tracker.qml:450
+#: ../qml/Tracker.qml:465
 msgid "Stop"
 msgstr ""
 

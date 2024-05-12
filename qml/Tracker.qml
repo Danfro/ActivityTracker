@@ -155,7 +155,11 @@ Rectangle {
          anchors.fill: parent
          zoomLevel: map.maximumZoomLevel - 2
          color: Theme.palette.normal.background
-         activeMapType: supportedMapTypes[supportedMapTypes.length-1]  // zero is Street map, only this style for free/hobby plan is allowed, the very last one is custom map
+         activeMapType: persistentSettings.mapType == "free" ? supportedMapTypes[0] : supportedMapTypes[supportedMapTypes.length-1]
+            // zero is Street map, only this style for free is allowed
+            // the very last one is custom map with value 100, use that for for Thunderforest maps
+            // available custom maps: https://www.thunderforest.com/maps/
+            // they require a API key, free hobby plan available
          plugin : Plugin {
             id: plugin
             name: "osm"
@@ -219,9 +223,20 @@ Rectangle {
             map.addMapItem(circle)
 
             // example code for retrieving supported map types
+            // available map types for the plugin are listed as:
+            // id: 0 name: Street Map value: 1
+            // id: 1 name: Cycle Map value: 10
+            // id: 2 name: Transit Map value: 6
+            // id: 3 name: Night Transit Map value: 6
+            // id: 4 name: Terrain Map value: 4
+            // id: 5 name: Hiking Map value: 8
+            // id: 6 name: Custom URL Map value: 100
+            // for Thunderforest maps always use custom map type
+            // https://doc.qt.io/archives/qt-5.12/qml-qtlocation-maptype.html
+
             // let supportedMapTypes = map.supportedMapTypes
             // for (let i = 0; i < supportedMapTypes.length; ++i) {
-            //     console.log("id: " + i + " name: " + supportedMapTypes[i].name + " value: " + supportedMapTypes[i])
+            //     console.log("id: " + i + " name: " + supportedMapTypes[i].name + " value: " + supportedMapTypes[i].style)
             // }
             // console.log("current map type: " + map.activeMapType)
          }
