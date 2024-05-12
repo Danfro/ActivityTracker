@@ -1,3 +1,11 @@
+## Changes v1.1.0
+- fixed: #1 map shows message "API key required" by using Thunderforest free map as default (thanks a lot guys for providing that!)
+- added: more Thunderforest map types (personal API key needed)
+- added: "waiting for position" info bubble
+- improved: only enable "start" button if there is a position available
+- improved: copyright notice overlay with clickable links added (same content)
+- updated: translations, many thanks to all translators!
+
 ## Changes v1.0.1
 - fixed: map marker now keeps fixed size regardless of map zoom
 - improved: editing a track name when saving, now uses the placeholder text as given input
