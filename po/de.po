@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 19:54+0000\n"
+"POT-Creation-Date: 2024-05-13 04:28+0000\n"
 "PO-Revision-Date: 2024-05-12 21:00+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
@@ -61,7 +61,7 @@ msgstr "Weblate unterstützen"
 msgid "Name"
 msgstr "Name"
 
-#: ../qml/ActivityDialog.qml:19
+#: ../qml/ActivityDialog.qml:20
 msgid "Select a sport below"
 msgstr "Wählen Sie unten eine Sportart aus"
 
@@ -73,7 +73,7 @@ msgstr "Aktivitätsart"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ../qml/ActivityDialog.qml:49
+#: ../qml/ActivityDialog.qml:47
 msgid "Save"
 msgstr "Speichern"
 
@@ -154,102 +154,108 @@ msgstr "Kilometer"
 msgid "Miles"
 msgstr "Meilen"
 
-#: ../qml/Settings.qml:76
+#: ../qml/Settings.qml:68
+msgid ""
+"Note: British imperial unit and United States customary unit used, 1.609344 "
+"km = 1 mile, 1 km = 0.621371 miles"
+msgstr ""
+
+#: ../qml/Settings.qml:88
 msgid "Log a point every:"
 msgstr "Position speichern alle:"
 
-#: ../qml/Settings.qml:78
+#: ../qml/Settings.qml:90
 msgid "between 50 and 3600000"
 msgstr "zwischen 50 und 3.600.000"
 
 #. TRANSLATORS: millisecond abbreviation
-#: ../qml/Settings.qml:104
+#: ../qml/Settings.qml:116
 msgid "ms"
 msgstr "ms"
 
-#: ../qml/Settings.qml:116
+#: ../qml/Settings.qml:128
 msgid "Altitude offset:"
 msgstr "Höhenkorrektur:"
 
-#: ../qml/Settings.qml:117
+#: ../qml/Settings.qml:129
 msgid "between -100 and 100"
 msgstr "zwischen -100 und 100"
 
-#: ../qml/Settings.qml:139
+#: ../qml/Settings.qml:151
 msgid "meter(s)"
 msgstr "Meter"
 
-#: ../qml/Settings.qml:163
+#: ../qml/Settings.qml:175
 msgid "Enter API key"
 msgstr "API Schlüssel eingeben"
 
-#: ../qml/Settings.qml:201
+#: ../qml/Settings.qml:213
 msgid "Apply"
 msgstr "Anwenden"
 
-#: ../qml/Settings.qml:212
+#: ../qml/Settings.qml:224
 msgid "Clear API key"
 msgstr "API Schlüssel löschen"
 
-#: ../qml/Settings.qml:230
+#: ../qml/Settings.qml:242
 msgid "API key required for other map types"
 msgstr "Für andere Kartentypen ist ein API Schlüssel nötig"
 
-#: ../qml/Settings.qml:230
+#: ../qml/Settings.qml:242
 msgid "Select map type:"
 msgstr "Kartentyp auswählen:"
 
-#: ../qml/Settings.qml:232
+#: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
 msgstr "Kostenfreie Thunderforest OSM Straßenkarte"
 
-#: ../qml/Settings.qml:233
+#: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
 msgstr "Thunderforest Fahrradkarte"
 
-#: ../qml/Settings.qml:234
+#: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
 msgstr "Thunderforest Karte Landschaft"
 
-#: ../qml/Settings.qml:235
+#: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
 msgstr "Thunderforest Karte Outdoor"
 
-#: ../qml/Settings.qml:236
+#: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
 msgstr "Thunderforest Karte ÖPNV"
 
-#: ../qml/Settings.qml:237
+#: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
 msgstr "Thunderforest Karte ÖPNV dunkel"
 
-#: ../qml/Settings.qml:238
+#: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
 msgstr "Thunderforest Karte Spinal (Gothic)"
 
-#: ../qml/Settings.qml:239
+#: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
 msgstr "Thunderforest Karte Pionier (historisch)"
 
-#: ../qml/Settings.qml:240
+#: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
 msgstr "Thunderforest Karte Atlas"
 
-#: ../qml/Settings.qml:241
+#: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
 msgstr "Thunderforest Karte Atlas mobil"
 
-#: ../qml/Settings.qml:242
+#: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
 msgstr "Thunderforest Karte Nachbarschaft"
 
-#: ../qml/Settings.qml:305
+#: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
 "Ein großes Dankeschön an Thunderforest.com für das Bereitstellen der "
 "kostenfreien Karte!"
 
-#: ../qml/Settings.qml:314
+#: ../qml/Settings.qml:326
 msgid ""
 "After changing the map type, please restart the app for the changes to be "
 "applied. Otherwise cached map tiles of the map type used before may be "
@@ -259,17 +265,17 @@ msgstr ""
 "anzuwenden. Sonst werden evtl. im Cache gespeicherte Karten des vorherigen "
 "Kartentyps angezeigt."
 
-#: ../qml/Settings.qml:322
+#: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
 msgstr ""
 "Hinweis: Wenn eine leere Karte angezeigt wird, ist evtl. der API Schlüssel "
 "falsch."
 
-#: ../qml/Settings.qml:329
+#: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
 msgstr "Bitte hole dir deinen persönlichen API Schlüssel:"
 
-#: ../qml/Settings.qml:343
+#: ../qml/Settings.qml:358
 msgid "Description of map types:"
 msgstr "Beschreibung der Kartentypen:"
 
