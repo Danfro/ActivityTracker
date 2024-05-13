@@ -64,6 +64,18 @@ Page {
                 }
             }
 
+            Label {
+                text: "\n" + i18n.tr("Note: British imperial unit and United States customary unit used, 1.609344 km = 1 mile, 1 km = 0.621371 miles") + "\n"
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    margins: units.gu(2)
+                }
+                font.italic: true
+                width: parent.width// - units.gu(4)
+                wrapMode: QQC.Text.WordWrap
+            }
+
             LI.Divider {
                 height: units.gu(0.1)
             }
