@@ -51,7 +51,7 @@ jobs:
       - name: Create Release
         # if a tag has been pushed, create a release with the last commit message (=changelog) as content
         id: create_release
-        uses: softprops/action-gh-release@latest # need to get tested if this works, otherwise use v1
+        uses: softprops/action-gh-release@v1 # need to get tested if this works, otherwise use v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
