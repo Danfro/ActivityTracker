@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-03-02 03:00+0000\n"
-"Last-Translator: Ermete D'Oro <liberta-combattente@paranoici.org>\n"
+"PO-Revision-Date: 2024-05-20 23:45+0000\n"
+"Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -159,6 +159,8 @@ msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Nota: Unità imperiali britanniche e unità consuete negli Stati Uniti in uso, "
+"1.609344 km = 1 miglio, 1 km = 0.621371 miglia"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -187,73 +189,71 @@ msgstr "metri"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Inserisci chiave API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Applica"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Cancella chiave API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Chiave API richesta per altri tipi di mappa"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Seleziona uno sport sotto"
+msgstr "Seleziona un tipo di mappa:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Mappa stradale OSM gratuita di Thunderforest"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Mappa ciclabile di Thunderforest"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Mappa panoramica di Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Mappa outdoor di Thunderforest"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Mappa trasporti di Thunderforest"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Mappa trasporti-scura di Thunderforest"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Mappa spinal di Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Mappa pioniere di Thunderforest"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Mappa atlante di Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Mappa atlante mobile di Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Mappa quartieri di Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "Un grande grazie a Thunderforest.com per fornirci la mappa gratuita!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -261,18 +261,22 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Dopo aver cambiato il tipo di mappa, per favore riavvia l'applicazione per "
+"applicare i cambiamenti. Altrimenti potrebbero essere visualizzati i "
+"tasselli salvati del precedente tipo di mappa utilizzato."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
 msgstr ""
+"Nota: se la mappa diventa tutta nera, la chiave API potrebbe essere errata."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Per favore richiedi la tua chiave API:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Descrizione dei tipi di mappe:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -332,7 +336,7 @@ msgstr "Pausa"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "In attesa della posizione..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
