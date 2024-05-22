@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-02-18 14:23+0000\n"
+"PO-Revision-Date: 2024-05-23 05:01+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -158,6 +158,8 @@ msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Notera: Brittisk imperialistisk enhet och USA:s sedvanliga enhet används, "
+"1,609344 km = 1 mile, 1 km = 0,621371 miles"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -186,73 +188,73 @@ msgstr "meter(rarna)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Ange API nyckel"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Tillämpa"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Rensa API nyckel"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "API nyckel krävs för andra karttyper"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Välj en sport nedan"
+msgstr "Välj en karttyp:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Fri Thunderforest OSM gatukarta"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Thunderforest cykelkarta"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Thunderforest landskapskarta"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Thunderforest utomhus karta"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Thunderforest transport karta"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Thunderforest transport-mörk karta"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Thunderforest ryggmärgskarta"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Thunderforest pionjärkarta"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Thunderforest atlas karta"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Thunderforest mobil atlaskarta"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Thunderforest grannskapskarta"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
+"Ett stort tack till Thunderforest.com som tillhandahåller den kostnadsfria "
+"kartan!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -260,18 +262,21 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"När du har ändrat karttypen, starta om appen för att ändringarna ska "
+"tillämpas. Annars kan cachade kartrutor av den karttyp som användes tidigare "
+"visas."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
-msgstr ""
+msgstr "Notera: Om kartan visas i bara svart kan API nyckeln vara fel."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Vänligen skaffa din egen API nyckel:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Beskrivning av karttyper:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -331,7 +336,7 @@ msgstr "Pausa"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Väntar på position..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
