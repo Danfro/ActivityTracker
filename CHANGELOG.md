@@ -1,3 +1,6 @@
+## Changes v1.1.1
+- updated: translations, many thanks to all translators!
+
 ## Changes v1.1.0
 - fixed: #1 map shows message "API key required" by using Thunderforest free map as default (thanks a lot guys for providing that!)
 - added: more Thunderforest map types (personal API key needed)
