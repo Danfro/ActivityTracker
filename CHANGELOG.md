@@ -3,6 +3,7 @@
 - added: more Thunderforest map types (personal API key needed)
 - added: "waiting for position" info bubble
 - added: option to have position fixed to map center or move freely around
+- added: note in settings which mile is used (British imperial and US customary unit)
 - improved: only enable "start" button if there is a position available
 - improved: copyright notice overlay with clickable links added (same content)
 - updated: translations, many thanks to all translators!
