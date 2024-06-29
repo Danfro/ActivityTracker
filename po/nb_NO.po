@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-02-23 05:18+0000\n"
+"PO-Revision-Date: 2024-06-30 21:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/nb_NO/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -193,19 +193,19 @@ msgstr "meter"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Skriv inn API-nøkkel"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Bruk"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Tøm API-nøkkel"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "API-nøkkel påkrevd for andre karttyper"
 
 #: ../qml/Settings.qml:242
 #, fuzzy
@@ -223,19 +223,19 @@ msgstr ""
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Thunderforest-landskapskart"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Thunderforest-utendørskart"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Thunderforest-transportkart"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Mørkt Thunderforest-transportkart"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
@@ -246,8 +246,9 @@ msgid "Thunderforest pioneer map"
 msgstr ""
 
 #: ../qml/Settings.qml:252
+#, fuzzy
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Thunderforest-verdenskart"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
@@ -255,7 +256,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Thunderforest-nabolagskart"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
@@ -278,7 +279,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Beskrivelse av karttyper:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -338,7 +339,7 @@ msgstr "Pause"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Venter på posisjonering …"
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
