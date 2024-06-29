@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-06-21 13:09+0000\n"
+"PO-Revision-Date: 2024-06-30 21:09+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-rc\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -247,15 +247,16 @@ msgstr "Atlas de Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Mapa mundial móvil de Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Mapa del vecindario de Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
+"¡Muchísimas gracias a Thunderforest.com por proporcionarnos el mapa gratuito!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -263,18 +264,24 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Después de cambiar el tipo de mapa, reinicie la aplicación para que se "
+"apliquen los cambios. De lo contrario, es posible que se muestren los "
+"mosaicos de mapas almacenados en caché del tipo de mapa utilizado "
+"anteriormente."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
 msgstr ""
+"Nota: Si el mapa aparece en negro, es posible que la clave API esté "
+"incorrecta."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Por favor, obtén tu propia clave API:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Descripción de los tipos de mapas:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -334,7 +341,7 @@ msgstr "Pausar"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Esperando por la posición..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
