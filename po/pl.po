@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-03-25 13:01+0000\n"
-"Last-Translator: marcin mikołajczak <me@mkljczk.pl>\n"
+"PO-Revision-Date: 2024-07-02 21:10+0000\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -152,7 +152,7 @@ msgstr "Kilometry"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Mile"
 
 #: ../qml/Settings.qml:68
 msgid ""
@@ -187,25 +187,23 @@ msgstr "metr(y)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Wpisz klucz API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Zastosuj"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Wyczyść klucz API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
 msgstr ""
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Wybierz poniżej sport"
+msgstr "Wybierz rodzaj mapy:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
@@ -279,10 +277,8 @@ msgid "Choose sport:"
 msgstr "Wybierz sport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Wybierz"
+msgstr "Wybierz później"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
@@ -294,7 +290,7 @@ msgstr "Nowa aktywność"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "Wstrzymano"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
@@ -330,7 +326,7 @@ msgstr ""
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "Zatrzymaj"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
@@ -338,7 +334,7 @@ msgstr ""
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "Wznów"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
@@ -374,7 +370,7 @@ msgstr ""
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Marsz z kijkami"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
