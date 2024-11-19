@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-11-08 00:00+0000\n"
+"PO-Revision-Date: 2024-11-19 17:19+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -33,11 +33,11 @@ msgstr "Verze %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
-msgstr ""
+msgstr "Vydáno pod licencí GNU GPL v3.<br>Zdrojový kód je k dispozici na adrese"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
-msgstr ""
+msgstr "Část ikon je vyrobena od %1 z %2 je licencována od %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
 #: ../qml/About.qml:110
@@ -45,174 +45,178 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
+"Děkujeme %1 za ikony založené na:<br>%3 podle %8 z %2,<br>%4 podle %9 z "
+"%2,<br>%5 podle %10 z %2,<br>%6 podle %11 z %2,<br>%7 podle %12 z %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
-msgstr ""
+msgstr "Přeložte tuto aplikaci na Weblate!"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
-msgstr ""
+msgstr "Podpořte Weblate"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
-msgstr ""
+msgstr "Jméno"
 
 #: ../qml/ActivityDialog.qml:20
 msgid "Select a sport below"
-msgstr ""
+msgstr "Níže si vyberte sport"
 
 #: ../qml/ActivityDialog.qml:30
 msgid "Activity Type"
-msgstr ""
+msgstr "Typ aktivity"
 
 #: ../qml/ActivityDialog.qml:40 ../qml/SportSelectPopUp.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: ../qml/ActivityDialog.qml:47
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: ../qml/ImportPage.qml:34
 msgid "Choose"
-msgstr ""
+msgstr "Vybrat"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:151 ../qml/Main.qml:154
 msgid "Distance: %1 %2"
-msgstr ""
+msgstr "Vzdálenost: %1 %2"
 
 #: ../qml/Main.qml:157
 msgid "Time: "
-msgstr ""
+msgstr "Čas: "
 
 #: ../qml/Main.qml:231
 msgid "Recent Activities"
-msgstr ""
+msgstr "Nedávné aktivity"
 
 #: ../qml/Main.qml:235 ../qml/Settings.qml:16
 msgid "Settings"
-msgstr ""
+msgstr "Nastavení"
 
 #: ../qml/Main.qml:240
 msgid "Filter"
-msgstr ""
+msgstr "Filtr"
 
 #: ../qml/Main.qml:245
 msgid "Import"
-msgstr ""
+msgstr "Import"
 
 #: ../qml/Main.qml:275 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
-msgstr ""
+msgstr "Vyberte typ a název aktivity"
 
 #: ../qml/Main.qml:290
 msgid "Edit the type and the name of your activity"
-msgstr ""
+msgstr "Upravit typ a název aktivity"
 
 #: ../qml/Main.qml:311
 msgid "No saved activities"
-msgstr ""
+msgstr "Žádné uložené aktivity"
 
 #: ../qml/Main.qml:314
 msgid "Swipe up to log a new activity"
-msgstr ""
+msgstr "Přejetím nahoru zaznamenáte novou aktivitu"
 
 #: ../qml/Main.qml:390
 msgid "Track information"
-msgstr ""
+msgstr "Informace o trase"
 
 #: ../qml/Main.qml:404
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: ../qml/Main.qml:415
 msgid "Log new Activity"
-msgstr ""
+msgstr "Záznam nové aktivity"
 
 #: ../qml/Map.qml:17
 msgid "Activity Map"
-msgstr ""
+msgstr "Mapa aktivity"
 
 #: ../qml/Map.qml:20
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: ../qml/Settings.qml:55
 msgid "Distance unit:"
-msgstr ""
+msgstr "Jednotka vzdálenosti:"
 
 #: ../qml/Settings.qml:56
 msgid "Kilometers"
-msgstr ""
+msgstr "Kilometry"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Míle"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Poznámka: Britská imperiální jednotka a obvyklá jednotka Spojených států "
+"amerických, 1,609344 km = 1 míle, 1 km = 0,621371 míle"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
-msgstr ""
+msgstr "Zaznamenat bod každý:"
 
 #: ../qml/Settings.qml:90
 msgid "between 50 and 3600000"
-msgstr ""
+msgstr "mezi 50 a 3600000"
 
 #. TRANSLATORS: millisecond abbreviation
 #: ../qml/Settings.qml:116
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../qml/Settings.qml:128
 msgid "Altitude offset:"
-msgstr ""
+msgstr "Výškový posun:"
 
 #: ../qml/Settings.qml:129
 msgid "between -100 and 100"
-msgstr ""
+msgstr "mezi -100 a 100"
 
 #: ../qml/Settings.qml:151
 msgid "meter(s)"
-msgstr ""
+msgstr "metr(ů)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Zadejte klíč API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Použít"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Vymazat klíč API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Klíč API vyžadovaný pro jiné typy map"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
-msgstr ""
+msgstr "Vyberte typ mapy:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Bezplatná mapa Thunderforest OSM"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Cyklomapa Thunderforest"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Krajinná mapa Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
