@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-03-22 02:15+0000\n"
+"PO-Revision-Date: 2024-11-26 20:00+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/hr/>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
-msgstr "O programu"
+msgstr "O aplikaciji"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
@@ -166,7 +166,7 @@ msgstr "Zapiši točku svakih:"
 
 #: ../qml/Settings.qml:90
 msgid "between 50 and 3600000"
-msgstr "između 50 i 3600000"
+msgstr "između 50 i 3.600.000"
 
 #. TRANSLATORS: millisecond abbreviation
 #: ../qml/Settings.qml:116
@@ -187,33 +187,31 @@ msgstr "m"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Upiši API ključ"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Primijeni"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Izbriši API ključ"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Za druge vrste karta je potreban API ključ"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Dolje odaberi sport"
+msgstr "Odaberi vrstu karte:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Besplatna Thunderforest OSM cestovna karta"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Thunderforest biciklistička karta"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
@@ -253,7 +251,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "Veliko hvala Thunderforest.com na besplatnoj karti!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -272,7 +270,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Opis vrsta karti:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -328,7 +326,7 @@ msgstr "Ništa, vrati se natrag"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr "Zaustavi"
+msgstr "Pauza"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
