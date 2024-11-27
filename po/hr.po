@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-11-26 20:00+0000\n"
+"PO-Revision-Date: 2024-11-28 16:00+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/hr/>\n"
@@ -34,7 +34,7 @@ msgstr "Verzija %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
-msgstr "Objavljeno pod uslovima GNU GPL v3.<br>Izvorni kod dostupan na"
+msgstr "Objavljeno pod uslovima GNU GPL v3.<br>Izvorni kod je dostupan na"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
-msgstr "Prevedi ovaj program na Weblate stranicama!"
+msgstr "Prevedi ovaj program na Weblateu!"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
@@ -159,6 +159,8 @@ msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Napomena: Korištena je britanska jedinica i uobičajena američka jedinica, "
+"1,609344 km = 1 milja, 1 km = 0,621371 milja"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -207,27 +209,27 @@ msgstr "Odaberi vrstu karte:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr "Besplatna Thunderforest OSM cestovna karta"
+msgstr "Besplatna Thunderforest OSM karta – ceste"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr "Thunderforest biciklistička karta"
+msgstr "Thunderforest karta – biciklizam"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Thunderforest karta – krajolik"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Thunderforest karta – vanjske aktivnosti"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Thunderforest karta – javni prijevoz"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Thunderforest tamna karta – javni prijevoz"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
@@ -235,19 +237,19 @@ msgstr ""
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Thunderforest karta – pioniri"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Thunderforest karta – atlas"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Thunderforest karta – mobilni atlas"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Thunderforest karta – susjedstvo"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
