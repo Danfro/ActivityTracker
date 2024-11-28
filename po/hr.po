@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-11-28 16:00+0000\n"
+"PO-Revision-Date: 2024-11-29 17:00+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/hr/>\n"
@@ -209,47 +209,47 @@ msgstr "Odaberi vrstu karte:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr "Besplatna Thunderforest OSM karta – ceste"
+msgstr "Besplatna Thunderforest OSM – karta cesta"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr "Thunderforest karta – biciklizam"
+msgstr "Thunderforest cycle – karta za biciklizam"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr "Thunderforest karta – krajolik"
+msgstr "Thunderforest landscape – karta krajolika"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr "Thunderforest karta – vanjske aktivnosti"
+msgstr "Thunderforest outdoors – karta za vanjske aktivnosti"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr "Thunderforest karta – javni prijevoz"
+msgstr "Thunderforest transport – karta javnog prijevoza"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr "Thunderforest tamna karta – javni prijevoz"
+msgstr "Thunderforest transport dark – tamna karta javnog prijevoza"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Thunderforest spinal – pločasta karta"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr "Thunderforest karta – pioniri"
+msgstr "Thunderforest pioneer – karta željezničkih pruga"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr "Thunderforest karta – atlas"
+msgstr "Thunderforest atlas – karta cesta"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr "Thunderforest karta – mobilni atlas"
+msgstr "Thunderforest mobile atlas – karta cesta"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr "Thunderforest karta – susjedstvo"
+msgstr "Thunderforest neighbourhood – karta susjedstva"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
@@ -261,14 +261,17 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Nakon mijenjanja vrste karte ponovo pokreni aplikaciju kako bi se promjene "
+"primijenile. U suprotnom se mogu prikazati predmemorirane pločice prethodno "
+"korištene karte."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
-msgstr ""
+msgstr "Napomena: Ako se prikaže crna karta, možda API ključ nije u redu."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Nabavi vlastiti API ključ:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
