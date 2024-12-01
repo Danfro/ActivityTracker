@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-11-29 17:00+0000\n"
+"PO-Revision-Date: 2024-12-01 15:00+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/hr/>\n"
@@ -307,7 +307,7 @@ msgstr "Želiš li prekinuti ovu aktivnost?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr "Da, prekini i odbaci"
+msgstr "Da, zaustavi i odbaci"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
@@ -319,11 +319,11 @@ msgstr "Što želiš raditi?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr "Prekini i spremi put"
+msgstr "Zaustavi i spremi put"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr "Prekini i odbaci put"
+msgstr "Zaustavi i odbaci put"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
@@ -335,7 +335,7 @@ msgstr "Pauza"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Čekanje na poziciju..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
