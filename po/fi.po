@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2020-01-18 18:21+0000\n"
-"Last-Translator: mika-n <citius@luukku.com>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/activity-tracker/"
-"translations/fi/>\n"
+"PO-Revision-Date: 2024-12-10 12:00+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -85,10 +85,8 @@ msgstr "Valitse"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:151 ../qml/Main.qml:154
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Etäisyys: "
+msgstr "Etäisyys: %1 %2"
 
 #: ../qml/Main.qml:157
 msgid "Time: "
@@ -147,10 +145,8 @@ msgid "Info"
 msgstr "English"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Etäisyys: "
+msgstr "Etäisyysyksikkö:"
 
 #: ../qml/Settings.qml:56
 #, fuzzy
@@ -210,10 +206,8 @@ msgid "API key required for other map types"
 msgstr ""
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Valitse urheilulaji alapuolella"
+msgstr "Valitse karttatyyppi:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
