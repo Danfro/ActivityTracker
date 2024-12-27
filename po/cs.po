@@ -33,7 +33,8 @@ msgstr "Verze %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
-msgstr "Vydáno pod licencí GNU GPL v3.<br>Zdrojový kód je k dispozici na adrese"
+msgstr ""
+"Vydáno pod licencí GNU GPL v3.<br>Zdrojový kód je k dispozici na adrese"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
@@ -45,8 +46,8 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
-"Děkujeme %1 za ikony založené na:<br>%3 podle %8 z %2,<br>%4 podle %9 z "
-"%2,<br>%5 podle %10 z %2,<br>%6 podle %11 z %2,<br>%7 podle %12 z %2"
+"Děkujeme %1 za ikony založené na:<br>%3 podle %8 z %2,<br>%4 podle %9 z %2,"
+"<br>%5 podle %10 z %2,<br>%6 podle %11 z %2,<br>%7 podle %12 z %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"

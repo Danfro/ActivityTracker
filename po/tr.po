@@ -254,7 +254,8 @@ msgstr "Thunderforest mahalle haritası"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr "Ücretsiz haritayı sağladığı için Thunderforest.com'a büyük teşekkürler!"
+msgstr ""
+"Ücretsiz haritayı sağladığı için Thunderforest.com'a büyük teşekkürler!"
 
 #: ../qml/Settings.qml:326
 msgid ""
