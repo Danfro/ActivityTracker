@@ -3,3 +3,5 @@ activitytracker.qmlproject.user
 *.mo
 *.OLD
 .clickable/
+TODO.md
+.gitignore
