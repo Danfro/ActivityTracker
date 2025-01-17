@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2020-09-30 21:41+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/activity-"
-"tracker/translations/pt/>\n"
+"PO-Revision-Date: 2025-01-18 23:00+0000\n"
+"Last-Translator: Guilherme <guilhermelibsoa@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -85,10 +85,8 @@ msgstr "Escolher"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:151 ../qml/Main.qml:154
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Distância: "
+msgstr "Distância:"
 
 #: ../qml/Main.qml:157
 msgid "Time: "
@@ -147,10 +145,8 @@ msgid "Info"
 msgstr "Informação"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Distância: "
+msgstr "Distância:"
 
 #: ../qml/Settings.qml:56
 #, fuzzy
