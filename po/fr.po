@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.actidev\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-08-05 16:09+0000\n"
+"PO-Revision-Date: 2025-02-16 16:13+0000\n"
 "Last-Translator: Steve <steve.kueffer.ch@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -205,7 +205,7 @@ msgstr "Clé API requise pour les autres types de cartes"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
-msgstr "Choisissez un type de carte"
+msgstr "Choisissez un type de carte:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
