@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-04-01 02:24+0000\n"
-"Last-Translator: 复予 <clonewith@qq.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"ubports/activitytracker/zh_Hans/>\n"
+"PO-Revision-Date: 2025-02-23 11:03+0000\n"
+"Last-Translator: Cassian <prismarine@epicraft.top>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/ubports/activitytracker/zh_Hans/>\n"
 "Language: zh_HANS-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -186,25 +186,23 @@ msgstr "仪表"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "输入 API 密钥"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "应用"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "清除 API 密钥"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "其他地图类型需要 API 密钥"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "选择下面的运动"
+msgstr "选择地图类型："
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
@@ -267,7 +265,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "请获取您自己的 API 密钥："
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
@@ -331,7 +329,7 @@ msgstr "暂停"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "等待定位…"
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
