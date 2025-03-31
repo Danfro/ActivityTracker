@@ -1,7 +1,7 @@
 ## Changes v1.1.3
 - updated: translations, many thanks to all translators!
 
-## Changes v1.1.2
+## Changes v1.1.2 (not released to OpenStore)
 - updated: translations, many thanks to all translators!
 
 ## Changes v1.1.1
