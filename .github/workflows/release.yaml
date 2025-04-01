@@ -49,7 +49,7 @@ jobs:
           OPENSTORE_KEY: ${{ secrets.OPENSTORE_KEY }}
         run: | # grab the last commit message as changelog and publish
           echo "${{ github.event.head_commit.message }}"
-          CHANGELOG = $(git log -1 --pretty=%B | head -1)
+          CHANGELOG=$(git log -1 --pretty=%B | head -1)
           clickable publish -- "$CHANGELOG" --apikey ${OPENSTORE_KEY}
       - name: Create Release
         # if a tag has been pushed, create a release with the last commit message (=changelog) as content
