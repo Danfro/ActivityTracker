@@ -40,7 +40,7 @@ jobs:
         # upload the build artifacts to github using the appname and version
         uses: actions/upload-artifact@v4 # here @latest doesn't work, specific version v4 or above
         with:
-          name: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
+          name: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}
           path: build/*/app/*.click
           if-no-files-found: error
       - name: Publish to Open Store
@@ -48,8 +48,7 @@ jobs:
         env:
           OPENSTORE_KEY: ${{ secrets.OPENSTORE_KEY }}
         run: | # grab the last commit message as changelog and publish | # do not add spaces infront and after a = | add changelog as last parameter
-          echo "${{ github.event.head_commit.message }}"
-          CHANGELOG=$(git log -1 --pretty=%B | head -1)
+          CHANGELOG=${{ github.event.head_commit.message }}
           clickable publish --apikey ${OPENSTORE_KEY} -- "$CHANGELOG"
       - name: Create Release
         # if a tag has been pushed, create a release with the last commit message (=changelog) as content
@@ -64,5 +63,5 @@ jobs:
           body: ${CHANGELOG}
           draft: false
           prerelease: false
-          files: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
+          files: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}
           fail_on_unmatched_files: false
