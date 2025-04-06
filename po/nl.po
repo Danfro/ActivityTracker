@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2024-05-20 09:01+0000\n"
+"PO-Revision-Date: 2025-04-07 10:01+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -34,14 +34,14 @@ msgstr "Versie %1"
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
 msgstr ""
-"Uitgebracht onder de voorwaarden van de GNU GPL v3.<br>Broncode beschikbaar "
-"op"
+"Uitgebracht onder de voorwaarden van de GNU GPL v3-licentie.<br>De broncode "
+"is beschikbaar op"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
 msgstr ""
-"Een gedeelte van de pictogrammen is gemaakt door %1 van %2 is gelicenseerd "
-"door %3"
+"Een deel van de pictogrammen is gemaakt door %1 van %2, en is uitgebracht "
+"onder de %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
 #: ../qml/About.qml:110
@@ -49,9 +49,9 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
-"Dank aan %1 voor de pictogrammen gebaseerd op:<br>%3 door %8 van %2,<br>%4 "
-"door %9 van %2,<br>%5 door %10 van %2,<br>%6 door %11 van %2,<br>%7 door %12 "
-"van %2"
+"Met dank aan %1 voor de pictogrammen gebaseerd op:<br>%3 door %8 van "
+"%2,<br>%4 door %9 van %2,<br>%5 door %10 van %2,<br>%6 door %11 van "
+"%2,<br>%7 door %12 van %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
@@ -67,7 +67,7 @@ msgstr "Naam"
 
 #: ../qml/ActivityDialog.qml:20
 msgid "Select a sport below"
-msgstr "Kies hieronder een sport"
+msgstr "Kies een sport"
 
 #: ../qml/ActivityDialog.qml:30
 msgid "Activity Type"
@@ -116,19 +116,19 @@ msgstr "Kies de soort en naam van je activiteit"
 
 #: ../qml/Main.qml:290
 msgid "Edit the type and the name of your activity"
-msgstr "Pas de soort en naam aan van je activiteit"
+msgstr "Wijzig de soort en naam van je activiteit"
 
 #: ../qml/Main.qml:311
 msgid "No saved activities"
-msgstr "Geen opgeslagen activiteiten"
+msgstr "Er zijn geen opgeslagen activiteiten"
 
 #: ../qml/Main.qml:314
 msgid "Swipe up to log a new activity"
-msgstr "Veeg omhoog om een nieuwe activiteit vast te leggen"
+msgstr "Veeg omhoog om een activiteit vast te leggen"
 
 #: ../qml/Main.qml:390
 msgid "Track information"
-msgstr "Informatie bijhouden"
+msgstr "Uitgebreide informatie"
 
 #: ../qml/Main.qml:404
 msgid "Close"
@@ -140,7 +140,7 @@ msgstr "Nieuwe activiteit vastleggen"
 
 #: ../qml/Map.qml:17
 msgid "Activity Map"
-msgstr "Activiteitenkaart"
+msgstr "Activiteitskaart"
 
 #: ../qml/Map.qml:20
 msgid "Info"
@@ -164,7 +164,7 @@ msgid ""
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
 "Let op: er worden Britse en Amerikaanse imperiale eenheden gebruikt - "
-"1.609344 km = 1 mijl, 1 km = 0.621371 mijlen"
+"1,609344 km = 1 mijl, 1 km = 0,621371 mijlen"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -205,7 +205,7 @@ msgstr "Api-sleutel wissen"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr "Een api-sleutel is vereist om andere kaartsoorten te gebruiken"
+msgstr "Voor het gebruik van andere kaartsoorten is een api-sleutel vereist"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
@@ -258,7 +258,7 @@ msgstr "Thunderforest: wijkkaart"
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
-"Met dank aan Thunderforest.com voor het beschikbaar maken van de gratis "
+"Met dank aan Thunderforest.com voor het beschikbaar stellen van de gratis "
 "kaart!"
 
 #: ../qml/Settings.qml:326
@@ -267,7 +267,7 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
-"Herstart de app na het kiezen van een andere kaartsoort zodat de nieuwe "
+"Herstart de app na het kiezen van een andere kaartsoort, zodat de nieuwe "
 "kaart volledig kan worden ingeladen."
 
 #: ../qml/Settings.qml:334
@@ -294,7 +294,7 @@ msgstr "Later kiezen"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
-msgstr "Activiteit bezig"
+msgstr "Bezig met activiteit"
 
 #: ../qml/Tracker.qml:60
 msgid "New Activity"
@@ -366,7 +366,7 @@ msgstr "Fietstocht"
 
 #: ../qml/components/Sports.qml:9
 msgid "Walk"
-msgstr "Lopen"
+msgstr "Wandelen"
 
 #: ../qml/components/Sports.qml:10
 msgid "Drive"
@@ -378,7 +378,7 @@ msgstr "Wandeltocht"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr "SUP"
+msgstr "Suppen"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
@@ -386,7 +386,7 @@ msgstr "Nordic walking"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
-msgstr "Eénwieler"
+msgstr "Eenwieler"
 
 #~ msgid "After"
 #~ msgstr "Na"
