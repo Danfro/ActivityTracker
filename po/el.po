@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2019-12-05 22:05+0000\n"
-"Last-Translator: DIMITRIOS DALAVOURAS <DIMITRIS@general-refrigeration.gr>\n"
-"Language-Team: Greek <https://hosted.weblate.org/projects/activity-tracker/"
-"translations/el/>\n"
+"PO-Revision-Date: 2025-05-03 12:01+0000\n"
+"Last-Translator: \"Λευτέρης Τ.\" <lefteris592@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -28,10 +28,8 @@ msgid "Activity Tracker"
 msgstr "Παρακολούθηση δραστηριότητας"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Έκδοση"
+msgstr "Έκδοση %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -86,10 +84,8 @@ msgstr "Επιλέξτε"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:151 ../qml/Main.qml:154
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Απόσταση: "
+msgstr "Απόσταση: %1 %2"
 
 #: ../qml/Main.qml:157
 msgid "Time: "
@@ -148,26 +144,24 @@ msgid "Info"
 msgstr "Πληροφορίες"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Απόσταση: "
+msgstr "Μονάδα απόστασης:"
 
 #: ../qml/Settings.qml:56
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "Μέτρο(α)"
+msgstr "Χιλιόμετρα"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Μίλια"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Σημείωση: Χρησιμοποιείται η βρετανική αυτοκρατορική μονάδα και η τελωνειακή "
+"μονάδα των ΗΠΑ, 1.609344 χλμ = 1 μίλι, 1 χλμ = 0,621371 μίλια"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -196,15 +190,15 @@ msgstr "Μέτρο(α)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Εισαγωγή κλειδιού API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Εφαρμογή"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Εκκαθάριση κλειδιού API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
