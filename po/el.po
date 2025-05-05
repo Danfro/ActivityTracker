@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2025-05-03 12:01+0000\n"
+"PO-Revision-Date: 2025-05-05 23:01+0000\n"
 "Last-Translator: \"Λευτέρης Τ.\" <lefteris592@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/el/>\n"
@@ -202,61 +202,61 @@ msgstr "Εκκαθάριση κλειδιού API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Το κλειδί API απαιτείται για άλλους τύπους χάρτη"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Επιλέξτε ένα άθλημα παρακάτω"
+msgstr "Επιλέξτε ένα τύπο χάρτη"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Δωρεάν Thunderforest OSM χάρτης δρόμου"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Thunderforest χάρτης ποδηλάτου"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Thunderforest χάρτης τοπίου"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Thunderforest υπαίθριος χάρτης"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Thunderforest χάρτης μετακίνησης"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Thunderforest χάρτης μεταφορών-σκοτεινό"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Thunderforest spinal χάρτης"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Thunderforest πρωτοπόρος χάρτης"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Thunderforest atlas χάρτης"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Thunderforest κινητός atlas χάρτης"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Thunderforest χάρτης γειτονιάς"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
+"Ένα μεγάλο ευχαριστώ στο Thunderforest.com για την παροχή του ελεύθερου "
+"χάρτη!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -268,24 +268,23 @@ msgstr ""
 #: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
 msgstr ""
+"Σημείωση: Εάν ο χάρτης εμφανιστεί μαύρος, το κλειδί API μάλλον είναι λάθος."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Παρακαλούμε αποκτήστε το δικό σας API κλειδί:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Περιγραφή των τύπων χάρτη:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
 msgstr "Επιλέξτε άθλημα:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Επιλέξτε"
+msgstr "Επιλέξτε αργότερα"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
@@ -297,7 +296,7 @@ msgstr "Νέα δραστηριότητα"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "Σε παύση"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
@@ -309,19 +308,19 @@ msgstr "Θέλετε να ακυρώσετε τη δραστηριότητα;"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Ναι, διακοπή και απόρριψη"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
-msgstr ""
+msgstr "Όχι, πάμε πίσω"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Τι θα ήθελες να κάνεις;"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr ""
+msgstr "Διακοπή και αποθήκευση διαδρομής"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
