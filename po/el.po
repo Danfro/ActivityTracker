@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 04:28+0000\n"
-"PO-Revision-Date: 2025-05-05 23:01+0000\n"
+"PO-Revision-Date: 2025-05-07 14:02+0000\n"
 "Last-Translator: \"Λευτέρης Τ.\" <lefteris592@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/el/>\n"
@@ -206,7 +206,7 @@ msgstr "Το κλειδί API απαιτείται για άλλους τύπο�
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
-msgstr "Επιλέξτε ένα τύπο χάρτη"
+msgstr "Επιλέξτε τύπο χάρτη:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
@@ -264,6 +264,9 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Μετά την αλλαγή του τύπου χάρτη, επανεκκινήστε την εφαρμογή για να "
+"εφαρμοστούν οι αλλαγές. Διαφορετικά μπορεί να εμφανιστούν αποθηκευμένα "
+"πλακίδια του προηγούμενου τύπου χάρτη που χρησιμοποιούταν πριν."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map comes up black, the API key might be wrong."
@@ -324,23 +327,23 @@ msgstr "Διακοπή και αποθήκευση διαδρομής"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Διακοπή και απόρριψη κομματιού"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Τίποτα, πάμε πίσω"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "Παύση"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Περιμένοντας θέση..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "Συνέχιση"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
@@ -372,11 +375,11 @@ msgstr "Πεζοπορία"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Νορβηγικό περπάτημα"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
