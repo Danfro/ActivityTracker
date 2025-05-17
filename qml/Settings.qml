@@ -331,7 +331,7 @@ Page {
                 }
                 Label {
                     id: noAPIvalidationNote
-                    text: "\n" + i18n.tr("Note: If the map comes up black, the API key might be wrong.")
+                    text: "\n" + i18n.tr("Note: If the map is empty, check the API key — it may be wrong.")
                     font.italic: true
                     width: parent.width - units.gu(4)
                     wrapMode: QQC.Text.WordWrap

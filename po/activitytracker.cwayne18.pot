@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 04:28+0000\n"
+"POT-Creation-Date: 2025-05-17 19:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
@@ -256,7 +256,7 @@ msgid ""
 msgstr ""
 
 #: ../qml/Settings.qml:334
-msgid "Note: If the map comes up black, the API key might be wrong."
+msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
 
 #: ../qml/Settings.qml:342
