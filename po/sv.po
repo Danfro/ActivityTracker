@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 04:28+0000\n"
+"POT-Creation-Date: 2025-05-17 19:30+0000\n"
 "PO-Revision-Date: 2024-05-23 05:01+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ubports/"
@@ -267,7 +267,9 @@ msgstr ""
 "visas."
 
 #: ../qml/Settings.qml:334
-msgid "Note: If the map comes up black, the API key might be wrong."
+#, fuzzy
+#| msgid "Note: If the map comes up black, the API key might be wrong."
+msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr "Notera: Om kartan visas i bara svart kan API nyckeln vara fel."
 
 #: ../qml/Settings.qml:342

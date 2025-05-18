@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 04:28+0000\n"
+"POT-Creation-Date: 2025-05-17 19:30+0000\n"
 "PO-Revision-Date: 2025-02-23 11:03+0000\n"
 "Last-Translator: Cassian <prismarine@epicraft.top>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -260,7 +260,7 @@ msgid ""
 msgstr ""
 
 #: ../qml/Settings.qml:334
-msgid "Note: If the map comes up black, the API key might be wrong."
+msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
 
 #: ../qml/Settings.qml:342

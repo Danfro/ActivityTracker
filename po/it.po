@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 04:28+0000\n"
+"POT-Creation-Date: 2025-05-17 19:30+0000\n"
 "PO-Revision-Date: 2024-05-20 23:45+0000\n"
 "Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/ubports/"
@@ -266,7 +266,9 @@ msgstr ""
 "tasselli salvati del precedente tipo di mappa utilizzato."
 
 #: ../qml/Settings.qml:334
-msgid "Note: If the map comes up black, the API key might be wrong."
+#, fuzzy
+#| msgid "Note: If the map comes up black, the API key might be wrong."
+msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
 "Nota: se la mappa diventa tutta nera, la chiave API potrebbe essere errata."
 

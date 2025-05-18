@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 04:28+0000\n"
+"POT-Creation-Date: 2025-05-17 19:30+0000\n"
 "PO-Revision-Date: 2020-09-03 06:36+0000\n"
 "Last-Translator: msri <msriharitasa@gmail.com>\n"
 "Language-Team: Kannada <https://hosted.weblate.org/projects/activity-tracker/"
@@ -272,7 +272,7 @@ msgid ""
 msgstr ""
 
 #: ../qml/Settings.qml:334
-msgid "Note: If the map comes up black, the API key might be wrong."
+msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
 
 #: ../qml/Settings.qml:342
