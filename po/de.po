@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-17 19:30+0000\n"
-"PO-Revision-Date: 2024-05-13 04:35+0000\n"
+"PO-Revision-Date: 2025-05-19 20:02+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.4\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -268,12 +268,10 @@ msgstr ""
 "Kartentyps angezeigt."
 
 #: ../qml/Settings.qml:334
-#, fuzzy
-#| msgid "Note: If the map comes up black, the API key might be wrong."
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
-"Hinweis: Wenn eine leere Karte angezeigt wird, ist evtl. der API Schlüssel "
-"falsch."
+"Hinweis: Wenn eine leere Karte angezeigt wird, prüfe den API Schlüssel - "
+"dieser ist evtl. falsch."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
