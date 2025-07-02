@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-17 19:30+0000\n"
-"PO-Revision-Date: 2024-05-20 23:45+0000\n"
+"PO-Revision-Date: 2025-07-03 10:01+0000\n"
 "Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -266,11 +266,9 @@ msgstr ""
 "tasselli salvati del precedente tipo di mappa utilizzato."
 
 #: ../qml/Settings.qml:334
-#, fuzzy
-#| msgid "Note: If the map comes up black, the API key might be wrong."
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
-"Nota: se la mappa diventa tutta nera, la chiave API potrebbe essere errata."
+"Nota: se la mappa è vuota, controlla la chiave API — potrebbe essere errata."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
