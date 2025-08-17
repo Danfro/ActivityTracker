@@ -8,18 +8,20 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-17 19:30+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-08-18 16:02+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
-msgstr ""
+msgstr "Rakenduse teave"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
@@ -27,7 +29,7 @@ msgstr ""
 
 #: ../qml/About.qml:41
 msgid "Version %1"
-msgstr ""
+msgstr "Versioon %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -66,24 +68,24 @@ msgstr ""
 
 #: ../qml/ActivityDialog.qml:40 ../qml/SportSelectPopUp.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "Katkesta"
 
 #: ../qml/ActivityDialog.qml:47
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: ../qml/ImportPage.qml:34
 msgid "Choose"
-msgstr ""
+msgstr "Vali"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:151 ../qml/Main.qml:154
 msgid "Distance: %1 %2"
-msgstr ""
+msgstr "Vahemaa: %1 %2"
 
 #: ../qml/Main.qml:157
 msgid "Time: "
-msgstr ""
+msgstr "Aeg: "
 
 #: ../qml/Main.qml:231
 msgid "Recent Activities"
