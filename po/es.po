@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-17 19:30+0000\n"
-"PO-Revision-Date: 2024-06-30 21:09+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2025-08-18 16:02+0000\n"
+"Last-Translator: Alejandro Martínez <alemartinezman@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.13\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -25,7 +25,7 @@ msgstr "Acerca de"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
-msgstr "Activity Tracker"
+msgstr "Registrador de Actividades"
 
 #: ../qml/About.qml:41
 msgid "Version %1"
@@ -57,7 +57,7 @@ msgstr "¡Traduzca esta aplicación en Weblate!"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
-msgstr "Soporta Weblate"
+msgstr "Apoya Weblate"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -191,7 +191,7 @@ msgstr "metro(s)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr "Ingresa la clave de la API"
+msgstr "Ingresa clave API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
@@ -203,7 +203,7 @@ msgstr "Borrar clave API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr "Para otros tipos de tarjetas, se requiere una clave API"
+msgstr "Para otros tipos de mapas se requiere una clave API"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
@@ -215,11 +215,11 @@ msgstr "Mapa de calles gratuito de Thunderforest OSM"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr "Mapa para bicicletas Thunderforest"
+msgstr "Mapa para bicicletas de Thunderforest"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr "Mapa del paisaje de Thunderforest"
+msgstr "Mapa de terreno de Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
@@ -227,15 +227,15 @@ msgstr "Mapa de exteriores de Thunderforest"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr "Mapa del transporte público Thunderforest"
+msgstr "Mapa del transporte público de Thunderforest"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr "Mapa oscuro del transporte público Thunderforest"
+msgstr "Mapa en oscuro del transporte público de Thunderforest"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr "Mapa espinal de Thunderforest"
+msgstr "Mapa Spinal de Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
@@ -243,15 +243,15 @@ msgstr "Mapa pionero de Thunderforest"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr "Atlas de Thunderforest"
+msgstr "Mapa Atlas de Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr "Mapa mundial móvil de Thunderforest"
+msgstr "Mapa Atlas móvil de Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr "Mapa del vecindario de Thunderforest"
+msgstr "Mapa de vecindarios de Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
@@ -270,12 +270,8 @@ msgstr ""
 "anteriormente."
 
 #: ../qml/Settings.qml:334
-#, fuzzy
-#| msgid "Note: If the map comes up black, the API key might be wrong."
 msgid "Note: If the map is empty, check the API key — it may be wrong."
-msgstr ""
-"Nota: Si el mapa aparece en negro, es posible que la clave API esté "
-"incorrecta."
+msgstr "Nota: Si el mapa está vacío es posible que la clave API sea incorrecta."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
@@ -291,7 +287,7 @@ msgstr "Seleccione deporte:"
 
 #: ../qml/SportSelectPopUp.qml:21
 msgid "Choose later"
-msgstr "Elegir después"
+msgstr "Seleccionar después"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
@@ -327,11 +323,11 @@ msgstr "¿Qué quieres hacer?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr "Detener y guardar la pista"
+msgstr "Detener y guardar progreso"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr "Detener y descartar la pista"
+msgstr "Detener y descartar progreso"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
