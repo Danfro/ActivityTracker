@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-17 19:30+0000\n"
-"PO-Revision-Date: 2020-02-26 12:33+0000\n"
-"Last-Translator: Mark Bridgens <mark.bridgens@yougov.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/activity-tracker/"
-"translations/ar/>\n"
+"PO-Revision-Date: 2025-09-02 02:01+0000\n"
+"Last-Translator: نورا الجماعي <nardir20nn@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 5.13.1-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -89,7 +89,7 @@ msgstr "اختار"
 #, fuzzy
 #| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "المسافة: "
+msgstr "المسافة:"
 
 #: ../qml/Main.qml:157
 msgid "Time: "
@@ -148,10 +148,8 @@ msgid "Info"
 msgstr "معلومات"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "المسافة: "
+msgstr "المسافة: نورا الجماعي"
 
 #: ../qml/Settings.qml:56
 #, fuzzy
