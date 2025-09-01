@@ -1,3 +1,6 @@
+## Changes v1.1.4
+- updated: translations, many thanks to all translators!
+
 ## Changes v1.1.3
 - updated: translations, many thanks to all translators!
 
