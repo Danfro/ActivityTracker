@@ -53,7 +53,11 @@ MainView {
         var seconds = Math.floor((totalNumberOfSeconds - ((hours * 3600) + (minutes * 60))));
         var hours2 = (hours == 0 ? "" : (hours < 10 ? "0" + hours +":" : hours+":"))
         var result = hours2 + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds  < 10 ? "0" + seconds : seconds);
-        return result
+        if (result == "00:00" ) {
+            return "--:--"
+        } else {
+            return result
+        }
     }
 
     function formatDist(distance) {
@@ -196,8 +200,8 @@ MainView {
 
         function get_units(result) {
             call('geepeeex.get_units', [], function(result){
-                console.warn("getting units")
-                console.warn(result[0])
+                // console.warn("getting units")
+                // console.warn(result[0])
                 runits = result[0]
                 return runits
             }

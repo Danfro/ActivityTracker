@@ -98,33 +98,37 @@ def print_gpx_info(gpx, gpx_file,gpx_name,act_type):
     print_gpx_part_info(gpx)
     add_run(gpx,gpx_name,act_type,gpx_file,"")
 
-def add_run(gpx_part,name,act_type,filename,polyline):
+def add_run(gpx_part, name, act_type, filename, polyline):
     conn = sqlite3.connect('%s/activities.db' % filebase)
     cursor = conn.cursor()
     cursor.execute("""CREATE TABLE if not exists activities
                   (id INTEGER PRIMARY KEY AUTOINCREMENT,name text, act_date text, distance text,
-                   speed text, act_type text,filename text,polyline text)""")
+                   speed text, act_type text, filename text, polyline text)""")
     sql = "INSERT INTO activities VALUES (?,?,?,?,?,?,?,?)"
-    start_time, end_time = gpx_part.get_time_bounds()
-    #l2d='{:.3f}'.format(gpx.length_2d() / 1000.)
-    l2d = '{:.3f}'.format(gpx_part.length_2d() / 1000.)
-    moving_time, stopped_time, moving_distance, stopped_distance, max_speed = gpx_part.get_moving_data()
-    print(max_speed)
-    #print('%sStopped distance: %sm' % stopped_distance)
-    maxspeed = 'Max speed: {:.2f}km/h'.format(max_speed * 60. ** 2 / 1000. if max_speed else 0)
-    duration = '{:.2f}'.format(gpx_part.get_duration() / 60)
 
-    print("-------------------------")
-    print(name)
-    print(start_time)
-    print(l2d)
-    print(maxspeed)
-    print("-------------------------")
+    start_time, end_time = gpx_part.get_time_bounds()
+    moving_time, stopped_time, moving_distance, stopped_distance, max_speed = gpx_part.get_moving_data()
+
+    length_2d = gpx_part.length_2d()
+    l2d = '{:.3f}'.format(length_2d / 1000. if length_2d is not None else 0)
+
+    maxspeed = 'Max speed: {:.2f}km/h'.format(max_speed * 60. ** 2 / 1000. if max_speed is not None else 0)
+
+    duration = gpx_part.get_duration()
+    duration_formatted = '{:.2f}'.format(duration / 60 if duration is not None else 0)
+
+    # print("-------------------------")
+    # print(name)
+    # print(start_time)
+    # print(l2d)
+    # print(maxspeed)
+    # print("-------------------------")
+
     try:
-        cursor.execute(sql, [None, name,start_time,l2d,duration,act_type,filename,polyline])
+        cursor.execute(sql, [None, name, start_time, l2d, duration_formatted, act_type, filename, polyline])
         conn.commit()
     except sqlite3.Error as er:
-        print("-------------______---_____---___----____--____---___-----")
+        print("----sql error----")
         print(er)
     conn.close()
 
