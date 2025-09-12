@@ -155,7 +155,7 @@ MainView {
                         result[i].distance = i18n.tr("Distance: %1 %2").arg(result[i].distance.toString().replace(".",Qt.locale().decimalPoint)).arg("km")
                     }
                     var seconds = parseFloat(result[i].speed) * 60
-                    result[i].speed = i18n.tr("Time: ") + stopwatch(seconds)
+                    result[i].speed = i18n.tr("Duration: ") + stopwatch(seconds)
                     listModel.append(result[i]);
                 }
             });
