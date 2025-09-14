@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-17 19:30+0000\n"
+"POT-Creation-Date: 2025-09-12 21:28+0000\n"
 "PO-Revision-Date: 2025-07-03 10:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ubports/"
@@ -84,55 +84,55 @@ msgid "Choose"
 msgstr "தேர்வு செய்யவும்"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
-#: ../qml/Main.qml:151 ../qml/Main.qml:154
+#: ../qml/Main.qml:156 ../qml/Main.qml:159
 msgid "Distance: %1 %2"
 msgstr "தூரம்: %1 %2"
 
-#: ../qml/Main.qml:157
-msgid "Time: "
-msgstr "நேரம்: "
+#: ../qml/Main.qml:162
+msgid "Duration: "
+msgstr ""
 
-#: ../qml/Main.qml:231
+#: ../qml/Main.qml:243
 msgid "Recent Activities"
 msgstr "அண்மைக் கால நடவடிக்கைகள்"
 
-#: ../qml/Main.qml:235 ../qml/Settings.qml:16
+#: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
 msgstr "அமைப்புகள்"
 
-#: ../qml/Main.qml:240
+#: ../qml/Main.qml:252
 msgid "Filter"
 msgstr "வடிப்பி"
 
-#: ../qml/Main.qml:245
+#: ../qml/Main.qml:257
 msgid "Import"
 msgstr "இறக்குமதி"
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:342
+#: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
 msgstr "உங்களது செயல்பாட்டின் வகை மற்றும் பெயரினை தேர்ந்தெடுக்கவும்"
 
-#: ../qml/Main.qml:290
+#: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
 msgstr "உங்கள் செயல்பாட்டின் வகை மற்றும் பெயரைத் திருத்தவும்"
 
-#: ../qml/Main.qml:311
+#: ../qml/Main.qml:322
 msgid "No saved activities"
 msgstr "சேமித்த நடவடிக்கைகள் இல்லை"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
 msgstr "புதிய செயல்பாட்டை பதிவு செய்ய ச்வைப் செய்யவும்"
 
-#: ../qml/Main.qml:390
+#: ../qml/Main.qml:401
 msgid "Track information"
 msgstr "தகவல்களைக் கண்காணிக்கவும்"
 
-#: ../qml/Main.qml:404
+#: ../qml/Main.qml:415
 msgid "Close"
 msgstr "மூடு"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:424
 msgid "Log new Activity"
 msgstr "புதிய செயல்பாட்டை பதிவு செய்யுங்கள்"
 
@@ -382,6 +382,9 @@ msgstr "நோர்டிக் நடைபயிற்சி"
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
 msgstr "ஒற்றைத் தனியாழி"
+
+#~ msgid "Time: "
+#~ msgstr "நேரம்: "
 
 #~ msgid "After"
 #~ msgstr "அடுத்து"

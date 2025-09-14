@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-17 19:30+0000\n"
+"POT-Creation-Date: 2025-09-12 21:28+0000\n"
 "PO-Revision-Date: 2025-08-31 18:01+0000\n"
 "Last-Translator: Rondy Andersson <rondarius@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ubports/"
@@ -81,55 +81,55 @@ msgid "Choose"
 msgstr "Välj"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
-#: ../qml/Main.qml:151 ../qml/Main.qml:154
+#: ../qml/Main.qml:156 ../qml/Main.qml:159
 msgid "Distance: %1 %2"
 msgstr "Avstånd: %1 %2"
 
-#: ../qml/Main.qml:157
-msgid "Time: "
-msgstr "Tid: "
+#: ../qml/Main.qml:162
+msgid "Duration: "
+msgstr ""
 
-#: ../qml/Main.qml:231
+#: ../qml/Main.qml:243
 msgid "Recent Activities"
 msgstr "Senaste aktiviteterna"
 
-#: ../qml/Main.qml:235 ../qml/Settings.qml:16
+#: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
 msgstr "Inställningar"
 
-#: ../qml/Main.qml:240
+#: ../qml/Main.qml:252
 msgid "Filter"
 msgstr "Filter"
 
-#: ../qml/Main.qml:245
+#: ../qml/Main.qml:257
 msgid "Import"
 msgstr "Importera"
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:342
+#: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
 msgstr "Välj typen och namnet på din aktivitet"
 
-#: ../qml/Main.qml:290
+#: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
 msgstr "Redigera typen och namnet på din aktivitet"
 
-#: ../qml/Main.qml:311
+#: ../qml/Main.qml:322
 msgid "No saved activities"
 msgstr "Inga sparade aktiviteter"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
 msgstr "Svep uppåt för att logga en ny aktivitet"
 
-#: ../qml/Main.qml:390
+#: ../qml/Main.qml:401
 msgid "Track information"
 msgstr "Vägbeskrivning"
 
-#: ../qml/Main.qml:404
+#: ../qml/Main.qml:415
 msgid "Close"
 msgstr "Stäng"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:424
 msgid "Log new Activity"
 msgstr "Logga ny aktivitet"
 
@@ -383,3 +383,6 @@ msgstr "Stavgång"
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
 msgstr "Enhjuling"
+
+#~ msgid "Time: "
+#~ msgstr "Tid: "

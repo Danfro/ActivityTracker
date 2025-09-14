@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-17 19:30+0000\n"
+"POT-Creation-Date: 2025-09-12 21:28+0000\n"
 "PO-Revision-Date: 2020-09-03 06:36+0000\n"
 "Last-Translator: msri <msriharitasa@gmail.com>\n"
 "Language-Team: Kannada <https://hosted.weblate.org/projects/activity-tracker/"
@@ -85,57 +85,57 @@ msgid "Choose"
 msgstr "ಆಯ್ಕೆಮಾಡಿ"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
-#: ../qml/Main.qml:151 ../qml/Main.qml:154
+#: ../qml/Main.qml:156 ../qml/Main.qml:159
 #, fuzzy
 #| msgid "Distance: "
 msgid "Distance: %1 %2"
 msgstr "ದೂರ: "
 
-#: ../qml/Main.qml:157
-msgid "Time: "
-msgstr "ವೇಳೆ: "
+#: ../qml/Main.qml:162
+msgid "Duration: "
+msgstr ""
 
-#: ../qml/Main.qml:231
+#: ../qml/Main.qml:243
 msgid "Recent Activities"
 msgstr "ಇತ್ತೀಚಿನ ಚಟುವಟಿಕೆಗಳು"
 
-#: ../qml/Main.qml:235 ../qml/Settings.qml:16
+#: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
 msgstr "ಅಳವಡಿಕೆಗಳು"
 
-#: ../qml/Main.qml:240
+#: ../qml/Main.qml:252
 msgid "Filter"
 msgstr "ಹೆಚ್ಚಿನ ಆಯ್ಕೆಗಳು"
 
-#: ../qml/Main.qml:245
+#: ../qml/Main.qml:257
 msgid "Import"
 msgstr "ಆಮದು ಮಾಡಿ"
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:342
+#: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
 msgstr "ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಪ್ರಕಾರ ಮತ್ತು ಹೆಸರನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
-#: ../qml/Main.qml:290
+#: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
 msgstr "ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಪ್ರಕಾರ ಮತ್ತು ಹೆಸರನ್ನು ಪರಿಷ್ಕರಿಸಿ"
 
-#: ../qml/Main.qml:311
+#: ../qml/Main.qml:322
 msgid "No saved activities"
 msgstr "ಯಾವುದೇ ಉಳಿಸಿದ ಚಟುವಟಿಕೆಗಳು ಇಲ್ಲ"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
 msgstr "ಹೊಸ ಚಟುವಟಿಕೆಯನ್ನು ಲಾಗ್ ಮಾಡಲು ಮೇಲೆ ಸ್ವೈಪ್ ಮಾಡಿ"
 
-#: ../qml/Main.qml:390
+#: ../qml/Main.qml:401
 msgid "Track information"
 msgstr "ಮಾರ್ಗದ ಮಾಹಿತಿ"
 
-#: ../qml/Main.qml:404
+#: ../qml/Main.qml:415
 msgid "Close"
 msgstr "ಮುಚ್ಚಿ"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:424
 msgid "Log new Activity"
 msgstr "ಹೊಸ ಚಟುವಟಿಕೆಯನ್ನು ಲಾಗ್ ಮಾಡಿ"
 
@@ -388,6 +388,9 @@ msgstr ""
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
 msgstr "ಒಂದು ಗಾಲಿಯ ಸೈಕಲ್ಲು"
+
+#~ msgid "Time: "
+#~ msgstr "ವೇಳೆ: "
 
 #~ msgid "After"
 #~ msgstr "ಆದಮೇಲೆ"

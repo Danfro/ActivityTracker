@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-17 19:30+0000\n"
+"POT-Creation-Date: 2025-09-12 21:28+0000\n"
 "PO-Revision-Date: 2025-09-02 02:01+0000\n"
 "Last-Translator: نورا الجماعي <nardir20nn@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/ubports/"
@@ -85,57 +85,57 @@ msgid "Choose"
 msgstr "اختار"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
-#: ../qml/Main.qml:151 ../qml/Main.qml:154
+#: ../qml/Main.qml:156 ../qml/Main.qml:159
 #, fuzzy
 #| msgid "Distance: "
 msgid "Distance: %1 %2"
 msgstr "المسافة:"
 
-#: ../qml/Main.qml:157
-msgid "Time: "
-msgstr "الوقت: "
+#: ../qml/Main.qml:162
+msgid "Duration: "
+msgstr ""
 
-#: ../qml/Main.qml:231
+#: ../qml/Main.qml:243
 msgid "Recent Activities"
 msgstr "الأنشطة الأخيرة"
 
-#: ../qml/Main.qml:235 ../qml/Settings.qml:16
+#: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
 msgstr "الإعدادات"
 
-#: ../qml/Main.qml:240
+#: ../qml/Main.qml:252
 msgid "Filter"
 msgstr "منقي"
 
-#: ../qml/Main.qml:245
+#: ../qml/Main.qml:257
 msgid "Import"
 msgstr "استيراد"
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:342
+#: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
 msgstr "حدد نوع واسم نشاطك"
 
-#: ../qml/Main.qml:290
+#: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
 msgstr "تحرير نوع واسم النشاط الخاص بك"
 
-#: ../qml/Main.qml:311
+#: ../qml/Main.qml:322
 msgid "No saved activities"
 msgstr "لا توجد أنشطة محفوظة"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
 msgstr "اسحب لأعلى لتسجيل نشاط جديد"
 
-#: ../qml/Main.qml:390
+#: ../qml/Main.qml:401
 msgid "Track information"
 msgstr "تتبع المعلومات"
 
-#: ../qml/Main.qml:404
+#: ../qml/Main.qml:415
 msgid "Close"
 msgstr "إغلاق"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:424
 msgid "Log new Activity"
 msgstr "تسجيل نشاط جديد"
 
@@ -386,6 +386,9 @@ msgstr ""
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
 msgstr "الدراجة الاحادية"
+
+#~ msgid "Time: "
+#~ msgstr "الوقت: "
 
 #~ msgid "After"
 #~ msgstr "بعد"

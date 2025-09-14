@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-17 19:30+0000\n"
+"POT-Creation-Date: 2025-09-12 21:28+0000\n"
 "PO-Revision-Date: 2025-05-19 20:02+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
@@ -82,55 +82,55 @@ msgid "Choose"
 msgstr "Auswählen"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
-#: ../qml/Main.qml:151 ../qml/Main.qml:154
+#: ../qml/Main.qml:156 ../qml/Main.qml:159
 msgid "Distance: %1 %2"
 msgstr "Entfernung: %1 %2"
 
-#: ../qml/Main.qml:157
-msgid "Time: "
-msgstr "Zeit: "
+#: ../qml/Main.qml:162
+msgid "Duration: "
+msgstr ""
 
-#: ../qml/Main.qml:231
+#: ../qml/Main.qml:243
 msgid "Recent Activities"
 msgstr "Letzte Aktivitäten"
 
-#: ../qml/Main.qml:235 ../qml/Settings.qml:16
+#: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: ../qml/Main.qml:240
+#: ../qml/Main.qml:252
 msgid "Filter"
 msgstr "Filter"
 
-#: ../qml/Main.qml:245
+#: ../qml/Main.qml:257
 msgid "Import"
 msgstr "Importieren"
 
-#: ../qml/Main.qml:275 ../qml/Tracker.qml:342
+#: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
 msgstr "Wählen Sie die Art und den Namen Ihrer Aktivität aus"
 
-#: ../qml/Main.qml:290
+#: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
 msgstr "Bearbeiten Sie die Art und den Namen Ihrer Aktivität"
 
-#: ../qml/Main.qml:311
+#: ../qml/Main.qml:322
 msgid "No saved activities"
 msgstr "Keine gespeicherten Aktivitäten"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
 msgstr "Nach oben wischen, um eine neue Aktivität zu aufzuzeichnen"
 
-#: ../qml/Main.qml:390
+#: ../qml/Main.qml:401
 msgid "Track information"
 msgstr "Aktivitätsinformation"
 
-#: ../qml/Main.qml:404
+#: ../qml/Main.qml:415
 msgid "Close"
 msgstr "Schließen"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:424
 msgid "Log new Activity"
 msgstr "Neue Aktivität aufzeichnen"
 
@@ -384,6 +384,9 @@ msgstr "Nordic Walking"
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
 msgstr "Einrad fahren"
+
+#~ msgid "Time: "
+#~ msgstr "Zeit: "
 
 #~ msgid "Yes, cancel"
 #~ msgstr "Ja, abbrechen"
