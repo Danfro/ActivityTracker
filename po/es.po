@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2025-08-18 16:02+0000\n"
+"PO-Revision-Date: 2025-09-16 11:01+0000\n"
 "Last-Translator: Alejandro Martínez <alemartinezman@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -90,7 +90,7 @@ msgstr "Distancia: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Duración: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
