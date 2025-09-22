@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2024-12-01 15:00+0000\n"
+"PO-Revision-Date: 2025-09-23 14:01+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/hr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -88,7 +88,7 @@ msgstr "Udaljenost: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Trajanje: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
@@ -266,10 +266,8 @@ msgstr ""
 "korištene karte."
 
 #: ../qml/Settings.qml:334
-#, fuzzy
-#| msgid "Note: If the map comes up black, the API key might be wrong."
 msgid "Note: If the map is empty, check the API key — it may be wrong."
-msgstr "Napomena: Ako se prikaže crna karta, možda API ključ nije u redu."
+msgstr "Napomena: Ako je karta prazna, provjeri API ključ – možda je krivi."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
