@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.actidev\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2025-02-16 16:13+0000\n"
+"PO-Revision-Date: 2025-10-11 23:10+0000\n"
 "Last-Translator: Steve <steve.kueffer.ch@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -88,7 +88,7 @@ msgstr "Distance : %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Durée: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
@@ -268,12 +268,10 @@ msgstr ""
 "s'affichent."
 
 #: ../qml/Settings.qml:334
-#, fuzzy
-#| msgid "Note: If the map comes up black, the API key might be wrong."
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
-"Remarque : si la carte s'affiche en noir, il se peut que la clé API soit "
-"erronée."
+"Remarque: Si la carte est vide, contrôlez la clé de l'API — elle est peut "
+"être erronée."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
