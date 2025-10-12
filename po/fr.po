@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.actidev\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2025-10-11 23:10+0000\n"
+"PO-Revision-Date: 2025-10-13 22:07+0000\n"
 "Last-Translator: Steve <steve.kueffer.ch@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/fr/>\n"
@@ -46,12 +46,12 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
-"Grâce à %1 pour les icônes basées sur : <br>%3 par %8 de %2, <br>%4 par %9 "
+"Grâce à %1 pour les icônes basées sur : <br>%3 par %8 de %2, <br>%4 par %9 "
 "de %2,<br>%5 par %10 de %2, <br>%6 par %11 de %2,<br>%7 par %12 de %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
-msgstr "Traduisez cette application sur Weblate !"
+msgstr "Traduisez cette application sur Weblate !"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
@@ -88,7 +88,7 @@ msgstr "Distance : %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr "Durée: "
+msgstr "Durée : "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
@@ -270,7 +270,7 @@ msgstr ""
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
-"Remarque: Si la carte est vide, contrôlez la clé de l'API — elle est peut "
+"Remarque : Si la carte est vide, contrôlez la clé de l'API — elle est peut "
 "être erronée."
 
 #: ../qml/Settings.qml:342
