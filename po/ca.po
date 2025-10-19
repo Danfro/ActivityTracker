@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2020-03-30 18:41+0000\n"
-"Last-Translator: Jaume Ortolà i Font <jaumeortola@gmail.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/activity-tracker/"
-"translations/ca/>\n"
+"PO-Revision-Date: 2025-10-20 04:54+0000\n"
+"Last-Translator: Guillem Bagaria Morató <guillembagaria@somnuvol.coop>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -25,21 +25,21 @@ msgstr "Quant a"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
-msgstr "Activity Tracker"
+msgstr "Enregistrador d'Activitats"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Versió"
+msgstr "Versió %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
-msgstr "Alliberat sota la llicència GNU GPL v3.<br>Codi font disponible en"
+msgstr ""
+"Publicat sota els termes de la llicència GNU GPL v3.<br>Codi font disponible "
+"a"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
-msgstr "Part de les icones estan fetes per %1 de %2 amb el permís de %3"
+msgstr "Part de les icones estan fetes per %1 de %2 sota la llicència %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
 #: ../qml/About.qml:110
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
-msgstr "Traduïu aquesta aplicació a Weblate!"
+msgstr "Tradueix aquesta aplicació a Weblate!"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
@@ -64,7 +64,7 @@ msgstr "Nom"
 
 #: ../qml/ActivityDialog.qml:20
 msgid "Select a sport below"
-msgstr "Seleccioneu un esport a continuació"
+msgstr "Selecciona un dels següents esports"
 
 #: ../qml/ActivityDialog.qml:30
 msgid "Activity Type"
@@ -76,46 +76,44 @@ msgstr "Cancel·la"
 
 #: ../qml/ActivityDialog.qml:47
 msgid "Save"
-msgstr "Desar"
+msgstr "Desa"
 
 #: ../qml/ImportPage.qml:34
 msgid "Choose"
-msgstr "Trieu"
+msgstr "Tria"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:156 ../qml/Main.qml:159
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Distància: "
+msgstr "Distància: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Durada: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
-msgstr "Activitat recent"
+msgstr "Activitats recents"
 
 #: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
-msgstr "Configuració"
+msgstr "Paràmetres"
 
 #: ../qml/Main.qml:252
 msgid "Filter"
-msgstr "Filtre"
+msgstr "Filtra"
 
 #: ../qml/Main.qml:257
 msgid "Import"
-msgstr "Importeu"
+msgstr "Importa"
 
 #: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
-msgstr "Seleccioneu el tipus i el nom de la vostra activitat"
+msgstr "Selecciona el tipus i el nom de la teva activitat"
 
 #: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
-msgstr "Seleccioneu el tipus i el nom de la vostra activitat"
+msgstr "Edita el tipus i el nom de la teva activitat"
 
 #: ../qml/Main.qml:322
 msgid "No saved activities"
@@ -123,19 +121,19 @@ msgstr "No hi ha activitats desades"
 
 #: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
-msgstr "Rellisqueu cap amunt per registrar una nova activitat"
+msgstr "Llisca cap amunt per enregistrar una nova activitat"
 
 #: ../qml/Main.qml:401
 msgid "Track information"
-msgstr "Informació de rastreig"
+msgstr "Informació de la ruta"
 
 #: ../qml/Main.qml:415
 msgid "Close"
-msgstr "Tanqueu"
+msgstr "Tanca"
 
 #: ../qml/Main.qml:424
 msgid "Log new Activity"
-msgstr "Registra una nova activitat"
+msgstr "Enregistra una nova activitat"
 
 #: ../qml/Map.qml:17
 msgid "Activity Map"
@@ -146,30 +144,28 @@ msgid "Info"
 msgstr "Informació"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Distància: "
+msgstr "Unitat de distància:"
 
 #: ../qml/Settings.qml:56
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "metre(s)"
+msgstr "Quilòmetres"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Milles"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Nota: S'utilitzen unitats del sistema britànic i unitats habituals dels "
+"Estats Units, 1,609344 km = 1 milla, 1 km = 0,621371 milles"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
-msgstr "Desa un punt cada:"
+msgstr "Enregistra un punt cada:"
 
 #: ../qml/Settings.qml:90
 msgid "between 50 and 3600000"
