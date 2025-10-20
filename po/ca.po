@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2025-10-20 04:54+0000\n"
+"PO-Revision-Date: 2025-10-21 11:02+0000\n"
 "Last-Translator: Guillem Bagaria Morató <guillembagaria@somnuvol.coop>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ca/>\n"
@@ -190,25 +190,23 @@ msgstr "metre(s)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Introdueix una clau API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Aplica"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Esborra la clau API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Es requereix una clau API per altres tipus de mapes"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Seleccioneu un esport a continuació"
+msgstr "Selecciona el tipus de mapa:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
