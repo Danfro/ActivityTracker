@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2025-10-22 22:02+0000\n"
+"PO-Revision-Date: 2025-10-25 05:02+0000\n"
 "Last-Translator: Guillem Bagaria Morató <guillembagaria@somnuvol.coop>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -230,31 +230,31 @@ msgstr "Mapa de transport públic de Thunderforest"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Mapa fosc de transport públic de Thunderforest"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Mapa Spinal (estil rock dur) de Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Mapa Pioneer (estil històric) de Thunderforest"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Mapa Atlas (estil minimalista) de Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Mapa Atlas mòbil (alt contrast) de Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Mapa de barris de Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "Moltes gràcies a Thunderforest.com per proporcionar-nos el mapa lliure!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -262,36 +262,39 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Després de canviar el tipus de mapa, cal reiniciar l'aplicació perquè "
+"s'apliquin els canvis. Altrament, és possible que es mostrin les tessel·les "
+"emmagatzemades a la memòria cau corresponents al tipus de mapa utilitzat "
+"anteriorment."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
+"Nota: Si no es mostra el mapa, comprova la clau API — podria ser incorrecta."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Si us plau, obtén la teva clau API:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Descripció dels tipus de mapes:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
-msgstr "Trieu l'esport:"
+msgstr "Tria un esport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Trieu"
+msgstr "Tria'l més tard"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
-msgstr "Actitivitat en progrés"
+msgstr "Activitat en curs"
 
 #: ../qml/Tracker.qml:60
 msgid "New Activity"
-msgstr "Nova activitata"
+msgstr "Activitat nova"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
