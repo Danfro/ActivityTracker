@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2025-10-25 05:02+0000\n"
+"PO-Revision-Date: 2025-10-26 18:02+0000\n"
 "Last-Translator: Guillem Bagaria Morató <guillembagaria@somnuvol.coop>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ca/>\n"
@@ -298,7 +298,7 @@ msgstr "Activitat nova"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "En pausa"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
@@ -306,43 +306,43 @@ msgstr "Sense dades"
 
 #: ../qml/Tracker.qml:264
 msgid "Do you want to cancel the activity?"
-msgstr "Voleu cancel·lar l'activitat?"
+msgstr "Vols cancel·lar l'activitat?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Sí, atura i descarta"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
-msgstr ""
+msgstr "No, torna enrere"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Què vols fer?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr ""
+msgstr "Atura i desa la ruta"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Atura i descarta la ruta"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Res, torna enrere"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "Posa en pausa"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Esperant la posició..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "Reprèn"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
@@ -358,27 +358,27 @@ msgstr "Córrer"
 
 #: ../qml/components/Sports.qml:8
 msgid "BikeRide"
-msgstr "Anar en bici"
+msgstr "Bicicleta"
 
 #: ../qml/components/Sports.qml:9
 msgid "Walk"
-msgstr "Camminata"
+msgstr "Caminada"
 
 #: ../qml/components/Sports.qml:10
 msgid "Drive"
-msgstr "Viaggio"
+msgstr "Conducció"
 
 #: ../qml/components/Sports.qml:11
 msgid "Hike"
-msgstr "Escursione"
+msgstr "Senderisme"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "Paddle surf"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Marxa nòrdica"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
