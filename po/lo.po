@@ -8,34 +8,36 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-28 14:00+0000\n"
+"Last-Translator: BoneNI <bounkirdni@gmail.com>\n"
+"Language-Team: Lao <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/lo/>\n"
 "Language: lo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
-msgstr ""
+msgstr "ກ່ຽວກັບ"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
-msgstr ""
+msgstr "ຕົວຕິດຕາມກິດຈະກຳ"
 
 #: ../qml/About.qml:41
 msgid "Version %1"
-msgstr ""
+msgstr "ເວີຊັນ %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
-msgstr ""
+msgstr "ເຜີຍແຜ່ພາຍໃຕ້ເງື່ອນໄຂຂອງ GNU GPL v3.<br>ລະຫັດແຫຼ່ງມີຢູ່ທີ່"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
-msgstr ""
+msgstr "ສ່ວນໜຶ່ງຂອງໄອຄອນແມ່ນສ້າງໂດຍ %1 ຈາກ %2 ໄດ້ຮັບອະນຸຍາດໂດຍ %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
 #: ../qml/About.qml:110
@@ -43,210 +45,213 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
+"ຂໍຂອບໃຈ %1 ສຳລັບໄອຄອນທີ່ອີງຕາມ:<br>%3 ໂດຍ %8 ຈາກ %2,<br>%4 ໂດຍ %9 ຈາກ %2,<br>%5 "
+"ໂດຍ %10 ຈາກ %2,<br>%6 ໂດຍ %11 ຈາກ %2,<br>%7 ໂດຍ %12 ຈາກ %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
-msgstr ""
+msgstr "ແປພາສາແອັບນີ້ໃນ Weblate!"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
-msgstr ""
+msgstr "ສະໜັບສະໜູນ Weblate"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
-msgstr ""
+msgstr "ຊື່"
 
 #: ../qml/ActivityDialog.qml:20
 msgid "Select a sport below"
-msgstr ""
+msgstr "ເລືອກກິລາລຸ່ມນີ້"
 
 #: ../qml/ActivityDialog.qml:30
 msgid "Activity Type"
-msgstr ""
+msgstr "ປະເພດກິດຈະກຳ"
 
 #: ../qml/ActivityDialog.qml:40 ../qml/SportSelectPopUp.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "ຍົກເລີກ"
 
 #: ../qml/ActivityDialog.qml:47
 msgid "Save"
-msgstr ""
+msgstr "ບັນທຶກ"
 
 #: ../qml/ImportPage.qml:34
 msgid "Choose"
-msgstr ""
+msgstr "ເລືອກ"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:156 ../qml/Main.qml:159
 msgid "Distance: %1 %2"
-msgstr ""
+msgstr "ໄລຍະທາງ: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "ໄລຍະເວລາ: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
-msgstr ""
+msgstr "ກິດຈະກຳຫຼ້າສຸດ"
 
 #: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
-msgstr ""
+msgstr "ການຕັ້ງຄ່າ"
 
 #: ../qml/Main.qml:252
 msgid "Filter"
-msgstr ""
+msgstr "ຕົວຕອງ"
 
 #: ../qml/Main.qml:257
 msgid "Import"
-msgstr ""
+msgstr "ນຳເຂົ້າ"
 
 #: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
-msgstr ""
+msgstr "ເລືອກປະເພດ ແລະ ຊື່ກິດຈະກຳຂອງທ່ານ"
 
 #: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
-msgstr ""
+msgstr "ແກ້ໄຂປະເພດ ແລະ ຊື່ກິດຈະກຳຂອງທ່ານ"
 
 #: ../qml/Main.qml:322
 msgid "No saved activities"
-msgstr ""
+msgstr "ບໍ່ມີກິດຈະກຳທີ່ບັນທຶກໄວ້"
 
 #: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
-msgstr ""
+msgstr "ປັດຂຶ້ນເພື່ອບັນທຶກກິດຈະກຳໃໝ່"
 
 #: ../qml/Main.qml:401
 msgid "Track information"
-msgstr ""
+msgstr "ຂໍ້ມູນເສັ້ນທາງ"
 
 #: ../qml/Main.qml:415
 msgid "Close"
-msgstr ""
+msgstr "ປິດ"
 
 #: ../qml/Main.qml:424
 msgid "Log new Activity"
-msgstr ""
+msgstr "ບັນທຶກກິດຈະກຳໃໝ່"
 
 #: ../qml/Map.qml:17
 msgid "Activity Map"
-msgstr ""
+msgstr "ແຜນທີ່ກິດຈະກຳ"
 
 #: ../qml/Map.qml:20
 msgid "Info"
-msgstr ""
+msgstr "ຂໍ້ມູນ"
 
 #: ../qml/Settings.qml:55
 msgid "Distance unit:"
-msgstr ""
+msgstr "ຫົວໜ່ວຍໄລຍະທາງ:"
 
 #: ../qml/Settings.qml:56
 msgid "Kilometers"
-msgstr ""
+msgstr "ກິໂລແມັດ"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "ໄມລ໌"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"ໝາຍເຫດ: ໃຊ້ຫົວໜ່ວຍອັງກິດ ແລະ ອາເມລິກາ, 1.609344 ກມ = 1 ໄມລ໌, 1 ກມ = 0.621371 ໄມລ໌"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
-msgstr ""
+msgstr "ບັນທຶກຈຸດທຸກໆ:"
 
 #: ../qml/Settings.qml:90
 msgid "between 50 and 3600000"
-msgstr ""
+msgstr "ລະຫວ່າງ 50 ຫາ 3600000"
 
 #. TRANSLATORS: millisecond abbreviation
 #: ../qml/Settings.qml:116
 msgid "ms"
-msgstr ""
+msgstr "ມລວ"
 
 #: ../qml/Settings.qml:128
 msgid "Altitude offset:"
-msgstr ""
+msgstr "ຊົດເຊີຍລະດັບຄວາມສູງ:"
 
 #: ../qml/Settings.qml:129
 msgid "between -100 and 100"
-msgstr ""
+msgstr "ລະຫວ່າງ -100 ຫາ 100"
 
 #: ../qml/Settings.qml:151
 msgid "meter(s)"
-msgstr ""
+msgstr "ແມັດ"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "ໃສ່ລະຫັດ API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "ນຳໃຊ້"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "ລຶບລະຫັດ API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "ຕ້ອງໃຊ້ລະຫັດ API ສຳລັບແຜນທີ່ປະເພດອື່ນ"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
-msgstr ""
+msgstr "ເລືອກປະເພດແຜນທີ່:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "ແຜນທີ່ຖະໜົນ Thunderforest OSM ຟຣີ"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "ແຜນທີ່ລົດຖີບ Thunderforest"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "ແຜນທີ່ພູມສັນຖານ Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "ແຜນທີ່ກາງແຈ້ງ Thunderforest"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "ແຜນທີ່ການຂົນສົ່ງ Thunderforest"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "ແຜນທີ່ການຂົນສົ່ງ-ມືດ Thunderforest"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "ແຜນທີ່ spinal Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "ແຜນທີ່ບຸກເບີກ Thunderforest"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "ແຜນທີ່ atlas Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "ແຜນທີ່ atlas ມືຖື Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "ແຜນທີ່ຊຸມຊົນ Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "ຂໍຂອບໃຈຢ່າງສູງຕໍ່ Thunderforest.com ສຳລັບການໃຫ້ບໍລິການແຜນທີ່ຟຣີ!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -254,119 +259,121 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"ຫຼັງຈາກປ່ຽນປະເພດແຜນທີ່, ກະລຸນາປິດແລ້ວເປີດແອັບໃໝ່ເພື່ອໃຫ້ການປ່ຽນແປງມີຜົນ. ຖ້າບໍ່ດັ່ງນັ້ນ, "
+"ຂໍ້ມູນແຜນທີ່ເກົ່າທີ່ເກັບໄວ້ອາດຈະຖືກສະແດງຂຶ້ນມາ."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
-msgstr ""
+msgstr "ໝາຍເຫດ: ຖ້າແຜນທີ່ວ່າງເປົ່າ, ໃຫ້ກວດເບິ່ງລະຫັດ API — ມັນອາດຈະຜິດ."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "ກະລຸນາເອົາລະຫັດ API ຂອງທ່ານເອງ:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "ຄຳອະທິບາຍປະເພດແຜນທີ່:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
-msgstr ""
+msgstr "ເລືອກກິລາ:"
 
 #: ../qml/SportSelectPopUp.qml:21
 msgid "Choose later"
-msgstr ""
+msgstr "ເລືອກພາຍຫຼັງ"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
-msgstr ""
+msgstr "ກິດຈະກຳພວມດຳເນີນການ"
 
 #: ../qml/Tracker.qml:60
 msgid "New Activity"
-msgstr ""
+msgstr "ກິດຈະກຳໃໝ່"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "ຢຸດຊົ່ວຄາວ"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
-msgstr ""
+msgstr "ບໍ່ມີຂໍ້ມູນ"
 
 #: ../qml/Tracker.qml:264
 msgid "Do you want to cancel the activity?"
-msgstr ""
+msgstr "ເຈົ້າຕ້ອງການຍົກເລີກກິດຈະກຳບໍ່?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "ແມ່ນ, ຢຸດ ແລະ ຖິ້ມຂໍ້ມູນ"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
-msgstr ""
+msgstr "ບໍ່, ກັບຄືນ"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr ""
+msgstr "ເຈົ້າຕ້ອງການເຮັດຫຍັງ?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr ""
+msgstr "ຢຸດ ແລະ ບັນທຶກເສັ້ນທາງ"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr ""
+msgstr "ຢຸດ ແລະ ຖິ້ມເສັ້ນທາງ"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
-msgstr ""
+msgstr "ບໍ່ເຮັດຫຍັງ, ກັບຄືນ"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "ຢຸດຊົ່ວຄາວ"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "ກຳລັງລໍຖ້າຕຳແໜ່ງ..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "ສືບຕໍ່"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
-msgstr ""
+msgstr "ເລີ່ມ"
 
 #: ../qml/Tracker.qml:465
 msgid "Stop"
-msgstr ""
+msgstr "ຢຸດ"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
-msgstr ""
+msgstr "ແລ່ນ"
 
 #: ../qml/components/Sports.qml:8
 msgid "BikeRide"
-msgstr ""
+msgstr "ຂີ່ລົດຖີບ"
 
 #: ../qml/components/Sports.qml:9
 msgid "Walk"
-msgstr ""
+msgstr "ຍ່າງ"
 
 #: ../qml/components/Sports.qml:10
 msgid "Drive"
-msgstr ""
+msgstr "ຂັບລົດ"
 
 #: ../qml/components/Sports.qml:11
 msgid "Hike"
-msgstr ""
+msgstr "ຍ່າງປ່າ"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "ພາຍເຮືອຢືນ"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "ຍ່າງແບບນໍດິກ"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
-msgstr ""
+msgstr "ລົດຖີບລໍ້ດຽວ"
