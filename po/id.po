@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2020-01-15 17:21+0000\n"
-"Last-Translator: Habib R <revolusi147id@gmail.com>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/activity-"
-"tracker/translations/id/>\n"
+"PO-Revision-Date: 2025-12-04 14:00+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -85,14 +85,12 @@ msgstr "Pilih"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:156 ../qml/Main.qml:159
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Jarak "
+msgstr "Jarak: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Durasi: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
@@ -147,10 +145,8 @@ msgid "Info"
 msgstr "Info"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Jarak "
+msgstr "Satuan jarak:"
 
 #: ../qml/Settings.qml:56
 #, fuzzy
@@ -160,13 +156,15 @@ msgstr "meter"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Mil"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Catatan: Menggunakan satuan imperial Britania dan satuan kebiasaan Amerika "
+"Serikat, 1,609344 km = 1 mil, 1 km = 0,621371 mil"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -195,73 +193,73 @@ msgstr "meter"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Masukkan kunci API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Terapkan"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Hapus kunci API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Kunci API diperlukan untuk jenis peta lainnya"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Pilih olahraga di bawah"
+msgstr "Pilih jenis peta:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Peta jalan Thunderforest OSM gratis"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Peta sepeda Thunderforest"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Peta lanskap Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Peta luar ruangan Thunderforest"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Peta transportasi Thunderforest"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Peta transportasi-gelap Thunderforest"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Peta tulang belakang Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Peta perintis Thunderforest"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Peta atlas Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Peta atlas seluler Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Peta lingkungan Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgstr ""
+"Terima kasih sebesar-besarnya kepada Thunderforest.com atas penyediaan peta "
+"gratis!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -269,18 +267,21 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Setelah mengubah jenis peta, harap mulai ulang aplikasi agar perubahan "
+"diterapkan. Jika tidak, potongan peta yang disimpan dari jenis peta "
+"sebelumnya mungkin akan ditampilkan."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
-msgstr ""
+msgstr "Catatan: Jika peta kosong, periksa kunci API — mungkin salah."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Silakan dapatkan kunci API Anda sendiri:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Deskripsi jenis peta:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
@@ -302,7 +303,7 @@ msgstr "Aktivitas Baru"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "Dijeda"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
@@ -314,39 +315,39 @@ msgstr "Anda ingin membatalkan aktivitas?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Ya, hentikan dan abaikan"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
-msgstr ""
+msgstr "Tidak, kembali"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Apa yang ingin Anda lakukan?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr ""
+msgstr "Hentikan dan simpan jalur"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Hentikan dan abaikan jalur"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Tidak ada, kembali"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "Jeda"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Menunggu posisi..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "Lanjutkan"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
@@ -378,11 +379,11 @@ msgstr "Mendaki"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Jalan Nordik"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
