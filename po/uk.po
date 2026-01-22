@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2026-01-22 09:25+0000\n"
+"PO-Revision-Date: 2026-01-22 18:44+0000\n"
 "Last-Translator: Serhii Horichenko <serhii@horichenko.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/uk/>\n"
@@ -100,7 +100,7 @@ msgstr "Налаштування"
 
 #: ../qml/Main.qml:252
 msgid "Filter"
-msgstr "Цідило"
+msgstr "Фільтр"
 
 #: ../qml/Main.qml:257
 msgid "Import"
