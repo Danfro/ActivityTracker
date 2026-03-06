@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2026-03-05 12:10+0000\n"
+"PO-Revision-Date: 2026-03-07 16:11+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ca/>\n"
@@ -25,7 +25,7 @@ msgstr "Quant a"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
-msgstr "Enregistrador d'Activitats"
+msgstr "Enregistrador d'activitats"
 
 #: ../qml/About.qml:41
 msgid "Version %1"
@@ -109,11 +109,11 @@ msgstr "Importa"
 
 #: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
-msgstr "Selecciona el tipus i el nom de la teva activitat"
+msgstr "Seleccioneu el tipus i el nom de la vostra activitat"
 
 #: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
-msgstr "Edita el tipus i el nom de la teva activitat"
+msgstr "Editeu el tipus i el nom de la vostra activitat"
 
 #: ../qml/Main.qml:322
 msgid "No saved activities"
@@ -121,7 +121,7 @@ msgstr "No hi ha activitats desades"
 
 #: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
-msgstr "Llisca cap amunt per enregistrar una nova activitat"
+msgstr "Llisqueu cap amunt per enregistrar una nova activitat"
 
 #: ../qml/Main.qml:401
 msgid "Track information"
@@ -190,7 +190,7 @@ msgstr "metre(s)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr "Introdueix una clau API"
+msgstr "Introduïu una clau API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
@@ -202,7 +202,7 @@ msgstr "Esborra la clau API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr "Es requereix una clau API per altres tipus de mapes"
+msgstr "Es requereix una clau API per a altres tipus de mapes"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
@@ -210,7 +210,7 @@ msgstr "Selecciona el tipus de mapa:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr "Mapa OSM lliure de Thunderforest"
+msgstr "Mapa gratuït OSM de Thunderforest"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -246,7 +246,7 @@ msgstr "Mapa Atlas (estil minimalista) de Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr "Mapa Atlas mòbil (alt contrast) de Thunderforest"
+msgstr "Mapa Atlas mòbil de Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
@@ -270,11 +270,11 @@ msgstr ""
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
-"Nota: Si no es mostra el mapa, comprova la clau API — podria ser incorrecta."
+"Nota: Si no es mostra el mapa, comproveu la clau API — podria ser incorrecta."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr "Si us plau, obtén la teva clau API:"
+msgstr "Si us plau, obteniu la vostra clau API:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
@@ -282,7 +282,7 @@ msgstr "Descripció dels tipus de mapes:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
-msgstr "Tria un esport:"
+msgstr "Trieu un esport:"
 
 #: ../qml/SportSelectPopUp.qml:21
 msgid "Choose later"
@@ -306,7 +306,7 @@ msgstr "Sense dades"
 
 #: ../qml/Tracker.qml:264
 msgid "Do you want to cancel the activity?"
-msgstr "Vols cancel·lar l'activitat?"
+msgstr "Voleu cancel·lar l'activitat?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
@@ -318,7 +318,7 @@ msgstr "No, torna enrere"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr "Què vols fer?"
+msgstr "Què voleu fer?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
