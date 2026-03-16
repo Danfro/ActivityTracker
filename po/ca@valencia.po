@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2020-09-04 13:36+0000\n"
-"Last-Translator: Arturo Hernández Pérez <al374891@uji.es>\n"
-"Language-Team: Valencian <https://hosted.weblate.org/projects/activity-"
-"tracker/translations/ca@valencia/>\n"
+"PO-Revision-Date: 2026-03-16 19:09+0000\n"
+"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Valencian <https://hosted.weblate.org/projects/ubports/"
+"activitytracker/ca@valencia/>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -25,19 +25,21 @@ msgstr "Quant a"
 
 #: ../qml/About.qml:35
 msgid "Activity Tracker"
-msgstr ""
+msgstr "Enregistrador d'activitats"
 
 #: ../qml/About.qml:41
 msgid "Version %1"
-msgstr ""
+msgstr "Versió %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
 msgstr ""
+"Publicat sota els termes de la llicència GNU GPL v3.<br>Codi font disponible "
+"a"
 
 #: ../qml/About.qml:97
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
-msgstr ""
+msgstr "Part de les icones estan fetes per %1 de %2 sota la llicència %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
 #: ../qml/About.qml:110
@@ -45,14 +47,16 @@ msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
 msgstr ""
+"Gràcies a %1 per les icones basades en:<br>%3 per %8 de %2,<br>%4 per %9 de "
+"%2,<br>%5 per %10 de %2,<br>%6 per %11 de %2,<br>%7 per %12 de %2"
 
 #: ../qml/About.qml:131
 msgid "Translate this app on Weblate!"
-msgstr ""
+msgstr "Traduïu aquesta aplicació a Weblate!"
 
 #: ../qml/About.qml:140
 msgid "Support Weblate"
-msgstr ""
+msgstr "Doneu suport a Weblate"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -81,27 +85,27 @@ msgstr "Elegir"
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:156 ../qml/Main.qml:159
 msgid "Distance: %1 %2"
-msgstr ""
+msgstr "Distància: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Durada: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
-msgstr ""
+msgstr "Activitats recents"
 
 #: ../qml/Main.qml:247 ../qml/Settings.qml:16
 msgid "Settings"
-msgstr ""
+msgstr "Paràmetres"
 
 #: ../qml/Main.qml:252
 msgid "Filter"
-msgstr ""
+msgstr "Filtra"
 
 #: ../qml/Main.qml:257
 msgid "Import"
-msgstr ""
+msgstr "Importa"
 
 #: ../qml/Main.qml:286 ../qml/Tracker.qml:342
 msgid "Select the type and the name of your activity"
@@ -109,27 +113,27 @@ msgstr "Seleccioneu el tipus i el nom de la seua activitat"
 
 #: ../qml/Main.qml:301
 msgid "Edit the type and the name of your activity"
-msgstr ""
+msgstr "Editeu el tipus i el nom de la vostra activitat"
 
 #: ../qml/Main.qml:322
 msgid "No saved activities"
-msgstr ""
+msgstr "No hi ha activitats desades"
 
 #: ../qml/Main.qml:325
 msgid "Swipe up to log a new activity"
-msgstr ""
+msgstr "Llisqueu cap amunt per enregistrar una nova activitat"
 
 #: ../qml/Main.qml:401
 msgid "Track information"
-msgstr ""
+msgstr "Informació de la ruta"
 
 #: ../qml/Main.qml:415
 msgid "Close"
-msgstr ""
+msgstr "Tanca"
 
 #: ../qml/Main.qml:424
 msgid "Log new Activity"
-msgstr ""
+msgstr "Enregistra una nova activitat"
 
 #: ../qml/Map.qml:17
 msgid "Activity Map"
@@ -141,116 +145,116 @@ msgstr "Info"
 
 #: ../qml/Settings.qml:55
 msgid "Distance unit:"
-msgstr ""
+msgstr "Unitat de distància:"
 
 #: ../qml/Settings.qml:56
 msgid "Kilometers"
-msgstr ""
+msgstr "Quilòmetres"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Milles"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Nota: S'utilitzen unitats del sistema britànic i unitats habituals dels "
+"Estats Units, 1,609344 km = 1 milla, 1 km = 0,621371 milles"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
-msgstr ""
+msgstr "Enregistra un punt cada:"
 
 #: ../qml/Settings.qml:90
 msgid "between 50 and 3600000"
-msgstr ""
+msgstr "entre 50 i 3600000"
 
 #. TRANSLATORS: millisecond abbreviation
 #: ../qml/Settings.qml:116
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../qml/Settings.qml:128
 msgid "Altitude offset:"
-msgstr ""
+msgstr "Compensació d'altitud:"
 
 #: ../qml/Settings.qml:129
 msgid "between -100 and 100"
-msgstr ""
+msgstr "entre -100 i 100"
 
 #: ../qml/Settings.qml:151
 msgid "meter(s)"
-msgstr ""
+msgstr "metre(s)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Introduïu una clau API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Aplica"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Esborra la clau API"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Es requereix una clau API per a altres tipus de mapes"
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Seleccioneu davall un esport"
+msgstr "Selecciona el tipus de mapa:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Mapa gratuït OSM de Thunderforest"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Mapa ciclista de Thunderforest"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Mapa de paisatge de Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Mapa d'activitats d'exterior de Thunderforest"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Mapa de transport públic de Thunderforest"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Mapa fosc de transport públic de Thunderforest"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Mapa Spinal (estil rock dur) de Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Mapa Pioneer (estil històric) de Thunderforest"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Mapa Atlas (estil minimalista) de Thunderforest"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Mapa Atlas mòbil de Thunderforest"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Mapa de barris de Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "Moltes gràcies a Thunderforest.com per proporcionar-nos el mapa lliure!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -258,28 +262,31 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Després de canviar el tipus de mapa, cal reiniciar l'aplicació perquè "
+"s'apliquin els canvis. Altrament, és possible que es mostrin les tessel·les "
+"emmagatzemades a la memòria cau corresponents al tipus de mapa utilitzat "
+"anteriorment."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
+"Nota: Si no es mostra el mapa, comproveu la clau API — podria ser incorrecta."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Si us plau, obteniu la vostra clau API:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Descripció dels tipus de mapes:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
 msgstr "Elegir esport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Elegir"
+msgstr "Tria'l més tard"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
@@ -291,7 +298,7 @@ msgstr "Activitat nova"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "En pausa"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
@@ -303,39 +310,39 @@ msgstr "Voleu cancel·lar l'activitat?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Sí, atura i descarta"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
-msgstr ""
+msgstr "No, torna enrere"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Què voleu fer?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr ""
+msgstr "Atura i desa la ruta"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Atura i descarta la ruta"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Res, torna enrere"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "Posa en pausa"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Esperant la posició..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "Reprèn"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
@@ -367,11 +374,11 @@ msgstr "Fer senderisme"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "Paddle surf"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Marxa nòrdica"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
