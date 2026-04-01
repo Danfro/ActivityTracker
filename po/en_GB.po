@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2026-03-16 19:09+0000\n"
+"PO-Revision-Date: 2026-04-02 16:09+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "ubports/activitytracker/en_GB/>\n"
@@ -88,7 +88,7 @@ msgstr "Distance: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Duration: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
@@ -209,51 +209,51 @@ msgstr "Select map type:"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
-msgstr ""
+msgstr "Free Thunderforest OSM street map"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Thunderforest cycle map"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr ""
+msgstr "Thunderforest landscape map"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Thunderforest outdoors map"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Thunderforest transport map"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Thunderforest transport-dark map"
 
 #: ../qml/Settings.qml:250
 msgid "Thunderforest spinal map"
-msgstr ""
+msgstr "Thunderforest spinal map"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Thunderforest pioneer map"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Thunderforest atlas map"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Thunderforest mobile atlas map"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Thunderforest neighbourhood map"
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "A big thanks to Thunderforest.com for providing the free map!"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -261,28 +261,29 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"After changing the map type, please restart the app for the changes to be "
+"applied. Otherwise cached map tiles of the map type used before may be "
+"displayed."
 
 #: ../qml/Settings.qml:334
 msgid "Note: If the map is empty, check the API key — it may be wrong."
-msgstr ""
+msgstr "Note: If the map is empty, check the API key — it may be wrong."
 
 #: ../qml/Settings.qml:342
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Please get your own API key:"
 
 #: ../qml/Settings.qml:358
 msgid "Description of map types:"
-msgstr ""
+msgstr "Description of map types:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
 msgstr "Choose sport:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Choose"
+msgstr "Choose later"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
@@ -294,7 +295,7 @@ msgstr "New Activity"
 
 #: ../qml/Tracker.qml:60
 msgid "Paused"
-msgstr ""
+msgstr "Paused"
 
 #: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
 msgid "No data"
@@ -306,39 +307,39 @@ msgstr "Do you want to cancel the activity?"
 
 #: ../qml/Tracker.qml:267
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Yes, stop and discard"
 
 #: ../qml/Tracker.qml:286
 msgid "No, go back"
-msgstr ""
+msgstr "No, go back"
 
 #: ../qml/Tracker.qml:300
 msgid "What would you like to do?"
-msgstr ""
+msgstr "What would you like to do?"
 
 #: ../qml/Tracker.qml:302
 msgid "Stop and save track"
-msgstr ""
+msgstr "Stop and save track"
 
 #: ../qml/Tracker.qml:323
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Stop and discard track"
 
 #: ../qml/Tracker.qml:331
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Nothing, go back"
 
 #: ../qml/Tracker.qml:387
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../qml/Tracker.qml:403
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Waiting for position..."
 
 #: ../qml/Tracker.qml:455
 msgid "Resume"
-msgstr ""
+msgstr "Resume"
 
 #: ../qml/Tracker.qml:455
 msgid "Start"
@@ -370,11 +371,11 @@ msgstr "Rambling"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Nordic walking"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
