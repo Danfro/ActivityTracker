@@ -3,106 +3,106 @@ import Lomiri.Components 1.3
 import "components"
 
 Page {
-   header: PageHeader {
-      id: pageHeader
-      title: i18n.tr("About")
-   }
+    header: PageHeader {
+        id: pageHeader
+        title: i18n.tr("About")
+    }
 
-   Flickable {
+    Flickable {
 
-      id: page_flickable
-      anchors {
-         top: pageHeader.bottom
-         left: parent.left
-         right: parent.right
-         bottom: parent.bottom
-      }
-      contentHeight:  about_column.height + units.gu(6)
-      clip: true
-      Column {
-         id: about_column
-         anchors.centerIn: parent
-         spacing: units.gu(4)
-         width: parent.width-spacing
+        id: page_flickable
+        anchors {
+            top: pageHeader.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+        contentHeight:  about_column.height + units.gu(6)
+        clip: true
+        Column {
+            id: about_column
+            anchors.centerIn: parent
+            spacing: units.gu(4)
+            width: parent.width-spacing
 
-         property string linkColor: " style=\"color:"+theme.palette.normal.activity+";\""
+            property string linkColor: " style=\"color:"+theme.palette.normal.activity+";\""
 
-         Column {
+            Column {
             width: parent.width
 
             Label {
-               font.weight: Font.DemiBold
-               text: i18n.tr("Activity Tracker")
-               font.pointSize: units.gu(2.5)
-               anchors.horizontalCenter: parent.horizontalCenter
+                font.weight: Font.DemiBold
+                text: i18n.tr("Activity Tracker")
+                font.pointSize: units.gu(2.5)
+                anchors.horizontalCenter: parent.horizontalCenter
             }
 
             Label {
-               text: i18n.tr("Version %1").arg(Qt.application.version)
-               anchors.horizontalCenter: parent.horizontalCenter
+                text: i18n.tr("Version %1").arg(Qt.application.version)
+                anchors.horizontalCenter: parent.horizontalCenter
             }
-         }
+            }
 
-         ProportionalShape {
+            ProportionalShape {
             id: logo
             width: units.gu(17)
             source: Image {
-               source: "../images/new-icon.svg"
+                source: "../images/new-icon.svg"
             }
             anchors.horizontalCenter: parent.horizontalCenter
             aspect: LomiriShape.DropShadow
-         }
+            }
 
-         Column {
+            Column {
             width: parent.width
 
             Label {
-               textFormat: Text.RichText
-               text: "<a "+about_column.linkColor+" href=\"https://github.com/Danfro/ActivityTracker\"> © 2024 Daniel Frost</a>"
-               anchors.horizontalCenter: parent.horizontalCenter
-               color: theme.palette.normal.activity
+                textFormat: Text.RichText
+                text: "<a "+about_column.linkColor+" href=\"https://github.com/Danfro/ActivityTracker\"> © 2024 Daniel Frost</a>"
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: theme.palette.normal.activity
             }
 
             Label {
-               textFormat: Text.RichText
-               text: "<a "+about_column.linkColor+" href=\"https://github.com/ernesst/ActivityTracker\"> © 2018-2023 Erne st & Michele Castellazzi</a>"
-               anchors.horizontalCenter: parent.horizontalCenter
-               color: theme.palette.normal.activity
+                textFormat: Text.RichText
+                text: "<a "+about_column.linkColor+" href=\"https://github.com/ernesst/ActivityTracker\"> © 2018-2023 Erne st & Michele Castellazzi</a>"
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: theme.palette.normal.activity
             }
 
             Label {
-               textFormat: Text.RichText
-               text: "<a "+about_column.linkColor+" href=\"https://github.com/cwayne18/ActivityTracker\"> © 2015 Chris Wayne</a>"
-               anchors.horizontalCenter: parent.horizontalCenter
-               color: theme.palette.normal.activity
+                textFormat: Text.RichText
+                text: "<a "+about_column.linkColor+" href=\"https://github.com/cwayne18/ActivityTracker\"> © 2015 Chris Wayne</a>"
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: theme.palette.normal.activity
             }
-         }
+            }
 
-         Column {
+            Column {
             width: parent.width
             spacing: units.gu(2)
 
             Label {
-               textFormat: Text.RichText
-               font.underline: false
-               text: i18n.tr("Released under the terms of the GNU GPL v3.<br>Source code available on") + " <a "+about_column.linkColor+"\" href=\"https://github.com/Danfro/ActivityTracker\">GitHub.com</a>"
-               font.pointSize: units.gu(1)
-               horizontalAlignment: Text.AlignHCenter
-               anchors.horizontalCenter: parent.horizontalCenter
-               onLinkActivated: Qt.openUrlExternally(link)
+                textFormat: Text.RichText
+                font.underline: false
+                text: i18n.tr("Released under the terms of the GNU GPL v3.<br>Source code available on") + " <a "+about_column.linkColor+"\" href=\"https://github.com/Danfro/ActivityTracker\">GitHub.com</a>"
+                font.pointSize: units.gu(1)
+                horizontalAlignment: Text.AlignHCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                onLinkActivated: Qt.openUrlExternally(link)
             }
 
             Label {
-               textFormat: Text.RichText
-               text: i18n.tr('Part of the icons is made by %1 from %2 is licensed by %3')
-               .arg('<a href="http://www.freepik.com" title="Freepik"'+about_column.linkColor+'>Freepik</a>')
-               .arg('<a href="https://www.flaticon.com/" title="Flaticon"'+about_column.linkColor+'>www.flaticon.com</a>')
-               .arg('<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"'+about_column.linkColor+'>CC 3.0 BY</a>.')
-               anchors.horizontalCenter: parent.horizontalCenter
-               horizontalAlignment: Text.AlignHCenter
-               wrapMode: Text.Wrap
-               font.pointSize: units.gu(1)
-               width: parent.width
+                textFormat: Text.RichText
+                text: i18n.tr('Part of the icons is made by %1 from %2 is licensed by %3')
+                .arg('<a href="http://www.freepik.com" title="Freepik"'+about_column.linkColor+'>Freepik</a>')
+                .arg('<a href="https://www.flaticon.com/" title="Flaticon"'+about_column.linkColor+'>www.flaticon.com</a>')
+                .arg('<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"'+about_column.linkColor+'>CC 3.0 BY</a>.')
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.Wrap
+                font.pointSize: units.gu(1)
+                width: parent.width
             }
             Label {
                 textFormat: Text.RichText
@@ -115,32 +115,33 @@ Page {
                 "%7 by %12 from %2").arg("Joan CiberSheep").arg("The Noun Project")
                 .arg("Run CC").arg("Hiking CC").arg("Bike CC").arg("Walk CC").arg("Car CC")
                 .arg("Vladimir Belochkin").arg("Think TIfferent").arg("Sakchai Ruankam").arg("Adrien Coquet").arg("Aneeque Ahmed")
-               anchors.horizontalCenter: parent.horizontalCenter
-               horizontalAlignment: Text.AlignHCenter
-               wrapMode: Text.Wrap
-               font.pointSize: units.gu(1)
-               width: parent.width
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.Wrap
+                font.pointSize: units.gu(1)
+                width: parent.width
             }
-         }
+            }
 
-         Row {
-            anchors.horizontalCenter: parent.horizontalCenter; spacing:units.gu(1)
-            Icon {name:"language-chooser";color:LomiriColors.blue;height:translate.height}
-            Button {
-               id: translate
-               text: i18n.tr("Translate this app on Weblate!")
-               onClicked: Qt.openUrlExternally("https://hosted.weblate.org/projects/ubports/activitytracker/")
+            Row {
+                anchors.horizontalCenter: parent.horizontalCenter; spacing:units.gu(1)
+                Icon {name:"language-chooser";color:LomiriColors.blue;height:translate.height}
+                Button {
+                    id: translate
+                    text: i18n.tr("Translate this app on Weblate!")
+                    onClicked: Qt.openUrlExternally("https://hosted.weblate.org/projects/ubports/activitytracker/")
+                }
             }
-         }
-         Row {
-            anchors.horizontalCenter: parent.horizontalCenter; spacing:units.gu(1)
-            Icon {name:"like";color:LomiriColors.red;height:supportWL.height}
-            Button {
-               id:supportWL
-               text: i18n.tr("Support Weblate")
-               onClicked: Qt.openUrlExternally("https://weblate.org/donate/")
+
+            Row {
+                anchors.horizontalCenter: parent.horizontalCenter; spacing:units.gu(1)
+                Icon {name:"like";color:LomiriColors.red;height:supportWL.height}
+                Button {
+                    id:supportWL
+                    text: i18n.tr("Support Weblate")
+                    onClicked: Qt.openUrlExternally("https://weblate.org/donate/")
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }

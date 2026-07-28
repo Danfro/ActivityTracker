@@ -4,18 +4,18 @@ import QtQuick 2.12
 import "components"
 
 OptionSelector {
-   id: os
-   property Item sportsComponent
-   model: sportsComponent.name
-   selectedIndex: sportsComponent.selected
-   delegate: Component {
-      id: selectorDelegate
-      OptionSelectorDelegate {
-         text: sportsComp.translated[index]
-         iconSource: "../images/"+sportsComp.name[index]+"-symbolic.svg"
-         constrainImage: true
-      }
-   }
+    id: os
+    property Item sportsComponent
+    model: sportsComponent.name
+    selectedIndex: sportsComponent.selected
+    delegate: Component {
+        id: selectorDelegate
+        OptionSelectorDelegate {
+            text: sportsComp.translated[index]
+            iconSource: "../images/"+sportsComp.name[index]+"-symbolic.svg"
+            constrainImage: true
+        }
+    }
 }
 
 // Grid {

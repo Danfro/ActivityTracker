@@ -432,11 +432,11 @@ MainView {
             contentUrl: Qt.resolvedUrl("Tracker.qml")
         }//Bottom edge
 
-        }//Page
+    }//Page
 
-        PageStack {
-            id: stack
-            Component.onCompleted: {
+    PageStack {
+        id: stack
+        Component.onCompleted: {
             am_running = false
             stack.push(mainPageComponent)
         }
