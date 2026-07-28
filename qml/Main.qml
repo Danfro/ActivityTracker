@@ -237,11 +237,11 @@ MainView {
     }//Python
 
     Page {
-        id: page1
+        id: mainPageComponent
         visible: true
         header: PageHeader {
             title: i18n.tr("Recent Activities")
-            id: page1Header
+            id: mainPageComponentHeader
             trailingActionBar.actions: [
                 Action {
                     text: i18n.tr("Settings")
@@ -312,10 +312,10 @@ MainView {
             visible : !(thelist.model.count > 0)
             id: rekt
             anchors {
-                left: page1.left
-                right: page1.right
-                bottom: page1.bottom
-                top: page1Header.bottom
+                left: mainPageComponent.left
+                right: mainPageComponent.right
+                bottom: mainPageComponent.bottom
+                top: mainPageComponentHeader.bottom
             }
             color: "transparent"
             EmptyState {
@@ -332,10 +332,10 @@ MainView {
 
         ListView {
             anchors {
-                left: page1.left
-                right: page1.right
-                bottom: page1.bottom
-                top: page1Header.bottom
+                left: mainPageComponent.left
+                right: mainPageComponent.right
+                bottom: mainPageComponent.bottom
+                top: mainPageComponentHeader.bottom
             }
             width: parent.width
             height: parent.height
@@ -438,7 +438,7 @@ MainView {
             id: stack
             Component.onCompleted: {
             am_running = false
-            stack.push(page1)
+            stack.push(mainPageComponent)
         }
     }
 }

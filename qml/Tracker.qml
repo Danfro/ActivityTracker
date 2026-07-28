@@ -13,8 +13,8 @@ Rectangle {
    onOpenDialogChanged: openDialog == true ? PopupUtils.open(sportselect) : ""
    Sports {id: sportsComp}
    color: Theme.palette.normal.background
-   width: page1.width
-   height: page1.height
+   width: mainPageComponent.width
+   height: mainPageComponent.height
    property int altitudeCorrected
    property bool fixedMarker: true
 
