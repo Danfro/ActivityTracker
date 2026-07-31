@@ -4,6 +4,8 @@ import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3 as Dialogs
 import QtPositioning 5.12
 import QtLocation 5.12
+// import Morph.Web 0.1
+
 import Qt.labs.platform 1.0 //for StandardPaths
 import "components"
 
@@ -26,19 +28,28 @@ Rectangle {
     }
 
     function start_recording() {
-            // loggingpoints.interval = persistentSettings.pointsInterval //useful or not ?
-            //listModel.clear()
-            if (!src.active){
-                src.start()
+        // loggingpoints.interval = persistentSettings.pointsInterval //useful or not ?
+        //listModel.clear()
+        if (!src.active){
+            src.start()
+        }
+        timer.start()
+        if (src.valid){
+            pygpx.create_gpx()
+            if (mapLoader.item) {
+                if (persistentSettings.mapType !== "offline") {
+                    mapLoader.item.addMapItem(pline)
+                    mapLoader.item.center = src.position.coordinate
+                } else {
+                    mapLoader.item.startTrack(
+                        src.position.coordinate.latitude,
+                        src.position.coordinate.longitude
+                    )
+                }
             }
-            timer.start()
-            if (src.valid){
-                pygpx.create_gpx()
-                map.addMapItem(pline)
-                map.center = src.position.coordinate
-                am_running = true
-                is_paused = false
-            }
+            am_running = true
+            is_paused = false
+        }
     }
 
     function pause_recording() {
@@ -57,6 +68,7 @@ Rectangle {
         id: newrunPage
         anchors.fill: parent
         header: PageHeader {
+            id: newRunHeader
             title: (am_running) ? i18n.tr("Activity in Progress") : (is_paused) ? i18n.tr("Paused") : i18n.tr("New Activity")
             leadingActionBar.actions: [
                 Action {
@@ -74,7 +86,19 @@ Rectangle {
                 }
                 ,Action {
                     iconName: fixedMarker ? "gps" : "gps-disabled"
-                    onTriggered: fixedMarker = !fixedMarker
+                    onTriggered: {
+                        fixedMarker = !fixedMarker
+                        if (fixedMarker && src.position.latitudeValid && src.position.longitudeValid) {
+                            var coord = src.position.coordinate
+                            if (mapLoader.item) {
+                                if (persistentSettings.mapType !== "offline") {
+                                    mapLoader.item.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
+                                } else {
+                                    mapLoader.item.centerOn(coord.latitude, coord.longitude)
+                                }
+                            }
+                        }
+                    }
                 }
             ]
         }
@@ -98,35 +122,45 @@ Rectangle {
 
 
             onPositionChanged: {
-            var coord = src.position.coordinate;
-            count++
-            //  console.log("Coordinate:", coord.longitude, coord.latitude);
+                var coord = src.position.coordinate;
+                count++
+                //  console.log("Coordinate:", coord.longitude, coord.latitude);
 
-            // only center position when tracking is active, otherwise allow zoom and pan
-            if (fixedMarker) map.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
-            circle.coordinate = QtPositioning.coordinate(coord.latitude, coord.longitude)
+                // only center position when tracking is active, otherwise allow zoom and pan
+                if (mapLoader.item && fixedMarker) {
+                    if (persistentSettings.mapType !== "offline") {
+                        mapLoader.item.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
+                    } else {
+                        mapLoader.item.centerOn(coord.latitude, coord.longitude)
+                    }
+                }
+                circle.coordinate = QtPositioning.coordinate(coord.latitude, coord.longitude)
 
-            if (gpxx && am_running && !is_paused) {
-                if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
-                    //pygpx.addpoint(gpxx,coord.latitude,coord.longitude,coord.altitude)
-                    altitudeCorrected = coord.altitude + persistentSettings.altitudeOffset
-                    pline.addCoordinate(QtPositioning.coordinate(coord.latitude,coord.longitude, altitudeCorrected))
-                    pygpx.current_distance(gpxx)
-                    distlabel.text = dist
-                    // console.warn("========================")
-                    //console.warn(pygpx.current_distance(gpxx))
+                if (gpxx && am_running && !is_paused) {
+                    if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
+                        //pygpx.addpoint(gpxx,coord.latitude,coord.longitude,coord.altitude)
+                        altitudeCorrected = coord.altitude + persistentSettings.altitudeOffset
+                        if (persistentSettings.mapType !== "offline") {
+                            pline.addCoordinate(QtPositioning.coordinate(coord.latitude, coord.longitude, altitudeCorrected))
+                        } else if (mapLoader.item) {
+                            mapLoader.item.addTrackPoint(coord.latitude, coord.longitude)
+                        }
+                        pygpx.current_distance(gpxx)
+                        distlabel.text = dist
+                        // console.warn("========================")
+                        //console.warn(pygpx.current_distance(gpxx))
+                    }
+                    if (src.position.altitudeValid) {
+                        altlabel.text = formatAlt(altitudeCorrected)
+                    } else {
+                        altlabel.text = i18n.tr("No data")
+                    }
+                    if (src.position.speedValid) {
+                        speedlabel.text = formatSpeed(src.position.speed)
+                    } else {
+                        speedlabel.text = i18n.tr("No data")
+                    }
                 }
-                if (src.position.altitudeValid) {
-                    altlabel.text = formatAlt(altitudeCorrected)
-                } else {
-                    altlabel.text = i18n.tr("No data")
-                }
-                if (src.position.speedValid) {
-                    speedlabel.text = formatSpeed(src.position.speed)
-                } else {
-                    speedlabel.text = i18n.tr("No data")
-                }
-            }
             }
         }
         Timer {
@@ -150,97 +184,111 @@ Rectangle {
             src.start()
         }
 
-        Map {
-            id: map
+        Loader {
+            id: mapLoader
+            // anchors.top: mainPage.newRunHeader.bottom
+            // anchors.bottom: parent.bottom
+            // anchors.left: parent.left
+            // anchors.right: parent.right
             anchors.fill: parent
-            zoomLevel: map.maximumZoomLevel - 2
-            color: Theme.palette.normal.background
-            activeMapType: persistentSettings.mapType == "free" ? supportedMapTypes[0] : supportedMapTypes[supportedMapTypes.length-1]
-            // zero is Street map, only this style for free is allowed
-            // the very last one is custom map with value 100, use that for for Thunderforest maps
-            // available custom maps: https://www.thunderforest.com/maps/
-            // they require a API key, free hobby plan available
-            plugin : Plugin {
-            id: plugin
-            name: "osm"
+            sourceComponent: persistentSettings.mapType==="offline" ? offlineMapComponent : onlineMapComponent
+        }
 
-            required.mapping: Plugin.AnyMappingFeatures
-            required.geocoding: Plugin.AnyGeocodingFeatures
+        // ---- Thunderforest online map ----
+        Component {
+            id: onlineMapComponent
+            Map {
+                id: map
+                anchors.fill: parent
+                zoomLevel: map.maximumZoomLevel - 2
+                color: Theme.palette.normal.background
+                activeMapType: persistentSettings.mapType == "offline" ? supportedMapTypes[0] : supportedMapTypes[supportedMapTypes.length-1]
+                // zero is Street map, only this style for free is allowed
+                // the very last one is custom map with value 100, use that for for Thunderforest maps
+                // available custom maps: https://www.thunderforest.com/maps/
+                // they require a API key, free hobby plan available
+                plugin : Plugin {
+                id: plugin
+                name: "osm"
 
-            // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
-            // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
+                required.mapping: Plugin.AnyMappingFeatures
+                required.geocoding: Plugin.AnyGeocodingFeatures
 
-            // url structure: "http://tile.thunderforest.com/landscape/%z/%x/%y.png?apikey=YOURAPIKEY&fake=.png"
+                // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
+                // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
 
-            PluginParameter {
-                id: mapTypeParameter
-                name: "osm.mapping.custom.host"
-                value: "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
-            }
-            PluginParameter {
-                name: "osm.mapping.custom.datacopyright"
-                value: "www.osm.org/copyright"
-            }
-            PluginParameter {
-                name: "osm.mapping.custom.mapcopyright"
-                value: "www.thunderforest.com"
-            }
-            PluginParameter {
-                name: "osm.mapping.offline.directory"
-                value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
-            }
+                // url structure: "http://tile.thunderforest.com/landscape/%z/%x/%y.png?apikey=YOURAPIKEY&fake=.png"
 
-            // example code for HERE map plugin
-            // name: "here"
-            // https://www.here.com/docs/bundle/raster-tile-api-migration-guide/page/README.html
-            // https://doc.qt.io/qt-5/location-plugin-here.html
-            // PluginParameter { name: "here.app_id"; value: "YOURAPP_ID" }
-            // PluginParameter { name: "here.token"; value: "YOURAPIKEY" }
-            // PluginParameter { name: "here.proxy"; value: "system" }
+                PluginParameter {
+                    id: mapTypeParameter
+                    name: "osm.mapping.custom.host"
+                    value: "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+                }
+                PluginParameter {
+                    name: "osm.mapping.custom.datacopyright"
+                    value: "www.osm.org/copyright"
+                }
+                PluginParameter {
+                    name: "osm.mapping.custom.mapcopyright"
+                    value: "www.thunderforest.com"
+                }
+                PluginParameter {
+                    name: "osm.mapping.offline.directory"
+                    value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
+                }
 
-            // PluginParameter { name: "here.places.api_version"; value: 2 }
-            // PluginParameter {
-            //    name: "here.mapping.host"
-            //    value: "https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/11/1100/671/256/png8?style=default"
-            // }
-            // PluginParameter {
-            //    name: "here.mapping.host.aerial"
-            //    value: "https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/satellite.day/11/1100/671/256/png8?apiKey=YOURAPIKEY"
-            // }
+                // example code for HERE map plugin
+                // name: "here"
+                // https://www.here.com/docs/bundle/raster-tile-api-migration-guide/page/README.html
+                // https://doc.qt.io/qt-5/location-plugin-here.html
+                // PluginParameter { name: "here.app_id"; value: "YOURAPP_ID" }
+                // PluginParameter { name: "here.token"; value: "YOURAPIKEY" }
+                // PluginParameter { name: "here.proxy"; value: "system" }
 
-            // PluginParameter { name: "here.places.api_version"; value: 3 }
-            // PluginParameter {
-            //    name: "here.mapping.host"
-            //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=explore.day&apiKey=YOURAPIKEY"
-            // }
-            // PluginParameter {
-            //    name: "here.mapping.host.aerial"
-            //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=satellite.day&apiKey=YOURAPIKEY"
-            // }
+                // PluginParameter { name: "here.places.api_version"; value: 2 }
+                // PluginParameter {
+                //    name: "here.mapping.host"
+                //    value: "https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/11/1100/671/256/png8?style=default"
+                // }
+                // PluginParameter {
+                //    name: "here.mapping.host.aerial"
+                //    value: "https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/satellite.day/11/1100/671/256/png8?apiKey=YOURAPIKEY"
+                // }
 
-            }
-            Component.onCompleted: {
-            map.addMapItem(circle)
+                // PluginParameter { name: "here.places.api_version"; value: 3 }
+                // PluginParameter {
+                //    name: "here.mapping.host"
+                //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=explore.day&apiKey=YOURAPIKEY"
+                // }
+                // PluginParameter {
+                //    name: "here.mapping.host.aerial"
+                //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=satellite.day&apiKey=YOURAPIKEY"
+                // }
 
-            // example code for retrieving supported map types
-            // available map types for the plugin are listed as:
-            // id: 0 name: Street Map value: 1
-            // id: 1 name: Cycle Map value: 10
-            // id: 2 name: Transit Map value: 6
-            // id: 3 name: Night Transit Map value: 6
-            // id: 4 name: Terrain Map value: 4
-            // id: 5 name: Hiking Map value: 8
-            // id: 6 name: Custom URL Map value: 100
-            // for Thunderforest maps always use custom map type
-            // https://doc.qt.io/archives/qt-5.12/qml-qtlocation-maptype.html
+                }
+                Component.onCompleted: {
+                    map.addMapItem(circle)
 
-            // let supportedMapTypes = map.supportedMapTypes
-            // for (let i = 0; i < supportedMapTypes.length; ++i) {
-            //     console.log("id: " + i + " name: " + supportedMapTypes[i].name + " value: " + supportedMapTypes[i].style)
-            // }
-            // console.log("current map type: " + map.activeMapType)
-            }
-        }//Map
+                    // example code for retrieving supported map types
+                    // available map types for the plugin are listed as:
+                    // id: 0 name: Street Map value: 1
+                    // id: 1 name: Cycle Map value: 10
+                    // id: 2 name: Transit Map value: 6
+                    // id: 3 name: Night Transit Map value: 6
+                    // id: 4 name: Terrain Map value: 4
+                    // id: 5 name: Hiking Map value: 8
+                    // id: 6 name: Custom URL Map value: 100
+                    // for Thunderforest maps always use custom map type
+                    // https://doc.qt.io/archives/qt-5.12/qml-qtlocation-maptype.html
+
+                    // let supportedMapTypes = map.supportedMapTypes
+                    // for (let i = 0; i < supportedMapTypes.length; ++i) {
+                    //     console.log("id: " + i + " name: " + supportedMapTypes[i].name + " value: " + supportedMapTypes[i].style)
+                    // }
+                    // console.log("current map type: " + map.activeMapType)
+                }
+            }//Map
+        }
 
         MapQuickItem {
             id: circle
@@ -249,6 +297,7 @@ Rectangle {
             coordinate : src.position.coordinate
             opacity: 0.4
             anchorPoint: Qt.point(marker.width/2, marker.height/2)
+            z: 5
         }
 
         MapPolyline {
@@ -257,6 +306,12 @@ Rectangle {
             line.color: 'red'
             path: []
         }
+
+        // ---- OSM Scout Server offline map ----
+        OfflineMap {
+            id: offlineMapComponent
+        }
+
         Component {
             id: areyousure
             Dialogs.Dialog {
@@ -273,7 +328,7 @@ Rectangle {
                         pygpx.format_timer(0)
                         var distfloat
                         distfloat = parseFloat(dist.slice(0,-2)) //clean up the gpx array but not the maps / path
-                        map.removeMapItem(pline)
+                        if (persistentSettings.mapType !== "offline") mapLoader.item.removeMapItem(pline)
                         timer.restart()
                         timer.stop()
                         am_running = false
@@ -350,7 +405,7 @@ Rectangle {
                 pygpx.format_timer(0)
                 timer.restart()
                 timer.stop()
-                map.removeMapItem(pline)
+                if (persistentSettings.mapType !== "offline") mapLoader.item.removeMapItem(pline)
                 //  listModel.append({"name": tf.displayText, "act_type": sportsComp.name[sportsComp.selected]})
                 //   pygpx.addrun(tf.displayText)
                 listModel.clear()
@@ -509,6 +564,7 @@ Rectangle {
                     id: mapText
                     text: "Map © "
                 }
+                // TODO: add maplibre and OSMscout for offline map
                 Label {
                     id: thunderforest
                     text: "www.thunderforest.com"

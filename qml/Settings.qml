@@ -241,20 +241,20 @@ Page {
                 }
                 text: persistentSettings.myApiKey ? i18n.tr("Select map type:") : i18n.tr("API key required for other map types")
                 model: [
-                    i18n.tr("Free Thunderforest OSM street map"),
+                    i18n.tr("OSMscout server offline map"),
                     i18n.tr("Thunderforest cycle map"),
                     i18n.tr("Thunderforest landscape map"),
                     i18n.tr("Thunderforest outdoors map"),
                     i18n.tr("Thunderforest transport map"),
                     i18n.tr("Thunderforest transport-dark map"),
-                    i18n.tr("Thunderforest spinal map"),
+                    i18n.tr("Thunderforest Spinal map"),
                     i18n.tr("Thunderforest pioneer map"),
                     i18n.tr("Thunderforest atlas map"),
                     i18n.tr("Thunderforest mobile atlas map"),
                     i18n.tr("Thunderforest neighbourhood map")
                 ]
                 property var map_id: [
-                    "free",
+                    "offline",
                     "cycle",
                     "landscape",
                     "outdoors",
@@ -268,7 +268,7 @@ Page {
                 ]
                 expanded: false
                 selectedIndex: switch(persistentSettings.mapType) {
-                    case "free": return 0;
+                    case "offline": return 0;
                     case "cycle": return 1;
                     case "landscape": return 2;
                     case "outdoors": return 3;
@@ -313,12 +313,21 @@ Page {
                 spacing: units.gu(1)
 
                 Label {
-                    id: thanksLabel
-                    text: "\n" + i18n.tr("A big thanks to Thunderforest.com for providing the free map!")
+                    id: thanksOSMLabel
+                    text: "\n" + i18n.tr("A big thanks to OSMscoutserver and OSM folks for providing the free map!")
                     font.bold: true
                     width: parent.width - units.gu(4)
                     wrapMode: QQC.Text.WordWrap
-                    visible: persistentSettings.mapType == "free"
+                    visible: persistentSettings.mapType === "offline"
+                }
+
+                Label {
+                    id: thanksTFLabel
+                    text: "\n" + i18n.tr("A big thanks to Thunderforest for providing their maps!")
+                    font.bold: true
+                    width: parent.width - units.gu(4)
+                    wrapMode: QQC.Text.WordWrap
+                    visible: persistentSettings.mapType !== "offline"
                 }
 
                 Label {
@@ -335,19 +344,19 @@ Page {
                     font.italic: true
                     width: parent.width - units.gu(4)
                     wrapMode: QQC.Text.WordWrap
-                    visible: !persistentSettings.mapType == "free"
+                    visible: persistentSettings.mapType !== "offline"
                 }
                 Label {
                     id: apiKeyDescription
                     text: "\n" + i18n.tr("Please get your own API key:")
-                    visible: persistentSettings.myApiKey == ""
+                    visible: persistentSettings.myApiKey === ""
                 }
                 Label {
                     id: apiKeylink
                     text: "https://manage.thunderforest.com/"
                     color: theme.palette.normal.activity
                     wrapMode: QQC.Text.WordWrap
-                    visible: persistentSettings.myApiKey == ""
+                    visible: persistentSettings.myApiKey === ""
                     QQC.MouseArea {
                         anchors.fill: parent
                         onClicked: Qt.openUrlExternally('https://manage.thunderforest.com/')

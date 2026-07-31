@@ -6,7 +6,7 @@ This repository is a fork of the [Xenial app version](https://github.com/ernesst
 
 Due to older QML lib on the original 15.04 version, the changes couldn't be retrofitted.
 The app had been upgraded by Michele and Ernes_t to work on 16.04 Ubuntu Touch. They did develop it up to v0.15.
-@Danfro (myself) did now update the app to work on focal.
+@Danfro (myself) did now update the app to work on focal and I am still maintaining the app.
 
 Please see the [changelog](https://github.com/Danfro/ActivityTracker/blob/master/CHANGELOG.md) for a detailed list of changes.
 
@@ -17,6 +17,18 @@ Please see the [changelog](https://github.com/Danfro/ActivityTracker/blob/master
  - due to a OS limitation the recording must occur with the screen on, otherwise the app is send to background and can not receive position information anymore
  - the GPX files are located in .local/share/activitytracker.cwayne18/
  - currently the map shows "api key required", this is know and hopefully can be fixed soon
+
+## Map sources
+As with version 2.0.0 there are two map sources that can be used with Activity Tracker app:
+a) OSMscoutserver free offline maps (default map)
+b) Thunderforest maps (api key required)
+
+OSMscoutserver can be installed from OpenStore. Download maps for your area to use them with Activity Tracker.
+To find out how to get a Thunderforest api key, please visit their website: [https://manage.thunderforest.com/](https://manage.thunderforest.com/).
+
+To display OSM offline maps, [maplibre 4.7.1](https://github.com/maplibre/maplibre-gl-js/releases/tag/v4.7.1) is used in a WebEngineView. With Qt5 based morph we can't use any more recent version.
+
+_Note: The free Thunderforest map has been discontinued. Thanks to Thunderforest folks for providing it over all the recent years._
 
 ## Translations
  This app can be translated on [Hosted Weblate](https://hosted.weblate.org/projects/ubports/activitytracker/). The localization platform of this project is sponsored by Hosted Weblate via their free hosting plan for Libre and Open Source Projects.

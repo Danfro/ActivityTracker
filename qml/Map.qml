@@ -7,11 +7,13 @@ import QtSystemInfo 5.0
 import QtLocation 5.12
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
-import Morph.Web 0.1
+// import Morph.Web 0.1
+// import QtWebEngine 1.10  // for offline map
 import Qt.labs.platform 1.0 //for StandardPaths
-
+import "components"
 
 Page {
+    id: mainPage
     header: PageHeader {
         id: map_header
         title: i18n.tr("Activity Map")
@@ -28,12 +30,11 @@ Page {
             }
         ]
     }
-    id: mainPage
     property var polyline
     property var index
 
     ActivityIndicator {
-        id:refreshmap
+        id: refreshmap
         anchors.centerIn: parent
         z: 5
     }
@@ -41,67 +42,85 @@ Page {
     Python {
         id: pygpxmap
         Component.onCompleted: {
-
             addImportPath(Qt.resolvedUrl('py/'));
             importModule("geepeeex", function() {
-            // console.warn("calling python script to load the gpx file")
-            refreshmap.visible = true
-            refreshmap.running = true
-            refreshmap.focus = true
-            pygpxmap.call("geepeeex.visu_gpx", [polyline], function(result) {
-                var t = new Array (0)
-                for (var i=0; i<result.length; i++) {
-                    pline.addCoordinate(QtPositioning.coordinate(result[i].latitude,result[i].longitude));
+                refreshmap.visible = true
+                refreshmap.running = true
+                refreshmap.focus = true
+                pygpxmap.call("geepeeex.visu_gpx", [polyline], function(result) {
+                    var coords = []
+                    for (var i = 0; i < result.length; i++) {
+                        coords.push([result[i].latitude, result[i].longitude])
+                    }
+                    // Egal welche Karte aktiv ist: gleiche Aufruf-Signatur
+                    if (mapLoader.item) {
+                        mapLoader.item.showTrack(coords)
+                    }
+                    refreshmap.visible = false
+                    refreshmap.running = false
+                    refreshmap.focus = false
+                });
+            });
+        }
+    }
+
+    Loader {
+        id: mapLoader
+        anchors.top: map_header.bottom
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
+        sourceComponent: persistentSettings.mapType==="offline" ? offlineMapComponent : onlineMapComponent
+    }
+
+    // ---- Thunderforest online map ----
+    Component {
+        id: onlineMapComponent
+        Map {
+            id: map
+            center: QtPositioning.coordinate(persistentSettings.initialLat, persistentSettings.initialLong)
+            zoomLevel: map.maximumZoomLevel - 5
+            color: Theme.palette.normal.background
+            activeMapType: supportedMapTypes[supportedMapTypes.length - 1]
+            plugin: Plugin {
+                name: "osm"
+                required.mapping: Plugin.AnyMappingFeatures
+                required.geocoding: Plugin.AnyGeocodingFeatures
+                PluginParameter {
+                    name: "osm.mapping.custom.host"
+                    value: "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
                 }
-                map.center = QtPositioning.coordinate(result[(i/2).toFixed(0)].latitude,result[(i/2).toFixed(0)].longitude); // Center the map on the enter of the track
-                refreshmap.visible = false
-                refreshmap.running = false
-                refreshmap.focus = false
-            });
-            });
-        }//Component.onCompleted
-    }
-
-    Map {
-        id: map
-        anchors.fill: parent
-        center: QtPositioning.coordinate(29.62289936, -95.64410114) // Oslo
-        zoomLevel: map.maximumZoomLevel - 5
-        color: Theme.palette.normal.background
-        activeMapType: supportedMapTypes[supportedMapTypes.length-1]  // zero is Street map, only this style for free/hobby plan is allowed, the very last one is custom map
-        plugin : Plugin {
-            id: plugin
-            name: "osm"
-
-            required.mapping: Plugin.AnyMappingFeatures
-            required.geocoding: Plugin.AnyGeocodingFeatures
-
-            // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
-            // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
-            PluginParameter {
-                name: "osm.mapping.custom.host"
-                value: "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+                PluginParameter { name: "osm.mapping.custom.datacopyright"; value: "www.osm.org/copyright" }
+                PluginParameter { name: "osm.mapping.custom.mapcopyright"; value: "www.thunderforest.com" }
+                PluginParameter {
+                    name: "osm.mapping.offline.directory"
+                    value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.12/tiles/osm"
+                }
             }
-            PluginParameter {
-                name: "osm.mapping.custom.datacopyright"
-                value: "www.osm.org/copyright"
-            }
-            PluginParameter {
-                name: "osm.mapping.custom.mapcopyright"
-                value: "www.thunderforest.com"
-            }
-            PluginParameter {
-                name: "osm.mapping.offline.directory"
-                value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
-            }
-        }
 
-        MapPolyline {
-            id: pline
-            line.width: 4
-            line.color: 'red'
-            path: []
+            MapPolyline {
+                id: pline
+                line.width: 4
+                line.color: 'red'
+                path: []
+            }
+
+            // Same-named function as the offline variant
+            function showTrack(coords) {
+                pline.path = []
+                for (var i = 0; i < coords.length; i++) {
+                    pline.addCoordinate(QtPositioning.coordinate(coords[i][0], coords[i][1]))
+                }
+                if (coords.length > 0) {
+                    map.center = QtPositioning.coordinate(coords[Math.floor(coords.length / 2)][0],
+                                                           coords[Math.floor(coords.length / 2)][1])
+                }
+            }
         }
     }
 
+    // ---- OSM Scout Server offline map ----
+    OfflineMap {
+        id: offlineMapComponent
+    }
 }

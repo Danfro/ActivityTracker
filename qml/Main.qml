@@ -101,10 +101,14 @@ MainView {
     }
     Settings {
         id: persistentSettings
+        property bool useOfflineMap: false
         property string myApiKey: ""
-        property string mapType: "free"
+        property string mapType: "offline"
         property int pointsInterval: 5000
         property int altitudeOffset: 0
+        property double initialLat: -95.64410114
+        property double initialLong: 29.62289936
+        property int initialZoom: 12
         // onPointsIntervalChanged: {/*console.log("pointsInterval has changed: "+pointsInterval);*/loggingpoints.interval = pointsInterval}
         // onaltitudeOffsetChanged: {console.log("altitudeOffset has changed: "+altitudeOffset)}
     }
@@ -309,7 +313,7 @@ MainView {
         }
 
         Rectangle {
-            visible : !(thelist.model.count > 0)
+            visible : !(trackList.model.count > 0)
             id: rekt
             anchors {
                 left: mainPageComponent.left
@@ -331,6 +335,7 @@ MainView {
         }
 
         ListView {
+            id: trackList
             anchors {
                 left: mainPageComponent.left
                 right: mainPageComponent.right
@@ -340,7 +345,7 @@ MainView {
             width: parent.width
             height: parent.height
             clip:true
-            id:thelist
+
             model: filtered ? filteredModel : listModel
 
             delegate: ListItem {
@@ -378,7 +383,7 @@ MainView {
                         onTriggered: {
                             indexrun = id;
                             //  print(indexrun);
-                            PopupUtils.open(edit_dialog)
+                            PopupUtils.open(edit_dialog,mainView,{trackName: name})
                         }
                     },
                     Action {
@@ -394,6 +399,7 @@ MainView {
                 }//Trailing
             }//ListItem
         }
+
         Component {
             id: infogpx
             Dialog {
@@ -418,13 +424,27 @@ MainView {
             }
         }
 
+        OsmScoutServerCheck {
+            id: offlineMapCheck
+            onCheckFinished: {
+                if (!available) {
+                    newrunEdge.enabled = false
+                    trackList.enabled = false
+                    pageStack.push(Qt.resolvedUrl("NoOfflineMapInfo.qml"))
+                } else {
+                    newrunEdge.enabled = true
+                    trackList.enabled = true
+                }
+            }
+        }
+
         BottomEdge {
             id: newrunEdge
             hint {
                 text: i18n.tr("Log new Activity")
                 iconSource: "../images/runman.svg"
                 status: "Active"
-                flickable: thelist
+                flickable: trackList
             }
             onCollapseStarted: hint.status = "Active"
             onCommitCompleted: contentItem.openDialog = true
@@ -441,4 +461,7 @@ MainView {
             stack.push(mainPageComponent)
         }
     }
+
+    // do migration from former free map to now default offline map
+    Component.onCompleted: persistentSettings.mapType = persistentSettings.mapType.replace("free","offline")
 }
