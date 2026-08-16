@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-12 21:28+0000\n"
-"PO-Revision-Date: 2019-11-16 16:04+0000\n"
-"Last-Translator: Theeiss <azaz9a@gmail.com>\n"
+"PO-Revision-Date: 2026-08-17 04:51+0000\n"
+"Last-Translator: Bigode Bugado <futebolista596@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"activity-tracker/translations/pt_BR/>\n"
+"ubports/activitytracker/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../qml/About.qml:8 ../qml/Settings.qml:20
 msgid "About"
@@ -28,10 +28,8 @@ msgid "Activity Tracker"
 msgstr "Rastreador de Atividade"
 
 #: ../qml/About.qml:41
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Versão"
+msgstr "Versão %1"
 
 #: ../qml/About.qml:88
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -84,14 +82,12 @@ msgstr "Escolher"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:156 ../qml/Main.qml:159
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Distância: "
+msgstr "Distância: %1 %2"
 
 #: ../qml/Main.qml:162
 msgid "Duration: "
-msgstr ""
+msgstr "Duração: "
 
 #: ../qml/Main.qml:243
 msgid "Recent Activities"
@@ -146,26 +142,24 @@ msgid "Info"
 msgstr "Info"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Distância: "
+msgstr "Distância:"
 
 #: ../qml/Settings.qml:56
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "medidor (s)"
+msgstr "Kilometro(s)"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Milhas"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Nota: as medidas  normalmente usadas Britânica e Americana, 1.609344 km = 1 "
+"milha, 1 km = 0.621371 milhas"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -194,11 +188,11 @@ msgstr "medidor (s)"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Insira a chave da API"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Inserir"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
@@ -209,10 +203,8 @@ msgid "API key required for other map types"
 msgstr ""
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Selecione um esporte abaixo"
+msgstr "Selecione o tipo de mapa"
 
 #: ../qml/Settings.qml:244
 msgid "Free Thunderforest OSM street map"
@@ -260,7 +252,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:317
 msgid "A big thanks to Thunderforest.com for providing the free map!"
-msgstr ""
+msgstr "Um grande abraço ao Thunderforest.com por prover o mapa gratuito"
 
 #: ../qml/Settings.qml:326
 msgid ""
@@ -286,10 +278,8 @@ msgid "Choose sport:"
 msgstr "Escolha o esporte:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Escolher"
+msgstr "Escolha depois"
 
 #: ../qml/Tracker.qml:60
 msgid "Activity in Progress"
