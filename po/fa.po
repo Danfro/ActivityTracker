@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-12 21:28+0000\n"
+"POT-Creation-Date: 2026-07-31 05:02+0000\n"
 "PO-Revision-Date: 2020-06-12 16:41+0000\n"
 "Last-Translator: Alireza Jabbari <rhrurhraj@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/activity-tracker/"
@@ -19,30 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
-#: ../qml/About.qml:8 ../qml/Settings.qml:20
+#: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
 msgstr "درباره"
 
-#: ../qml/About.qml:35
+#: ../qml/About.qml:40
 msgid "Activity Tracker"
 msgstr "فعالیت سنج"
 
-#: ../qml/About.qml:41
+#: ../qml/About.qml:46
 #, fuzzy
 #| msgid "Version"
 msgid "Version %1"
 msgstr "نسخه"
 
-#: ../qml/About.qml:88
+#: ../qml/About.qml:97
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
 msgstr "منتشر شده تحت قانون GNU GPL v3.<br> سورس کد در دسترس است در"
 
-#: ../qml/About.qml:97
+#: ../qml/About.qml:106
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
 msgstr "بخشی از آیکون ها ساخته شده توسط %1 از %2 پروانه داده شده توسط %3"
 
 #. TRANSLATORS: %1 is the name of the author of the icons, %2 is the project name. args from %3 to %7 are icon name while %8 to %12 are original authors names
-#: ../qml/About.qml:110
+#: ../qml/About.qml:119
 msgid ""
 "Thanks to %1 for the icons based on:<br>%3 by %8 from %2,<br>%4 by %9 from "
 "%2,<br>%5 by %10 from %2,<br>%6 by %11 from %2,<br>%7 by %12 from %2"
@@ -50,13 +50,17 @@ msgstr ""
 "با تشکر از %1 برای آیکون ها بر اساس:<br>%3 توسط %8 از %2,<br>%4 توسط %9 از "
 "%2,<br>%5 توسط %10 از %2,<br>%6 توسط %11 از %2,<br>%7 توسط %12 از %2"
 
-#: ../qml/About.qml:131
+#: ../qml/About.qml:140
 msgid "Translate this app on Weblate!"
 msgstr "این برنامه را در وبلیت ترجمه کنید !"
 
-#: ../qml/About.qml:140
+#: ../qml/About.qml:150
 msgid "Support Weblate"
 msgstr "حمایت از وبلیت"
+
+#: ../qml/About.qml:160
+msgid "Donate me a coffee"
+msgstr ""
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -83,65 +87,65 @@ msgid "Choose"
 msgstr "انتخاب"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
-#: ../qml/Main.qml:156 ../qml/Main.qml:159
+#: ../qml/Main.qml:160 ../qml/Main.qml:163
 #, fuzzy
 #| msgid "Distance: "
 msgid "Distance: %1 %2"
 msgstr "مسافت: "
 
-#: ../qml/Main.qml:162
+#: ../qml/Main.qml:166
 msgid "Duration: "
 msgstr ""
 
-#: ../qml/Main.qml:243
+#: ../qml/Main.qml:247
 msgid "Recent Activities"
 msgstr "فعالیت های اخیر"
 
-#: ../qml/Main.qml:247 ../qml/Settings.qml:16
+#: ../qml/Main.qml:251 ../qml/Settings.qml:16
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: ../qml/Main.qml:252
+#: ../qml/Main.qml:256
 msgid "Filter"
 msgstr "فیلتر"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:261
 msgid "Import"
 msgstr "وارد کردن"
 
-#: ../qml/Main.qml:286 ../qml/Tracker.qml:342
+#: ../qml/Main.qml:290 ../qml/Tracker.qml:397
 msgid "Select the type and the name of your activity"
 msgstr "انتخاب نوع و نام فعالیت موردنظر"
 
-#: ../qml/Main.qml:301
+#: ../qml/Main.qml:305
 msgid "Edit the type and the name of your activity"
 msgstr "نوع و نام فعالیت خود را ویرایش کنید"
 
-#: ../qml/Main.qml:322
+#: ../qml/Main.qml:326
 msgid "No saved activities"
 msgstr "هیچ فعالیتی ذخیره نشده"
 
-#: ../qml/Main.qml:325
+#: ../qml/Main.qml:329
 msgid "Swipe up to log a new activity"
 msgstr "به بالا بکشید تا فعالیت جدیدی خیره کنید"
 
-#: ../qml/Main.qml:401
+#: ../qml/Main.qml:407
 msgid "Track information"
 msgstr "اطلاعات مسیر"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:421
 msgid "Close"
 msgstr "بستن"
 
-#: ../qml/Main.qml:424
+#: ../qml/Main.qml:444
 msgid "Log new Activity"
 msgstr "ذخیره فعالیت جدید"
 
-#: ../qml/Map.qml:17
+#: ../qml/Map.qml:19
 msgid "Activity Map"
 msgstr "نقشه مسیر فعالیت"
 
-#: ../qml/Map.qml:20
+#: ../qml/Map.qml:22
 msgid "Info"
 msgstr "اطلاعات"
 
@@ -215,7 +219,7 @@ msgid "Select map type:"
 msgstr "یک رشته ورزشی را در لیست زیر انتخاب کنید"
 
 #: ../qml/Settings.qml:244
-msgid "Free Thunderforest OSM street map"
+msgid "OSMscout server offline map"
 msgstr ""
 
 #: ../qml/Settings.qml:245
@@ -239,7 +243,7 @@ msgid "Thunderforest transport-dark map"
 msgstr ""
 
 #: ../qml/Settings.qml:250
-msgid "Thunderforest spinal map"
+msgid "Thunderforest Spinal map"
 msgstr ""
 
 #: ../qml/Settings.qml:251
@@ -259,25 +263,30 @@ msgid "Thunderforest neighbourhood map"
 msgstr ""
 
 #: ../qml/Settings.qml:317
-msgid "A big thanks to Thunderforest.com for providing the free map!"
+msgid ""
+"A big thanks to OSMscoutserver and OSM folks for providing the free map!"
 msgstr ""
 
 #: ../qml/Settings.qml:326
+msgid "A big thanks to Thunderforest for providing their maps!"
+msgstr ""
+
+#: ../qml/Settings.qml:335
 msgid ""
 "After changing the map type, please restart the app for the changes to be "
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
 
-#: ../qml/Settings.qml:334
+#: ../qml/Settings.qml:343
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
 
-#: ../qml/Settings.qml:342
+#: ../qml/Settings.qml:351
 msgid "Please get your own API key:"
 msgstr ""
 
-#: ../qml/Settings.qml:358
+#: ../qml/Settings.qml:367
 msgid "Description of map types:"
 msgstr ""
 
@@ -291,69 +300,104 @@ msgstr "انتخاب ورزش:"
 msgid "Choose later"
 msgstr "انتخاب"
 
-#: ../qml/Tracker.qml:60
+#: ../qml/Tracker.qml:72
 msgid "Activity in Progress"
 msgstr "فعالیت درحال انجام"
 
-#: ../qml/Tracker.qml:60
+#: ../qml/Tracker.qml:72
 msgid "New Activity"
 msgstr "فعالیت جدید"
 
-#: ../qml/Tracker.qml:60
+#: ../qml/Tracker.qml:72
 msgid "Paused"
 msgstr ""
 
-#: ../qml/Tracker.qml:122 ../qml/Tracker.qml:127
+#: ../qml/Tracker.qml:156 ../qml/Tracker.qml:161
 msgid "No data"
 msgstr "فاقد داده"
 
-#: ../qml/Tracker.qml:264
+#: ../qml/Tracker.qml:319
 msgid "Do you want to cancel the activity?"
 msgstr "مایل به انصراف از این فعالیت هستید؟"
 
-#: ../qml/Tracker.qml:267
+#: ../qml/Tracker.qml:322
 msgid "Yes, stop and discard"
 msgstr ""
 
-#: ../qml/Tracker.qml:286
+#: ../qml/Tracker.qml:341
 msgid "No, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:300
+#: ../qml/Tracker.qml:355
 msgid "What would you like to do?"
 msgstr ""
 
-#: ../qml/Tracker.qml:302
+#: ../qml/Tracker.qml:357
 msgid "Stop and save track"
 msgstr ""
 
-#: ../qml/Tracker.qml:323
+#: ../qml/Tracker.qml:378
 msgid "Stop and discard track"
 msgstr ""
 
-#: ../qml/Tracker.qml:331
+#: ../qml/Tracker.qml:386
 msgid "Nothing, go back"
 msgstr ""
 
-#: ../qml/Tracker.qml:387
+#: ../qml/Tracker.qml:442
 msgid "Pause"
 msgstr ""
 
-#: ../qml/Tracker.qml:403
+#: ../qml/Tracker.qml:458
 msgid "Waiting for position..."
 msgstr ""
 
-#: ../qml/Tracker.qml:455
+#: ../qml/Tracker.qml:510
 msgid "Resume"
 msgstr ""
 
-#: ../qml/Tracker.qml:455
+#: ../qml/Tracker.qml:510
 msgid "Start"
 msgstr "شروع"
 
-#: ../qml/Tracker.qml:465
+#: ../qml/Tracker.qml:520
 msgid "Stop"
 msgstr "توقف"
+
+#: ../qml/components/NoOfflineMapInfo.qml:10
+msgid "Offline map unavailable!"
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:38
+msgid ""
+"Thunderforest free map has been discontinued. (Btw. thanks for providing "
+"folks!)"
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:40
+msgid ""
+"Activity Tracker does now default to free OSMscoutserver offline OSM maps."
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:42
+msgid "It looks like there is no OSMscoutserver offline map available."
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:44
+msgid "You have two options to use this app:"
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:46
+msgid "a) Install OSMscoutserver and download offline maps"
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:48
+msgid "b) Aquire a Thunderforest API key for their online maps"
+msgstr ""
+
+#: ../qml/components/NoOfflineMapInfo.qml:62
+msgid "OK, I understand"
+msgstr ""
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
