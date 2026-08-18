@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-31 05:02+0000\n"
-"PO-Revision-Date: 2026-02-02 15:01+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2026-08-18 20:59+0000\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -59,7 +59,7 @@ msgstr "Weblate unterstützen"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Spende mir einen Kaffee"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -213,7 +213,7 @@ msgstr "Kartentyp auswählen:"
 
 #: ../qml/Settings.qml:244
 msgid "OSMscout server offline map"
-msgstr ""
+msgstr "OSMscout server Offline-Karten"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -236,8 +236,6 @@ msgid "Thunderforest transport-dark map"
 msgstr "Thunderforest Karte ÖPNV dunkel"
 
 #: ../qml/Settings.qml:250
-#, fuzzy
-#| msgid "Thunderforest spinal map"
 msgid "Thunderforest Spinal map"
 msgstr "Thunderforest Karte Spinal (Gothic)"
 
@@ -258,21 +256,17 @@ msgid "Thunderforest neighbourhood map"
 msgstr "Thunderforest Karte Nachbarschaft"
 
 #: ../qml/Settings.qml:317
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid ""
 "A big thanks to OSMscoutserver and OSM folks for providing the free map!"
 msgstr ""
-"Ein großes Dankeschön an Thunderforest.com für das Bereitstellen der "
-"kostenfreien Karte!"
+"Ein großes Dankeschön an OSMscoutserver and OSM folks für das Bereitstellen "
+"der kostenfreien Karte!"
 
 #: ../qml/Settings.qml:326
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid "A big thanks to Thunderforest for providing their maps!"
 msgstr ""
-"Ein großes Dankeschön an Thunderforest.com für das Bereitstellen der "
-"kostenfreien Karte!"
+"Ein großes Dankeschön an Thunderforest für das Bereitstellen der ihrer "
+"Karten!"
 
 #: ../qml/Settings.qml:335
 msgid ""
@@ -372,38 +366,44 @@ msgstr "Stopp"
 
 #: ../qml/components/NoOfflineMapInfo.qml:10
 msgid "Offline map unavailable!"
-msgstr ""
+msgstr "Offline-Karten nicht verfügbar!"
 
 #: ../qml/components/NoOfflineMapInfo.qml:38
 msgid ""
 "Thunderforest free map has been discontinued. (Btw. thanks for providing "
 "folks!)"
 msgstr ""
+"Die Thunderforest kostenfreie Karte wird nicht mehr zur Verfügung gestellt. "
+"(Übrigens vielen Dank für die bisherige Bereitstellung!)"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
 "Activity Tracker does now default to free OSMscoutserver offline OSM maps."
 msgstr ""
+"Activity Tracker nutzt jetzt als Standartkarte die kostenfreien "
+"OSMscoutserver Offline-Karten."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
 msgid "It looks like there is no OSMscoutserver offline map available."
 msgstr ""
+"Es sieht so aus, als wären keine OSMscoutserver Offline-Karten verfügbar."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
-msgstr ""
+msgstr "Es gibt zwei Möglichkeiten die App zu nutzen:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
 msgid "a) Install OSMscoutserver and download offline maps"
-msgstr ""
+msgstr "a) Installiere OSMscoutserver und lade Offline-Karten herunter"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
 msgstr ""
+"b) Besorge dir einen Thunderforest API Schlüssel für deren Online-Karten"
 
 #: ../qml/components/NoOfflineMapInfo.qml:62
 msgid "OK, I understand"
-msgstr ""
+msgstr "Ok, verstanden"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
