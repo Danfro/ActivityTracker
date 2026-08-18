@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-31 05:02+0000\n"
+"POT-Creation-Date: 2026-08-18 20:57+0000\n"
 "PO-Revision-Date: 2020-05-19 04:41+0000\n"
 "Last-Translator: Tsend-Ayush A <a.tsendayush@gmail.com>\n"
 "Language-Team: Mongolian <https://hosted.weblate.org/projects/activity-"
@@ -207,7 +207,7 @@ msgid "Select map type:"
 msgstr ""
 
 #: ../qml/Settings.qml:244
-msgid "OSMscout server offline map"
+msgid "OSM Scout Server offline map"
 msgstr ""
 
 #: ../qml/Settings.qml:245
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../qml/Settings.qml:317
 msgid ""
-"A big thanks to OSMscoutserver and OSM folks for providing the free map!"
+"A big thanks to OSM Scout Server and OSM folks for providing the free map!"
 msgstr ""
 
 #: ../qml/Settings.qml:326
@@ -364,11 +364,11 @@ msgstr ""
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
-"Activity Tracker does now default to free OSMscoutserver offline OSM maps."
+"Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
-msgid "It looks like there is no OSMscoutserver offline map available."
+msgid "It looks like there is no OSM Scout Server offline map available."
 msgstr ""
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
@@ -376,7 +376,7 @@ msgid "You have two options to use this app:"
 msgstr ""
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
-msgid "a) Install OSMscoutserver and download offline maps"
+msgid "a) Install OSM Scout Server and download offline maps"
 msgstr ""
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
