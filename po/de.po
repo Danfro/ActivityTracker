@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-18 20:57+0000\n"
-"PO-Revision-Date: 2026-08-18 20:59+0000\n"
+"PO-Revision-Date: 2026-08-18 21:01+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/de/>\n"
@@ -212,10 +212,8 @@ msgid "Select map type:"
 msgstr "Kartentyp auswählen:"
 
 #: ../qml/Settings.qml:244
-#, fuzzy
-#| msgid "OSMscout server offline map"
 msgid "OSM Scout Server offline map"
-msgstr "OSMscout server Offline-Karten"
+msgstr "OSM Scout Server Offline-Karten"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -258,14 +256,11 @@ msgid "Thunderforest neighbourhood map"
 msgstr "Thunderforest Karte Nachbarschaft"
 
 #: ../qml/Settings.qml:317
-#, fuzzy
-#| msgid ""
-#| "A big thanks to OSMscoutserver and OSM folks for providing the free map!"
 msgid ""
 "A big thanks to OSM Scout Server and OSM folks for providing the free map!"
 msgstr ""
-"Ein großes Dankeschön an OSMscoutserver and OSM folks für das Bereitstellen "
-"der kostenfreien Karte!"
+"Ein großes Dankeschön an OSM Scout Server und das gesamte OSM Team für das "
+"Bereitstellen der kostenfreien Karten!"
 
 #: ../qml/Settings.qml:326
 msgid "A big thanks to Thunderforest for providing their maps!"
@@ -382,31 +377,24 @@ msgstr ""
 "(Übrigens vielen Dank für die bisherige Bereitstellung!)"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
-#, fuzzy
-#| msgid ""
-#| "Activity Tracker does now default to free OSMscoutserver offline OSM maps."
 msgid ""
 "Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
-"Activity Tracker nutzt jetzt als Standartkarte die kostenfreien "
-"OSMscoutserver Offline-Karten."
+"Activity Tracker nutzt jetzt als Standartkarte die kostenfreien OSM Scout "
+"Server Offline-Karten."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
-#, fuzzy
-#| msgid "It looks like there is no OSMscoutserver offline map available."
 msgid "It looks like there is no OSM Scout Server offline map available."
 msgstr ""
-"Es sieht so aus, als wären keine OSMscoutserver Offline-Karten verfügbar."
+"Es sieht so aus, als wären keine OSM Scout Server Offline-Karten verfügbar."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
 msgstr "Es gibt zwei Möglichkeiten die App zu nutzen:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
-#, fuzzy
-#| msgid "a) Install OSMscoutserver and download offline maps"
 msgid "a) Install OSM Scout Server and download offline maps"
-msgstr "a) Installiere OSMscoutserver und lade Offline-Karten herunter"
+msgstr "a) Installiere OSM Scout Server und lade Offline-Karten herunter"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
