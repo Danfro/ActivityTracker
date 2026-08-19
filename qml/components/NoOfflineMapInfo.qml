@@ -37,13 +37,13 @@ Page {
             //Warning Label, changes need to go to: /Timer/ui/About.qml, README.md and OpenStore description text
             text: i18n.tr("Thunderforest free map has been discontinued. (Btw. thanks for providing folks!)")
                   + "\n\n"
-                  + i18n.tr("Activity Tracker does now default to free OSMscoutserver offline OSM maps.")
+                  + i18n.tr("Activity Tracker does now default to free OSM Scout Server offline OSM maps.")
                   + "\n\n"
-                  + i18n.tr("It looks like there is no OSMscoutserver offline map available.")
+                  + i18n.tr("It looks like there is no OSM Scout Server offline map available.")
                   + "\n\n"
                   + i18n.tr("You have two options to use this app:")
                   + "\n\n"
-                  + i18n.tr("a) Install OSMscoutserver and download offline maps")
+                  + i18n.tr("a) Install OSM Scout Server and download offline maps")
                   + "\n\n"
                   + i18n.tr("b) Aquire a Thunderforest API key for their online maps")
             wrapMode: Text.WordWrap

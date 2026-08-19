@@ -241,7 +241,7 @@ Page {
                 }
                 text: persistentSettings.myApiKey ? i18n.tr("Select map type:") : i18n.tr("API key required for other map types")
                 model: [
-                    i18n.tr("OSMscout server offline map"),
+                    i18n.tr("OSM Scout Server offline map"),
                     i18n.tr("Thunderforest cycle map"),
                     i18n.tr("Thunderforest landscape map"),
                     i18n.tr("Thunderforest outdoors map"),
@@ -314,7 +314,7 @@ Page {
 
                 Label {
                     id: thanksOSMLabel
-                    text: "\n" + i18n.tr("A big thanks to OSMscoutserver and OSM folks for providing the free map!")
+                    text: "\n" + i18n.tr("A big thanks to OSM Scout Server and OSM folks for providing the free map!")
                     font.bold: true
                     width: parent.width - units.gu(4)
                     wrapMode: QQC.Text.WordWrap
