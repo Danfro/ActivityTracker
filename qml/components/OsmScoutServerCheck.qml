@@ -1,10 +1,10 @@
-// helper item to check if OSMscoutserver is available at all
+// helper item to check if OSM Scout Server is available at all
 import QtQuick 2.12
 
 Item {
     id: checker
 
-    // Wird nach Abschluss der Prüfung gefeuert
+    // signal is fired after check has completed
     signal checkFinished(bool available)
 
     property int timeoutMs: 3000

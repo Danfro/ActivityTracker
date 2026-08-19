@@ -92,13 +92,16 @@ MainView {
         return speed
     }
 
-    Sports {id:sportsComp}
+    Sports {
+        id:sportsComp
+    }
 
     //keep screen on while tracking an activity so we still get to read GPS
     ScreenSaver {
         id: screenSaver
         screenSaverEnabled: !am_running
     }
+
     Settings {
         id: persistentSettings
         property bool useOfflineMap: false
@@ -108,7 +111,7 @@ MainView {
         property int altitudeOffset: 0
         property double initialLat: -95.64410114
         property double initialLong: 29.62289936
-        property int initialZoom: 12
+        property int initialZoom: 10 // the larger the number, the closer in is zoomed
         // onPointsIntervalChanged: {/*console.log("pointsInterval has changed: "+pointsInterval);*/loggingpoints.interval = pointsInterval}
         // onaltitudeOffsetChanged: {console.log("altitudeOffset has changed: "+altitudeOffset)}
     }

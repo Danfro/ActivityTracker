@@ -23,7 +23,6 @@ Page {
 
         contentHeight: warning_text.height + units.gu(2)
 
-
         Label {
             id: warning_text
 

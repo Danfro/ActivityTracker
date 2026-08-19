@@ -28,11 +28,12 @@ Component {
         onLoadingChanged: {
             if (!loading) {
                 if (pendingStart) {
-                    webview.runJavaScript("initLiveTrack(" + pendingStart[0] + "," + pendingStart[1] + ");")
+                    webview.runJavaScript("initLiveTrack(" + pendingStart[0] + "," + pendingStart[1] + "," + persistentSettings.initialZoom + ");")
                     pendingStart = null
                 }
                 if (pendingCoords) {
                     webview.runJavaScript("showTrack(" + JSON.stringify(pendingCoords) + ");")
+                    // set the first point as new initial coord so the map is opened roughly at the last tracks position
                     if (pendingCoords.length > 0) {
                         persistentSettings.initialLat = pendingCoords[0][0]
                         persistentSettings.initialLong = pendingCoords[0][1]
@@ -56,7 +57,7 @@ Component {
             if (webview.loading) {
                 pendingStart = [lat, lon]
             } else {
-                webview.runJavaScript("initLiveTrack(" + lat + "," + lon + ");")
+                webview.runJavaScript("initLiveTrack(" + lat + "," + lon + "," + persistentSettings.initialZoom + ");")
             }
         }
 
