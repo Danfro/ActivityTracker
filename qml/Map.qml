@@ -7,8 +7,6 @@ import QtSystemInfo 5.0
 import QtLocation 5.12
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
-// import Morph.Web 0.1
-// import QtWebEngine 1.10  // for offline map
 import Qt.labs.platform 1.0 //for StandardPaths
 import "components"
 
@@ -19,14 +17,14 @@ Page {
         title: i18n.tr("Activity Map")
         trailingActionBar.actions: [
             Action {
-            text: i18n.tr("Info")
-            iconName: "info"
-            onTriggered: {
+                text: i18n.tr("Info")
+                iconName: "info"
+                onTriggered: {
                     indexrun = index
                     infodis=""
                     PopupUtils.open(infogpx)
                     pygpx.info_run(index)
-            }
+                }
             }
         ]
     }
@@ -52,7 +50,7 @@ Page {
                     for (var i = 0; i < result.length; i++) {
                         coords.push([result[i].latitude, result[i].longitude])
                     }
-                    // Egal welche Karte aktiv ist: gleiche Aufruf-Signatur
+
                     if (mapLoader.item) {
                         mapLoader.item.showTrack(coords)
                     }
@@ -90,8 +88,6 @@ Page {
                     name: "osm.mapping.custom.host"
                     value: "http://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
                 }
-                PluginParameter { name: "osm.mapping.custom.datacopyright"; value: "www.osm.org/copyright" }
-                PluginParameter { name: "osm.mapping.custom.mapcopyright"; value: "www.thunderforest.com" }
                 PluginParameter {
                     name: "osm.mapping.offline.directory"
                     value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.12/tiles/osm"
@@ -122,5 +118,21 @@ Page {
     // ---- OSM Scout Server offline map ----
     OfflineMap {
         id: offlineMapComponent
+    }
+
+    Rectangle {
+        id: dataRect
+        width: parent.width
+        height: units.gu(2.5)
+        anchors.bottom: parent.bottom
+        color: theme.palette.normal.background
+        opacity: 0.8
+
+        CopyrightLabel {
+            id: copyrightNotice
+            anchors.horizontalCenter: dataRect.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: units.gu(0.25)
+        }
     }
 }

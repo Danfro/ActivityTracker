@@ -1,4 +1,9 @@
-{{/*  get start coordinates from url parameters, use 0,0 if no valid coords are given  */}}
+// maplibre docs: https://maplibre.org/maplibre-gl-js/docs/
+// use latest 4.x maplibre, newer versions fail with our morph browser
+// used currently: https://github.com/maplibre/maplibre-gl-js/releases?page=8#release-v4.7.1
+// available styles: mc-car, mc, osmbright, osmbright-car
+
+//  get start coordinates from url parameters, use 0,0 if no valid coords are given
 var params = new URLSearchParams(window.location.search);
 var initialLat = parseFloat(params.get('lat'));
 var initialLon = parseFloat(params.get('lon'));
@@ -6,14 +11,12 @@ var initialZoom = parseInt(params.get('zoom'));
 
 var hasValidStart = !isNaN(initialLat) && !isNaN(initialLon);
 
-{{/*  use latest 4.x maplibre, newer versions fail with our morph browser
-used currently: https://github.com/maplibre/maplibre-gl-js/releases?page=8#release-v4.7.1
-available styles: mc-car, mc, osmbright, osmbright-car  */}}
 var map = new maplibregl.Map({
     container: 'map',
     style: 'http://localhost:8553/v1/mbgl/style?style=osmbright',
     center: hasValidStart ? [initialLon, initialLat] : [0,0],
-    zoom: initialZoom
+    zoom: initialZoom,
+    attributionControl: false  // credits will be adden on qml side for better vidual control
 });
 
 var trackReady = false;

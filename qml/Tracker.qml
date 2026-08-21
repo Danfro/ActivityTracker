@@ -4,8 +4,6 @@ import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3 as Dialogs
 import QtPositioning 5.12
 import QtLocation 5.12
-// import Morph.Web 0.1
-
 import Qt.labs.platform 1.0 //for StandardPaths
 import "components"
 
@@ -224,14 +222,7 @@ Rectangle {
                     name: "osm.mapping.custom.host"
                     value: "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
                 }
-                PluginParameter {
-                    name: "osm.mapping.custom.datacopyright"
-                    value: "www.osm.org/copyright"
-                }
-                PluginParameter {
-                    name: "osm.mapping.custom.mapcopyright"
-                    value: "www.thunderforest.com"
-                }
+
                 PluginParameter {
                     name: "osm.mapping.offline.directory"
                     value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
@@ -465,7 +456,6 @@ Rectangle {
             id: dataRect
             width: parent.width
             height: units.gu(14)
-            // z:100
             anchors.bottom: parent.bottom
             color: theme.palette.normal.background
             opacity: 0.8
@@ -553,43 +543,11 @@ Rectangle {
                 }
             }
 
-            Row {
+            CopyrightLabel {
                 id: copyrightNotice
+                anchors.horizontalCenter: dataRect.horizontalCenter
                 anchors.bottom: parent.bottom
-                anchors.left: parent.left
-                anchors.right: parent.right
-                width: parent.width
-                height: units.gu(2)
-                Label {
-                    id: mapText
-                    text: "Map © "
-                }
-                // TODO: add maplibre and OSMscout for offline map
-                Label {
-                    id: thunderforest
-                    text: "www.thunderforest.com"
-                    color: theme.palette.normal.activity
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: Qt.openUrlExternally('https://www.thunderforest.com/')
-                    }
-                }
-                Label {
-                    text: " | "
-                }
-                Label {
-                    id: dataText
-                    text: "Data © "
-                }
-                Label {
-                    id: osm
-                    text: "www.osm.org/copyright"
-                    color: theme.palette.normal.activity
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: Qt.openUrlExternally('https://www.osm.org/copyright')
-                    }
-                }
+                anchors.bottomMargin: units.gu(0.25)
             }
         }
     }
