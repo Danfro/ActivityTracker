@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-18 20:57+0000\n"
-"PO-Revision-Date: 2024-11-19 17:19+0000\n"
-"Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
+"PO-Revision-Date: 2026-08-22 16:51+0000\n"
+"Last-Translator: Milan Korecky <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -59,7 +59,7 @@ msgstr "Podpořte Weblate"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Kup mi kávu"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -92,7 +92,7 @@ msgstr "Vzdálenost: %1 %2"
 
 #: ../qml/Main.qml:166
 msgid "Duration: "
-msgstr ""
+msgstr "Doba trvání: "
 
 #: ../qml/Main.qml:247
 msgid "Recent Activities"
@@ -213,7 +213,7 @@ msgstr "Vyberte typ mapy:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "Offline mapa OSM Scout Serveru"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -225,46 +225,47 @@ msgstr "Krajinná mapa Thunderforest"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr ""
+msgstr "Mapa outdoorových aktivit v Thunderforestu"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr ""
+msgstr "Dopravní mapa Thunderforestu"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr ""
+msgstr "Thunderforest – mapa v tmavém režimu"
 
 #: ../qml/Settings.qml:250
-#, fuzzy
-#| msgid "Thunderforest cycle map"
 msgid "Thunderforest Spinal map"
-msgstr "Cyklomapa Thunderforest"
+msgstr "Thunderforest Spinal map (pro nevidomé)"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr ""
+msgstr "Thunderforest pioneer map (novější styl)"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr ""
+msgstr "Atlasová mapa Thunderforestu"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr ""
+msgstr "Atlasová mobilní Thunderforest mapa"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr ""
+msgstr "Mapa městské části Thunderforest"
 
 #: ../qml/Settings.qml:317
 msgid ""
 "A big thanks to OSM Scout Server and OSM folks for providing the free map!"
 msgstr ""
+"Velké poděkování patří OSM Scout Serveru a lidem z OSM za poskytnutí mapy "
+"zdarma!"
 
 #: ../qml/Settings.qml:326
 msgid "A big thanks to Thunderforest for providing their maps!"
 msgstr ""
+"Velké poděkování patří společnosti Thunderforest za poskytnutí jejich map!"
 
 #: ../qml/Settings.qml:335
 msgid ""
@@ -272,157 +273,165 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
+"Po změně typu mapy prosím restartujte aplikaci, aby se změny projevily. V "
+"opačném případě se mohou zobrazovat mapové dlaždice z mezipaměti, které "
+"pocházejí z dříve použitého typu mapy."
 
 #: ../qml/Settings.qml:343
 msgid "Note: If the map is empty, check the API key — it may be wrong."
 msgstr ""
+"Poznámka: Pokud je mapa prázdná, zkontrolujte klíč API – možná je nesprávný."
 
 #: ../qml/Settings.qml:351
 msgid "Please get your own API key:"
-msgstr ""
+msgstr "Získejte si prosím vlastní API klíč:"
 
 #: ../qml/Settings.qml:367
 msgid "Description of map types:"
-msgstr ""
+msgstr "Popis typů map:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
-msgstr ""
+msgstr "Vyberte sport:"
 
 #: ../qml/SportSelectPopUp.qml:21
 msgid "Choose later"
-msgstr ""
+msgstr "Vybrat později"
 
 #: ../qml/Tracker.qml:72
 msgid "Activity in Progress"
-msgstr ""
+msgstr "Aktuální aktivita"
 
 #: ../qml/Tracker.qml:72
 msgid "New Activity"
-msgstr ""
+msgstr "Nová aktivita"
 
 #: ../qml/Tracker.qml:72
 msgid "Paused"
-msgstr ""
+msgstr "Pozastaveno"
 
 #: ../qml/Tracker.qml:156 ../qml/Tracker.qml:161
 msgid "No data"
-msgstr ""
+msgstr "Žádné údaje"
 
 #: ../qml/Tracker.qml:319
 msgid "Do you want to cancel the activity?"
-msgstr ""
+msgstr "Přejete si tuto aktivitu zrušit?"
 
 #: ../qml/Tracker.qml:322
 msgid "Yes, stop and discard"
-msgstr ""
+msgstr "Ano, zastavit a zrušit"
 
 #: ../qml/Tracker.qml:341
 msgid "No, go back"
-msgstr ""
+msgstr "Ne, přejít zpět"
 
 #: ../qml/Tracker.qml:355
 msgid "What would you like to do?"
-msgstr ""
+msgstr "Co si přejete udělat?"
 
 #: ../qml/Tracker.qml:357
 msgid "Stop and save track"
-msgstr ""
+msgstr "Zastavit a uložit sledování"
 
 #: ../qml/Tracker.qml:378
 msgid "Stop and discard track"
-msgstr ""
+msgstr "Zastavit a zrušit sledování"
 
 #: ../qml/Tracker.qml:386
 msgid "Nothing, go back"
-msgstr ""
+msgstr "Nic, vrátit se zpět"
 
 #: ../qml/Tracker.qml:442
 msgid "Pause"
-msgstr ""
+msgstr "Pozastavit"
 
 #: ../qml/Tracker.qml:458
 msgid "Waiting for position..."
-msgstr ""
+msgstr "Čekání na polohu..."
 
 #: ../qml/Tracker.qml:510
 msgid "Resume"
-msgstr ""
+msgstr "Shrnutí"
 
 #: ../qml/Tracker.qml:510
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 #: ../qml/Tracker.qml:520
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #: ../qml/components/NoOfflineMapInfo.qml:10
 msgid "Offline map unavailable!"
-msgstr ""
+msgstr "Offline mapa není k dispozici!"
 
 #: ../qml/components/NoOfflineMapInfo.qml:38
 msgid ""
 "Thunderforest free map has been discontinued. (Btw. thanks for providing "
 "folks!)"
 msgstr ""
+"Bezplatná mapa Thunderforest byla stažena z provozu. (Mimochodem, díky za "
+"její poskytnutí, lidi!)"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
 "Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
+"Aplikace Activity Tracker nyní ve výchozím nastavení využívá bezplatné "
+"offline mapy OSM od OSM Scout Serveru."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
 msgid "It looks like there is no OSM Scout Server offline map available."
-msgstr ""
+msgstr "Zdá se, že není k dispozici žádná offline mapa OSM Scout Serveru."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
-msgstr ""
+msgstr "Tuto aplikaci můžete používat dvěma způsoby:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
 msgid "a) Install OSM Scout Server and download offline maps"
-msgstr ""
+msgstr "a) Nainstalujte OSM Scout Server a stáhněte si offline mapy"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
-msgstr ""
+msgstr "b) Získat klíč API služby Thunderforest pro jejich online mapy"
 
 #: ../qml/components/NoOfflineMapInfo.qml:62
 msgid "OK, I understand"
-msgstr ""
+msgstr "Dobře, rozumím"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
-msgstr ""
+msgstr "Běžet"
 
 #: ../qml/components/Sports.qml:8
 msgid "BikeRide"
-msgstr ""
+msgstr "Jízda na kole"
 
 #: ../qml/components/Sports.qml:9
 msgid "Walk"
-msgstr ""
+msgstr "Chůze"
 
 #: ../qml/components/Sports.qml:10
 msgid "Drive"
-msgstr ""
+msgstr "Jízda autem"
 
 #: ../qml/components/Sports.qml:11
 msgid "Hike"
-msgstr ""
+msgstr "Pěší výlet"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr ""
+msgstr "SUP"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
-msgstr ""
+msgstr "Severská chůze"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
-msgstr ""
+msgstr "Jízda na jednokolce"
 
 #~ msgid "Free Thunderforest OSM street map"
 #~ msgstr "Bezplatná mapa Thunderforest OSM"
