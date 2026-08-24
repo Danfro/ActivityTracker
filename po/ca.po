@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2026-03-07 16:11+0000\n"
+"PO-Revision-Date: 2026-08-25 15:55+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -60,7 +60,7 @@ msgstr "Doneu suport a Weblate"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Doneu-me un cafè"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -214,7 +214,7 @@ msgstr "Selecciona el tipus de mapa:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "Mapa fora de línia de servidor OSM Scout"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -237,10 +237,8 @@ msgid "Thunderforest transport-dark map"
 msgstr "Mapa fosc de transport públic de Thunderforest"
 
 #: ../qml/Settings.qml:250
-#, fuzzy
-#| msgid "Thunderforest spinal map"
 msgid "Thunderforest Spinal map"
-msgstr "Mapa Spinal (estil rock dur) de Thunderforest"
+msgstr "Mapa Spinal de Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
@@ -259,19 +257,15 @@ msgid "Thunderforest neighbourhood map"
 msgstr "Mapa de barris de Thunderforest"
 
 #: ../qml/Settings.qml:317
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid ""
 "A big thanks to OSM Scout Server and OSM folks for providing the free map!"
 msgstr ""
-"Moltes gràcies a Thunderforest.com per proporcionar-nos el mapa lliure!"
+"Moltes gràcies a OSM Scout Server i a la gent de l'OSM per proporcionar-nos "
+"el mapa lliure."
 
 #: ../qml/Settings.qml:326
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid "A big thanks to Thunderforest for providing their maps!"
-msgstr ""
-"Moltes gràcies a Thunderforest.com per proporcionar-nos el mapa lliure!"
+msgstr "Moltes gràcies a Thunderforest per proporcionar-nos el mapa lliure."
 
 #: ../qml/Settings.qml:335
 msgid ""
@@ -371,38 +365,44 @@ msgstr "Atura"
 
 #: ../qml/components/NoOfflineMapInfo.qml:10
 msgid "Offline map unavailable!"
-msgstr ""
+msgstr "El mapa fora de línia no està disponible."
 
 #: ../qml/components/NoOfflineMapInfo.qml:38
 msgid ""
 "Thunderforest free map has been discontinued. (Btw. thanks for providing "
 "folks!)"
 msgstr ""
+"El mapa lliure de Thunderforest s'ha discontinuat. (De pas, gràcies per "
+"haver-lo proveït, bona gent)"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
 "Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
+"L'Activity Tracker ara fa servir per defecte els mapes OSM fora de línia del "
+"OSM Scout Server."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
 msgid "It looks like there is no OSM Scout Server offline map available."
 msgstr ""
+"Sembla que no hi ha un mapa fora de línia de l'OSM Scout Server disponible."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
-msgstr ""
+msgstr "Teniu dues opcions per fer servir aquesta aplicació:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
 msgid "a) Install OSM Scout Server and download offline maps"
-msgstr ""
+msgstr "a) Instal·lar l'OSM Scout Server i descarregar mapes fora de línia"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
 msgstr ""
+"b) Comprar una clau de l'API del Thunderforest per als seu mapes en línia"
 
 #: ../qml/components/NoOfflineMapInfo.qml:62
 msgid "OK, I understand"
-msgstr ""
+msgstr "D'acord, ho entenc"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
