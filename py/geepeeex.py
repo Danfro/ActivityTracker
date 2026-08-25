@@ -166,7 +166,7 @@ def onetime_db_fix():
     if not os.path.exists(filename):
         print("Fixing db")
         conn = sqlite3.connect('%s/activities.db' % filebase)
-        numonly = re.compile("(\d*\.\d*)")
+        numonly = re.compile(r"(\d*\.\d*)")
         cursor = conn.cursor()
         a=get_runs()
         sql="UPDATE activities SET distance=? WHERE id=?"
@@ -191,7 +191,7 @@ def onetime_db_fix_again_cus_im_dumb():
     if not os.path.exists(filename):
         print("Fixing db again")
         conn = sqlite3.connect('%s/activities.db' % filebase)
-        numonly = re.compile("(\d*\.\d*)")
+        numonly = re.compile(r"(\d*\.\d*)")
         cursor = conn.cursor()
         a=get_runs()
         sql="UPDATE activities SET speed=? WHERE id=?"
