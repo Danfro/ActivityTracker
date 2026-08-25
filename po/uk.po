@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2026-04-17 04:38+0000\n"
+"PO-Revision-Date: 2026-08-26 09:41+0000\n"
 "Last-Translator: Serhii Horichenko <serhii@horichenko.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -59,7 +59,7 @@ msgstr "Підтримайте Weblate"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Пригостіть мене кавою"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -213,7 +213,7 @@ msgstr "Оберіть тип мапи:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "Офлайн-мапа сервера OSM Scout"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -236,10 +236,8 @@ msgid "Thunderforest transport-dark map"
 msgstr "Темна транспортна мапа Thunderforest"
 
 #: ../qml/Settings.qml:250
-#, fuzzy
-#| msgid "Thunderforest spinal map"
 msgid "Thunderforest Spinal map"
-msgstr "Готична мапа Thunderforest"
+msgstr "Карта Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
@@ -258,17 +256,14 @@ msgid "Thunderforest neighbourhood map"
 msgstr "Мапа околиць Thunderforest"
 
 #: ../qml/Settings.qml:317
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid ""
 "A big thanks to OSM Scout Server and OSM folks for providing the free map!"
-msgstr "Щира подяка Thunderforest.com за доступ до безплатних мап!"
+msgstr ""
+"Щира подяка серверу OSM Scout та учасникам OSM за надані безкоштовно мапи!"
 
 #: ../qml/Settings.qml:326
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid "A big thanks to Thunderforest for providing their maps!"
-msgstr "Щира подяка Thunderforest.com за доступ до безплатних мап!"
+msgstr "Щира подяка Thunderforest за надані мапи!"
 
 #: ../qml/Settings.qml:335
 msgid ""
@@ -368,38 +363,42 @@ msgstr "Зупинити"
 
 #: ../qml/components/NoOfflineMapInfo.qml:10
 msgid "Offline map unavailable!"
-msgstr ""
+msgstr "Офлайнові мапи недоступні!"
 
 #: ../qml/components/NoOfflineMapInfo.qml:38
 msgid ""
 "Thunderforest free map has been discontinued. (Btw. thanks for providing "
 "folks!)"
 msgstr ""
+"Безплатні мапи Thunderforest більше недоступні. (Між іншим, друзі, щира "
+"подяка за них!)"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
 "Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
+"Activity Tracker тепер типово використовує безкоштовні офлайн-мапи OSM із "
+"сервера OSM Scout."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
 msgid "It looks like there is no OSM Scout Server offline map available."
-msgstr ""
+msgstr "Схоже, немає доступного сервера OSM Scout з офлайн-мапами."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
-msgstr ""
+msgstr "Існує два варіанти використання цієї програми:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
 msgid "a) Install OSM Scout Server and download offline maps"
-msgstr ""
+msgstr "a) встановити сервер OSM Scout та завантажити офлайн-мапи"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
-msgstr ""
+msgstr "b) Отримати ключ API Thunderforest для їх онлайн-мап"
 
 #: ../qml/components/NoOfflineMapInfo.qml:62
 msgid "OK, I understand"
-msgstr ""
+msgstr "Добре, я розумію"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
