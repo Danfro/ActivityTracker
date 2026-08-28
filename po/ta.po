@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2026-08-25 15:55+0000\n"
+"PO-Revision-Date: 2026-08-28 18:41+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ta/>\n"
@@ -215,62 +215,57 @@ msgstr "வரைபட வகையைத் தேர்ந்தெடுக�
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "திறந்த தெரு வரைபடம்(ஓ எஸ் எம்)சேவையகம் வழங்கும் இணையமில்லா வரைபடம்"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr "தண்டர்ஃபோரச்ட் சுழற்சி வரைபடம்"
+msgstr "இடியோசை வனம் சுற்று வரைபடம்"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
-msgstr "தண்டர்ஃபோரச்ட் இயற்கை வரைபடம்"
+msgstr "இடியோசை வனம் நிலபரப்பு வரைபடம்"
 
 #: ../qml/Settings.qml:247
 msgid "Thunderforest outdoors map"
-msgstr "இடி ஃபார்பெச்ட் வெளிப்புற வரைபடம்"
+msgstr "இடியோசை வனம் வெளிப்புற வரைபடம்"
 
 #: ../qml/Settings.qml:248
 msgid "Thunderforest transport map"
-msgstr "தண்டர்ஃபோரச்ட் போக்குவரத்து வரைபடம்"
+msgstr "இடியோசை வனம் போக்குவரத்து வரைபடம்"
 
 #: ../qml/Settings.qml:249
 msgid "Thunderforest transport-dark map"
-msgstr "தண்டர்ஃபோரச்ட் போக்குவரத்து-இருண்ட வரைபடம்"
+msgstr "இடியோசை வனம் போக்குவரத்து-இருள் வரைபடம்"
 
 #: ../qml/Settings.qml:250
-#, fuzzy
-#| msgid "Thunderforest spinal map"
 msgid "Thunderforest Spinal map"
-msgstr "தண்டர்ஃபோரச்ட் முதுகெலும்பு வரைபடம்"
+msgstr "இடியோசை வனம் முதுகெலும்பு வரைபடம்"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
-msgstr "தண்டர்ஃபோரச்ட் முன்னோடி வரைபடம்"
+msgstr "இடியோசை வனம் முன்னோடி வரைபடம்"
 
 #: ../qml/Settings.qml:252
 msgid "Thunderforest atlas map"
-msgstr "தண்டர்ஃபோரச்ட் அட்லச் வரைபடம்"
+msgstr "இடியோசை வனம் உலகம் வரைபடம்"
 
 #: ../qml/Settings.qml:253
 msgid "Thunderforest mobile atlas map"
-msgstr "தண்டர்ஃபோரச்ட் மொபைல் அட்லச் வரைபடம்"
+msgstr "இடியோசைவனம் அலைபேசி உலக வரைபடம்"
 
 #: ../qml/Settings.qml:254
 msgid "Thunderforest neighbourhood map"
-msgstr "தண்டர்ஃபோரச்ட் அண்டை வரைபடம்"
+msgstr "இடியோசைவனம் சுற்று வட்டாரம் வரைபடம்"
 
 #: ../qml/Settings.qml:317
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid ""
 "A big thanks to OSM Scout Server and OSM folks for providing the free map!"
-msgstr "இலவச வரைபடத்தை வழங்கிய தண்டர்ஃபோரச்ட்.காமுக்கு ஒரு பெரிய நன்றி!"
+msgstr ""
+"இலவச வரைபடத்தை வழங்கிய ஓஎஸ்எம் சேவையகம் மற்றும் ஓ எஸ் எம் நண்பர்களுக்கு ஒரு பெரிய நன்றி!"
 
 #: ../qml/Settings.qml:326
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid "A big thanks to Thunderforest for providing their maps!"
-msgstr "இலவச வரைபடத்தை வழங்கிய தண்டர்ஃபோரச்ட்.காமுக்கு ஒரு பெரிய நன்றி!"
+msgstr "இலவச வரைபடத்தை வழங்கிய இடியோசைவனத்திற்கு ஒரு பெரிய நன்றி!"
 
 #: ../qml/Settings.qml:335
 msgid ""
@@ -278,17 +273,19 @@ msgid ""
 "applied. Otherwise cached map tiles of the map type used before may be "
 "displayed."
 msgstr ""
-"வரைபட வகையை மாற்றிய பிறகு, மாற்றங்கள் பயன்படுத்தப்படுவதற்கு பயன்பாட்டை மறுதொடக்கம் "
-"செய்யுங்கள். இல்லையெனில் முன் பயன்படுத்தப்படும் வரைபட வகையின் தற்காலிக சேமிப்பு வரைபட "
-"ஓடுகள் காண்பிக்கப்படலாம்."
+"வரைபட வகையை மாற்றிய பின்னர், மாற்றங்கள் செயலாக்கப்படுவதற்கு செயலியை மறுதொடக்கம் செய்யவும். "
+"இல்லையெனில் முன்னர் பயன்படுத்தப்பட்ட வரைபட வகையின் பிடிசேமிப்பின் வரைபட கட்டங்கள் "
+"காண்பிக்கப்படலாம்."
 
 #: ../qml/Settings.qml:343
 msgid "Note: If the map is empty, check the API key — it may be wrong."
-msgstr "குறிப்பு: வரைபடம் இல்லை என்றால், பநிஇ விசை தவறாக இருக்கலாம்."
+msgstr ""
+"குறிப்பு: வரைபடம் காலியாக இருந்தால்,(செயலி நிரலாக்க இடைமுகம்) செநிஇ விசையை "
+"சோதிக்கவும் ---அது தவறாக இருக்கலாம்."
 
 #: ../qml/Settings.qml:351
 msgid "Please get your own API key:"
-msgstr "தயவுசெய்து உங்கள் சொந்த பநிஇ விசையைப் பெறுங்கள்:"
+msgstr "தயவுசெய்து உங்கள் சொந்த செநிஇ விசையைப் பெறுங்கள்:"
 
 #: ../qml/Settings.qml:367
 msgid "Description of map types:"
@@ -296,15 +293,15 @@ msgstr "வரைபட வகைகளின் விளக்கம்:"
 
 #: ../qml/SportSelectPopUp.qml:10
 msgid "Choose sport:"
-msgstr "விளையாட்டினை தேர்ந்தெடுக்கவும்:"
+msgstr "விளையாட்டைத் தேர்ந்தெடு:"
 
 #: ../qml/SportSelectPopUp.qml:21
 msgid "Choose later"
-msgstr "பின்னர் தேர்வு செய்யவும்"
+msgstr "பின்னர் தேர்வு செய்"
 
 #: ../qml/Tracker.qml:72
 msgid "Activity in Progress"
-msgstr "தொடர்ச்சியில் உள்ள செயல்பாடு"
+msgstr "முன்னேற்றத்தில் உள்ள செயல்பாடு"
 
 #: ../qml/Tracker.qml:72
 msgid "New Activity"
@@ -316,19 +313,19 @@ msgstr "இடைநிறுத்தப்பட்டது"
 
 #: ../qml/Tracker.qml:156 ../qml/Tracker.qml:161
 msgid "No data"
-msgstr "தகவல் இல்லை"
+msgstr "தரவு இல்லை"
 
 #: ../qml/Tracker.qml:319
 msgid "Do you want to cancel the activity?"
-msgstr "செயல்பாட்டினை ரத்து செய்யவேண்டுமா?"
+msgstr "நீங்கள் செயல்பாட்டினை நீக்க விரும்புகிறீர்களா?"
 
 #: ../qml/Tracker.qml:322
 msgid "Yes, stop and discard"
-msgstr "ஆம், நிறுத்தி நிராகரிக்கவும்"
+msgstr "ஆம், நிறுத்தி கழித்துவிடவும்"
 
 #: ../qml/Tracker.qml:341
 msgid "No, go back"
-msgstr "இல்லை, திரும்பிச் செல்லுங்கள்"
+msgstr "இல்லை,பின்செல்"
 
 #: ../qml/Tracker.qml:355
 msgid "What would you like to do?"
@@ -340,11 +337,11 @@ msgstr "நிறுத்தி தடத்தை சேமிக்கவு�
 
 #: ../qml/Tracker.qml:378
 msgid "Stop and discard track"
-msgstr "தடத்தை நிறுத்தி நிராகரிக்கவும்"
+msgstr "நிறுத்தி, தடத்தை கழித்துகட்டவும்"
 
 #: ../qml/Tracker.qml:386
 msgid "Nothing, go back"
-msgstr "ஒன்றுமில்லை, திரும்பிச் செல்லுங்கள்"
+msgstr "ஒன்றுமில்லை, பின்செல்"
 
 #: ../qml/Tracker.qml:442
 msgid "Pause"
@@ -352,11 +349,11 @@ msgstr "இடைநிறுத்தம்"
 
 #: ../qml/Tracker.qml:458
 msgid "Waiting for position..."
-msgstr "பதவிக்காக காத்திருக்கிறது ..."
+msgstr "நிலைக்காக காத்திருக்கிறது ..."
 
 #: ../qml/Tracker.qml:510
 msgid "Resume"
-msgstr "மீண்டும் தொடங்குங்கள்"
+msgstr "மீண்டும் தொடரவும்"
 
 #: ../qml/Tracker.qml:510
 msgid "Start"
@@ -368,54 +365,61 @@ msgstr "நிறுத்து"
 
 #: ../qml/components/NoOfflineMapInfo.qml:10
 msgid "Offline map unavailable!"
-msgstr ""
+msgstr "இணையமில்லா வரைபடம் சேவையில் இல்லை!"
 
 #: ../qml/components/NoOfflineMapInfo.qml:38
 msgid ""
 "Thunderforest free map has been discontinued. (Btw. thanks for providing "
 "folks!)"
 msgstr ""
+"இடியோசைவனம் இலவச வரைபடம் கைவிடப்பட்டது.(மேலும்.வழங்கியதற்கு நன்றி நண்பர்களே!)"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
 "Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
+"இலவச திறந்த தெரு வரைபடம்(ஓ எஸ் எம்) வழிகாட்டி சேவையகத்தின் இணையமில்லா ஓ எஸ் எம் வரைபடத்தை "
+"செயல்பாட்டு-கண்காணிப்பான் இயல்பாக கொண்டுள்ளது."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
 msgid "It looks like there is no OSM Scout Server offline map available."
 msgstr ""
+"ஓ எஸ் எம் வழிகாட்டி சேவையகத்தின் இணையமில்லா வரைபடம் சேவையில் இல்லை என்பதுபோல் தெரிகிறது."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
-msgstr ""
+msgstr "இந்த செயலியை பயன்படுத்த உங்களுக்கு இரண்டு வாய்ப்புக்கள் உள்ளது:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
 msgid "a) Install OSM Scout Server and download offline maps"
 msgstr ""
+"அ)ஓ எஸ் எம் வழிகாட்டி சேவையகத்தை நிறுவி இணையமில்லா வரைபடங்களை பதிவிறக்கவும்"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
 msgstr ""
+"ஆ)அவர்களது இணைய வரைபடங்களுக்கு ஒரு இடியோசை வனத்தின் செயலி நிரலாக்க இடைமுகத்தின் "
+"விசையை கைப்பெறவும்"
 
 #: ../qml/components/NoOfflineMapInfo.qml:62
 msgid "OK, I understand"
-msgstr ""
+msgstr "சரி,நான் புரிந்துகொள்கிறேன்"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
-msgstr "இயக்க"
+msgstr "இயக்கு"
 
 #: ../qml/components/Sports.qml:8
 msgid "BikeRide"
-msgstr "பைக் ரைடு"
+msgstr "இருசக்கர வாகனப் பயணம்"
 
 #: ../qml/components/Sports.qml:9
 msgid "Walk"
-msgstr "நடக்க"
+msgstr "நட"
 
 #: ../qml/components/Sports.qml:10
 msgid "Drive"
-msgstr "இயக்கி"
+msgstr "ஓட்டு"
 
 #: ../qml/components/Sports.qml:11
 msgid "Hike"
@@ -423,7 +427,7 @@ msgstr "உயர்வு"
 
 #: ../qml/components/Sports.qml:12
 msgid "SUP"
-msgstr "சுப்"
+msgstr "சூப்"
 
 #: ../qml/components/Sports.qml:13
 msgid "Nordic walking"
@@ -431,7 +435,7 @@ msgstr "நோர்டிக் நடைபயிற்சி"
 
 #: ../qml/components/Sports.qml:14
 msgid "Unicycle"
-msgstr "ஒற்றைத் தனியாழி"
+msgstr "ஒரு சக்கர மிதிவண்டி"
 
 #~ msgid "Free Thunderforest OSM street map"
 #~ msgstr "இலவச தண்டர்ஃபோரச்ட் ஓஎச்எம் தெரு வரைபடம்"
