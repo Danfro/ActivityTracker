@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2024-02-26 19:03+0000\n"
-"Last-Translator: Семёнов Герман <GermanAizek@yandex.ru>\n"
+"PO-Revision-Date: 2026-09-15 03:51+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -35,7 +35,8 @@ msgstr "Версия %1"
 #: ../qml/About.qml:97
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
 msgstr ""
-"Выпущено в соответствии с условиями GNU GPL v3. <br> Исходный код доступен на"
+"Выпущено в соответствии с условиями лицензии GNU GPL v3. <br> Исходный код "
+"доступен на"
 
 #: ../qml/About.qml:106
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
@@ -60,7 +61,7 @@ msgstr "Поддержите Weblate"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Принимаются пожертвования на кофе"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -84,7 +85,7 @@ msgstr "Сохранить"
 
 #: ../qml/ImportPage.qml:34
 msgid "Choose"
-msgstr "Выбратьh"
+msgstr "Выбрать"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:160 ../qml/Main.qml:163
@@ -93,7 +94,7 @@ msgstr "Дистанция: %1 %2"
 
 #: ../qml/Main.qml:166
 msgid "Duration: "
-msgstr ""
+msgstr "Длительность: "
 
 #: ../qml/Main.qml:247
 msgid "Recent Activities"
@@ -207,14 +208,12 @@ msgid "API key required for other map types"
 msgstr ""
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Выбрать спорт ниже"
+msgstr "Выбрать тип карты:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "Оффлайновая карта с сервера OSM Scout"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
