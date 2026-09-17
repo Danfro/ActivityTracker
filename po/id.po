@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2025-12-04 14:00+0000\n"
+"PO-Revision-Date: 2026-09-18 22:51+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -28,10 +28,8 @@ msgid "Activity Tracker"
 msgstr "Pelacak Aktivitas"
 
 #: ../qml/About.qml:46
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Versi"
+msgstr "Versi %1"
 
 #: ../qml/About.qml:97
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
@@ -61,7 +59,7 @@ msgstr "Dukung Weblate"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Traktir saya kopi"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -153,10 +151,8 @@ msgid "Distance unit:"
 msgstr "Satuan jarak:"
 
 #: ../qml/Settings.qml:56
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "meter"
+msgstr "Kilometer"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
@@ -217,7 +213,7 @@ msgstr "Pilih jenis peta:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "Peta offline OSM Scout Server"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
@@ -240,10 +236,8 @@ msgid "Thunderforest transport-dark map"
 msgstr "Peta transportasi-gelap Thunderforest"
 
 #: ../qml/Settings.qml:250
-#, fuzzy
-#| msgid "Thunderforest spinal map"
 msgid "Thunderforest Spinal map"
-msgstr "Peta tulang belakang Thunderforest"
+msgstr "Peta Spinal Thunderforest"
 
 #: ../qml/Settings.qml:251
 msgid "Thunderforest pioneer map"
@@ -262,21 +256,17 @@ msgid "Thunderforest neighbourhood map"
 msgstr "Peta lingkungan Thunderforest"
 
 #: ../qml/Settings.qml:317
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid ""
 "A big thanks to OSM Scout Server and OSM folks for providing the free map!"
 msgstr ""
-"Terima kasih sebesar-besarnya kepada Thunderforest.com atas penyediaan peta "
-"gratis!"
+"Terima kasih sebesar-besarnya kepada OSM Scout Server dan komunitas OSM yang "
+"telah menyediakan peta gratis!"
 
 #: ../qml/Settings.qml:326
-#, fuzzy
-#| msgid "A big thanks to Thunderforest.com for providing the free map!"
 msgid "A big thanks to Thunderforest for providing their maps!"
 msgstr ""
-"Terima kasih sebesar-besarnya kepada Thunderforest.com atas penyediaan peta "
-"gratis!"
+"Terima kasih sebesar-besarnya kepada Thunderforest yang telah menyediakan "
+"peta mereka!"
 
 #: ../qml/Settings.qml:335
 msgid ""
@@ -305,10 +295,8 @@ msgid "Choose sport:"
 msgstr "Pilih olahraga:"
 
 #: ../qml/SportSelectPopUp.qml:21
-#, fuzzy
-#| msgid "Choose"
 msgid "Choose later"
-msgstr "Pilih"
+msgstr "Pilih nanti"
 
 #: ../qml/Tracker.qml:72
 msgid "Activity in Progress"
@@ -376,38 +364,43 @@ msgstr "Berhenti"
 
 #: ../qml/components/NoOfflineMapInfo.qml:10
 msgid "Offline map unavailable!"
-msgstr ""
+msgstr "Peta offline tidak tersedia!"
 
 #: ../qml/components/NoOfflineMapInfo.qml:38
 msgid ""
 "Thunderforest free map has been discontinued. (Btw. thanks for providing "
 "folks!)"
 msgstr ""
+"Peta gratis Thunderforest telah dihentikan. Terima kasih telah "
+"menyediakannya!"
 
 #: ../qml/components/NoOfflineMapInfo.qml:40
 msgid ""
 "Activity Tracker does now default to free OSM Scout Server offline OSM maps."
 msgstr ""
+"Activity Tracker kini secara default menggunakan peta OSM offline gratis "
+"dari OSM Scout Server."
 
 #: ../qml/components/NoOfflineMapInfo.qml:42
 msgid "It looks like there is no OSM Scout Server offline map available."
-msgstr ""
+msgstr "Tampaknya tidak ada peta offline OSM Scout Server yang tersedia."
 
 #: ../qml/components/NoOfflineMapInfo.qml:44
 msgid "You have two options to use this app:"
-msgstr ""
+msgstr "Anda memiliki dua opsi untuk menggunakan aplikasi ini:"
 
 #: ../qml/components/NoOfflineMapInfo.qml:46
 msgid "a) Install OSM Scout Server and download offline maps"
-msgstr ""
+msgstr "a) Instal OSM Scout Server dan unduh peta offline"
 
 #: ../qml/components/NoOfflineMapInfo.qml:48
 msgid "b) Aquire a Thunderforest API key for their online maps"
 msgstr ""
+"b) Dapatkan kunci API Thunderforest untuk menggunakan peta online mereka"
 
 #: ../qml/components/NoOfflineMapInfo.qml:62
 msgid "OK, I understand"
-msgstr ""
+msgstr "Baik, saya mengerti"
 
 #: ../qml/components/Sports.qml:7
 msgid "Run"
