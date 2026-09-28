@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2026-05-11 15:07+0000\n"
-"Last-Translator: \"Хмеляускас Александр (JasonWalt Bab@)\" "
-"<mardimusa8@gmail.com>\n"
+"PO-Revision-Date: 2026-09-28 19:51+0000\n"
+"Last-Translator: aimar orbe <aimar.orbe@ehu.eus>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/eu/>\n"
 "Language: eu\n"
@@ -18,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../qml/About.qml:13 ../qml/Settings.qml:20
 msgid "About"
@@ -29,16 +28,14 @@ msgid "Activity Tracker"
 msgstr "Activity Tracker"
 
 #: ../qml/About.qml:46
-#, fuzzy
-#| msgid "Version"
 msgid "Version %1"
-msgstr "Bertsioa %1"
+msgstr "%1. Bertsioa"
 
 #: ../qml/About.qml:97
 msgid "Released under the terms of the GNU GPL v3.<br>Source code available on"
 msgstr ""
 "GNU GPL v3. baldintzapean argitaratua.\n"
-"<br>Iturburu kodea:"
+"<br>Iturburu kodea hemen eskuragarri:"
 
 #: ../qml/About.qml:106
 msgid "Part of the icons is made by %1 from %2 is licensed by %3"
@@ -65,7 +62,7 @@ msgstr "Weblate babestu"
 
 #: ../qml/About.qml:160
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Kafe baten dohaintza egin"
 
 #: ../qml/ActivityDialog.qml:16
 msgid "Name"
@@ -93,14 +90,12 @@ msgstr "Aukeratu"
 
 #. TRANSLATORS: %1 will be replaced with the distance of the track, %2 will be replaced with the unit either km or mi
 #: ../qml/Main.qml:160 ../qml/Main.qml:163
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance: %1 %2"
-msgstr "Distantzia: "
+msgstr "Distantzia: %1 %2"
 
 #: ../qml/Main.qml:166
 msgid "Duration: "
-msgstr ""
+msgstr "Iraupena: "
 
 #: ../qml/Main.qml:247
 msgid "Recent Activities"
@@ -155,26 +150,24 @@ msgid "Info"
 msgstr "Info"
 
 #: ../qml/Settings.qml:55
-#, fuzzy
-#| msgid "Distance: "
 msgid "Distance unit:"
-msgstr "Distantzia: "
+msgstr "Distantzia unitatea:"
 
 #: ../qml/Settings.qml:56
-#, fuzzy
-#| msgid "meter(s)"
 msgid "Kilometers"
-msgstr "metro"
+msgstr "Kilometroak"
 
 #: ../qml/Settings.qml:56
 msgid "Miles"
-msgstr ""
+msgstr "Miliak"
 
 #: ../qml/Settings.qml:68
 msgid ""
 "Note: British imperial unit and United States customary unit used, 1.609344 "
 "km = 1 mile, 1 km = 0.621371 miles"
 msgstr ""
+"Oharra: Unitate inperial britainiarrak eta Estatu Batuetako ohiko unitateak "
+"erabiltzen dira, 1.609344 km = 1 milia, 1 km = 0.621371 milia"
 
 #: ../qml/Settings.qml:88
 msgid "Log a point every:"
@@ -218,10 +211,8 @@ msgid "API key required for other map types"
 msgstr ""
 
 #: ../qml/Settings.qml:242
-#, fuzzy
-#| msgid "Select a sport below"
 msgid "Select map type:"
-msgstr "Hautatu ondorengo kirol bat"
+msgstr "Hautatu mapa mota:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
