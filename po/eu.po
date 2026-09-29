@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: activitytracker.cwayne18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 03:59+0000\n"
-"PO-Revision-Date: 2026-09-28 19:51+0000\n"
+"PO-Revision-Date: 2026-09-30 14:49+0000\n"
 "Last-Translator: aimar orbe <aimar.orbe@ehu.eus>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/ubports/"
 "activitytracker/eu/>\n"
@@ -196,19 +196,19 @@ msgstr "metro"
 
 #: ../qml/Settings.qml:175
 msgid "Enter API key"
-msgstr ""
+msgstr "Sartu API gakoa"
 
 #: ../qml/Settings.qml:213
 msgid "Apply"
-msgstr ""
+msgstr "Aplikatu"
 
 #: ../qml/Settings.qml:224
 msgid "Clear API key"
-msgstr ""
+msgstr "Ezabatu API gakoa"
 
 #: ../qml/Settings.qml:242
 msgid "API key required for other map types"
-msgstr ""
+msgstr "Beste mapa motentzako API gakoa beharrezkoa da"
 
 #: ../qml/Settings.qml:242
 msgid "Select map type:"
@@ -216,11 +216,11 @@ msgstr "Hautatu mapa mota:"
 
 #: ../qml/Settings.qml:244
 msgid "OSM Scout Server offline map"
-msgstr ""
+msgstr "OSM Scout Server lineaz kanpoko mapa"
 
 #: ../qml/Settings.qml:245
 msgid "Thunderforest cycle map"
-msgstr ""
+msgstr "Thunderforest bizikleta mapa"
 
 #: ../qml/Settings.qml:246
 msgid "Thunderforest landscape map"
