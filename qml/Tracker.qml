@@ -118,18 +118,25 @@ Rectangle {
             active: true
             preferredPositioningMethods: PositionSource.SatellitePositioningMethods
 
-
             onPositionChanged: {
                 var coord = src.position.coordinate;
                 count++
                 //  console.log("Coordinate:", coord.longitude, coord.latitude);
 
                 // only center position when tracking is active, otherwise allow zoom and pan
-                if (mapLoader.item && fixedMarker) {
+                if (mapLoader.item) {
                     if (persistentSettings.mapType !== "offline") {
-                        mapLoader.item.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
+                        if (fixedMarker) {
+                            mapLoader.item.center = QtPositioning.coordinate(coord.latitude, coord.longitude)
+                        }
                     } else {
-                        mapLoader.item.centerOn(coord.latitude, coord.longitude)
+                        if (fixedMarker) {
+                            // show marker and center on screen
+                            mapLoader.item.centerOn(coord.latitude, coord.longitude)
+                        } else {
+                            // only show marker
+                            mapLoader.item.showMarker(coord.latitude, coord.longitude)
+                        }
                     }
                 }
                 circle.coordinate = QtPositioning.coordinate(coord.latitude, coord.longitude)
@@ -184,12 +191,8 @@ Rectangle {
 
         Loader {
             id: mapLoader
-            // anchors.top: mainPage.newRunHeader.bottom
-            // anchors.bottom: parent.bottom
-            // anchors.left: parent.left
-            // anchors.right: parent.right
             anchors.fill: parent
-            sourceComponent: persistentSettings.mapType==="offline" ? offlineMapComponent : onlineMapComponent
+            sourceComponent: persistentSettings.mapType === "offline" ? offlineMapComponent : onlineMapComponent
         }
 
         // ---- Thunderforest online map ----
@@ -206,56 +209,61 @@ Rectangle {
                 // available custom maps: https://www.thunderforest.com/maps/
                 // they require a API key, free hobby plan available
                 plugin : Plugin {
-                id: plugin
-                name: "osm"
+                    id: plugin
+                    name: "osm"
 
-                required.mapping: Plugin.AnyMappingFeatures
-                required.geocoding: Plugin.AnyGeocodingFeatures
+                    required.mapping: Plugin.AnyMappingFeatures
+                    required.geocoding: Plugin.AnyGeocodingFeatures
 
-                // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
-                // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
+                    // for Qt Versions older than 6.7 we need a workaround for the api key to be accepted by adding a &fake=.png at the end
+                    // https://stackoverflow.com/questions/60544057/qt-qml-map-with-here-plugin-how-to-correctly-authenticate-using-here-token
 
-                // url structure: "http://tile.thunderforest.com/landscape/%z/%x/%y.png?apikey=YOURAPIKEY&fake=.png"
+                    // url structure: "http://tile.thunderforest.com/landscape/%z/%x/%y.png?apikey=YOURAPIKEY&fake=.png"
 
-                PluginParameter {
-                    id: mapTypeParameter
-                    name: "osm.mapping.custom.host"
-                    value: "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+                    PluginParameter {
+                        id: mapTypeParameter
+                        name: "osm.mapping.custom.host"
+                        value: "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+                    }
+
+                    PluginParameter {
+                        name: "osm.mapping.offline.directory"
+                        value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
+                    }
+
+                    // example code for HERE map plugin
+                    // name: "here"
+                    // https://www.here.com/docs/bundle/raster-tile-api-migration-guide/page/README.html
+                    // https://doc.qt.io/qt-5/location-plugin-here.html
+                    // PluginParameter { name: "here.app_id"; value: "YOURAPP_ID" }
+                    // PluginParameter { name: "here.token"; value: "YOURAPIKEY" }
+                    // PluginParameter { name: "here.proxy"; value: "system" }
+
+                    // PluginParameter { name: "here.places.api_version"; value: 2 }
+                    // PluginParameter {
+                    //    name: "here.mapping.host"
+                    //    value: "https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/11/1100/671/256/png8?style=default"
+                    // }
+                    // PluginParameter {
+                    //    name: "here.mapping.host.aerial"
+                    //    value: "https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/satellite.day/11/1100/671/256/png8?apiKey=YOURAPIKEY"
+                    // }
+
+                    // PluginParameter { name: "here.places.api_version"; value: 3 }
+                    // PluginParameter {
+                    //    name: "here.mapping.host"
+                    //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=explore.day&apiKey=YOURAPIKEY"
+                    // }
+                    // PluginParameter {
+                    //    name: "here.mapping.host.aerial"
+                    //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=satellite.day&apiKey=YOURAPIKEY"
+                    // }
+
                 }
 
-                PluginParameter {
-                    name: "osm.mapping.offline.directory"
-                    value: StandardPaths.writableLocation(StandardPaths.CacheLocation) + "/QtLocation/5.8/tiles/osm"
-                }
-
-                // example code for HERE map plugin
-                // name: "here"
-                // https://www.here.com/docs/bundle/raster-tile-api-migration-guide/page/README.html
-                // https://doc.qt.io/qt-5/location-plugin-here.html
-                // PluginParameter { name: "here.app_id"; value: "YOURAPP_ID" }
-                // PluginParameter { name: "here.token"; value: "YOURAPIKEY" }
-                // PluginParameter { name: "here.proxy"; value: "system" }
-
-                // PluginParameter { name: "here.places.api_version"; value: 2 }
-                // PluginParameter {
-                //    name: "here.mapping.host"
-                //    value: "https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/11/1100/671/256/png8?style=default"
-                // }
-                // PluginParameter {
-                //    name: "here.mapping.host.aerial"
-                //    value: "https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/satellite.day/11/1100/671/256/png8?apiKey=YOURAPIKEY"
-                // }
-
-                // PluginParameter { name: "here.places.api_version"; value: 3 }
-                // PluginParameter {
-                //    name: "here.mapping.host"
-                //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=explore.day&apiKey=YOURAPIKEY"
-                // }
-                // PluginParameter {
-                //    name: "here.mapping.host.aerial"
-                //    value: "https://maps.hereapi.com/v3/base/mc/11/1100/671/png8?style=satellite.day&apiKey=YOURAPIKEY"
-                // }
-
+                Plugin {
+                    id: probe
+                    Component.onCompleted: console.log("Plugins: " + probe.availableServiceProviders)
                 }
                 Component.onCompleted: {
                     map.addMapItem(circle)
@@ -319,7 +327,11 @@ Rectangle {
                         pygpx.format_timer(0)
                         var distfloat
                         distfloat = parseFloat(dist.slice(0,-2)) //clean up the gpx array but not the maps / path
-                        if (persistentSettings.mapType !== "offline") mapLoader.item.removeMapItem(pline)
+                        if (persistentSettings.mapType !== "offline") {
+                            mapLoader.item.removeSource(track) 
+                        } else {
+                            mapLoader.item.removeTrack()
+                        }
                         timer.restart()
                         timer.stop()
                         am_running = false
@@ -396,7 +408,11 @@ Rectangle {
                 pygpx.format_timer(0)
                 timer.restart()
                 timer.stop()
-                if (persistentSettings.mapType !== "offline") mapLoader.item.removeMapItem(pline)
+                if (persistentSettings.mapType !== "offline") {
+                    mapLoader.item.removeSource(track) 
+                } else {
+                    mapLoader.item.removeTrack()
+                }
                 //  listModel.append({"name": tf.displayText, "act_type": sportsComp.name[sportsComp.selected]})
                 //   pygpx.addrun(tf.displayText)
                 listModel.clear()
@@ -552,3 +568,5 @@ Rectangle {
         }
     }
 }
+
+// Größe der Symbole -> klappt so noch nicht

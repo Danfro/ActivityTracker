@@ -16,7 +16,7 @@ var map = new maplibregl.Map({
     style: 'http://localhost:8553/v1/mbgl/style?style=osmbright',
     center: hasValidStart ? [initialLon, initialLat] : [0,0],
     zoom: initialZoom,
-    attributionControl: false  // credits will be adden on qml side for better vidual control
+    attributionControl: false  // credits will be added on qml side for better vidual control
 });
 
 var trackReady = false;
@@ -46,6 +46,9 @@ map.on('load', function () {
     }
 
     increaseTextSize(2.25);
+map.on('error', function (e) {
+    var message = e && e.error ? e.error.message : '';
+    console.log('MapLibre error: ' + message);
 });
 
 // plot existing track, called from qml-side
@@ -88,15 +91,19 @@ function addTrackPoint(lat, lon) {
     }
 }
 
-// center current position on screen, called from qml-side
+// show marker at center of screen
+function showMarker(lat, lon) {
+    ensureCenterMarker();
+    map.getSource('center-point').setData({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [lon, lat] }
+    });
+}
+
+// center marker at current position on screen and follow position changes, called from qml-side
 function centerOn(lat, lon) {
+    showMarker(lat, lon);
     map.setCenter([lon, lat]);
-    if (map.getSource('center-point')) {
-        map.getSource('center-point').setData({
-            type: 'Feature',
-            geometry: { type: 'Point', coordinates: [lon, lat] }
-        });
-    }
 }
 
 // tool function to draw track while it is recorded
@@ -112,6 +119,21 @@ function drawTrack(coords) {
         }, new maplibregl.LngLatBounds(lineCoords[0], lineCoords[0]));
         map.fitBounds(bounds, { padding: 250 });
     }
+}
+
+// tool to delete a recorded track
+function removeTrack() {
+    if (map.getLayer('track-line')) {
+        map.removeLayer('track-line');
+    }
+    if (map.getSource('track')) {
+        map.removeSource('track');
+    }
+
+    if (map.getSource('center-point')) {
+        map.removeSource('center-point');
+    }
+    liveCoords = [];
 }
 
 // increase text size, because map style default size is too small

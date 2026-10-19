@@ -111,7 +111,7 @@ MainView {
         property int altitudeOffset: 0
         property double initialLat: -95.64410114
         property double initialLong: 29.62289936
-        property int initialZoom: 10 // the larger the number, the closer in is zoomed
+        property int initialZoom: 13 // the larger the number, the closer in is zoomed
         // onPointsIntervalChanged: {/*console.log("pointsInterval has changed: "+pointsInterval);*/loggingpoints.interval = pointsInterval}
         // onaltitudeOffsetChanged: {console.log("altitudeOffset has changed: "+altitudeOffset)}
     }
