@@ -45,3 +45,12 @@ You can easily contribute to the localization of this project (i.e. the translat
   - j2g2rp for the Spanish translation,
   - All the contributors on Weblate,
   - Mr-Growl for unicycle sport.
+
+## Acknowledgments
+
+Also a big thanks goes to:
+
+MapLibre: https://maplibre.org/maplibre-gl-js/
+OSM Scout Server: https://rinigus.github.io/osmscout-server/
+
+for providing tools and maps.
