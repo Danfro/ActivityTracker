@@ -333,9 +333,6 @@ MainView {
                 anchors.centerIn: parent
             }
         }
-        Component.onCompleted: {
-            newrunEdge.preloadContent = true
-        }
 
         ListView {
             id: trackList
@@ -439,6 +436,7 @@ MainView {
                     trackList.enabled = true
                 }
             }
+            Component.onCompleted: check()
         }
 
         BottomEdge {
