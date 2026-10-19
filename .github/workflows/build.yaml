@@ -25,7 +25,7 @@ jobs:
     # defining all build steps that should be executed
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # here @latest doesn't work, specific version v4 or above
+        uses: actions/checkout@v7 # here @latest doesn't work, specific version v4 or above, https://github.com/actions/checkout/releases
       - name: Parse version
         # extract the version number from manifest.json.in
         # find the line with the version, split at " and take the 4th value
@@ -41,7 +41,7 @@ jobs:
           clickable build --arch ${{ matrix.arch }}
       - name: Upload Artifacts
         # upload the build artifacts to github using the appname and version
-        uses: actions/upload-artifact@v4 # here @latest doesn't work, specific version v4 or above
+        uses: actions/upload-artifact@v7 # here @latest doesn't work, specific version v4 or above, see https://github.com/actions/upload-artifact/releases
         with:
           name: ${{ matrix.appname }}_${{ env.ARTIFACT_VERSION }}_${{ matrix.arch }}.zip
           path: build/*/app/*.click
