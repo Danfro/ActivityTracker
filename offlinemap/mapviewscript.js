@@ -45,7 +45,10 @@ map.on('load', function () {
         pendingCoords = null;
     }
 
-    increaseTextSize(2.25);
+    increaseTextSize(2.5);
+    increaseIconSize(3.0);
+});
+
 map.on('error', function (e) {
     var message = e && e.error ? e.error.message : '';
     console.log('MapLibre error: ' + message);
@@ -179,6 +182,23 @@ function scaleTextSize(currentSize, factor) {
 
     // unknown type keep unchanged
     return currentSize;
+}
+
+// increase size of icons, also for layers that rely on the default icon-size of 1
+function increaseIconSize(factor) {
+    var layers = map.getStyle().layers;
+    for (var i = 0; i < layers.length; i++) {
+        var layer = layers[i];
+        if (layer.type !== 'symbol') continue;
+
+        // skip text-only layers without an icon
+        if (map.getLayoutProperty(layer.id, 'icon-image') === undefined) continue;
+
+        var currentSize = map.getLayoutProperty(layer.id, 'icon-size');
+        if (currentSize === undefined || currentSize === null) currentSize = 1; // MapLibre default
+
+        map.setLayoutProperty(layer.id, 'icon-size', scaleTextSize(currentSize, factor));
+    }
 }
 
 // create position marker for live tracking

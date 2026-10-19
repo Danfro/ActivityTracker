@@ -568,5 +568,3 @@ Rectangle {
         }
     }
 }
-
-// Größe der Symbole -> klappt so noch nicht
