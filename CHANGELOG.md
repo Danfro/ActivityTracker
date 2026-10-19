@@ -1,3 +1,9 @@
+## Changes v2.0.0
+- added: support for OSMscoutserver offline maps
+- removed: Thunderforest free online map since that is no longer supported
+- improved: set OSMscoutserver offline map as new default map
+- updated: translations, many thanks to all translators!
+
 ## Changes v1.1.4
 - updated: translations, many thanks to all translators!
 

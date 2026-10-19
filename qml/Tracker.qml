@@ -354,87 +354,87 @@ Rectangle {
         Component {
             id: dialog
             Dialogs.Dialog {
-            id: dialogue
-            title: i18n.tr("What would you like to do?")
-            PopUpButton {
-                texth: i18n.tr("Stop and save track")
-                color: LomiriColors.green
-                onClicked: {
-                    PopupUtils.close(dialogue)
+                id: dialogue
+                title: i18n.tr("What would you like to do?")
+                PopUpButton {
+                    texth: i18n.tr("Stop and save track")
+                    color: LomiriColors.green
+                    onClicked: {
+                        PopupUtils.close(dialogue)
 
-                    //FIXME: do I want to add a point even if gps params aren't valid? I want to add a point here to get the exact time of activity
-                    var coord = src.position.coordinate
-                    if (gpxx && am_running){
-                        if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
-                        altitudeCorrected = coord.altitude + persistentSettings.altitudeOffset
-                        pygpx.addpoint(gpxx,coord.latitude,coord.longitude,altitudeCorrected)
-                        //pygpx.addpoint(gpxx,coord.latitude,coord.longitude,coord.altitude)
+                        //FIXME: do I want to add a point even if gps params aren't valid? I want to add a point here to get the exact time of activity
+                        var coord = src.position.coordinate
+                        if (gpxx && am_running){
+                            if (src.position.latitudeValid && src.position.longitudeValid && src.position.altitudeValid) {
+                            altitudeCorrected = coord.altitude + persistentSettings.altitudeOffset
+                            pygpx.addpoint(gpxx,coord.latitude,coord.longitude,altitudeCorrected)
+                            //pygpx.addpoint(gpxx,coord.latitude,coord.longitude,coord.altitude)
+                            }
                         }
+                        src.stop()
+                        am_running = false
+                        timer.stop()
+                        PopupUtils.open(save_dialog)
                     }
-                    src.stop()
-                    am_running = false
-                    timer.stop()
-                    PopupUtils.open(save_dialog)
                 }
-            }
-            PopUpButton {
-                texth: i18n.tr("Stop and discard track")
-                color: LomiriColors.red
-                onClicked: {
-                    PopupUtils.close(dialogue) // close dialogue regardless of later choice
-                    PopupUtils.open(areyousure) // show confirmation dialog
+                PopUpButton {
+                    texth: i18n.tr("Stop and discard track")
+                    color: LomiriColors.red
+                    onClicked: {
+                        PopupUtils.close(dialogue) // close dialogue regardless of later choice
+                        PopupUtils.open(areyousure) // show confirmation dialog
+                    }
                 }
-            }
-            PopUpButton {
-                texth: i18n.tr("Nothing, go back")
-                onClicked: PopupUtils.close(dialogue)
-            }
+                PopUpButton {
+                    texth: i18n.tr("Nothing, go back")
+                    onClicked: PopupUtils.close(dialogue)
+                }
             }
         }//Dialog component
 
         Component {
             id: save_dialog
             ActivityDialog {
-            id: save_dialogue
-            sportsComponent: sportsComp
-            title: i18n.tr("Select the type and the name of your activity")
-            save.onClicked: {
-                PopupUtils.close(save_dialogue)
-                pygpx.writeit(gpxx,trackName,sportsComponent.name[sportsComponent.selected])
-                console.log(trackName)
-                // console.log("----------restart------------")
-                // counter & timer stuff used only here in Tracker -> why? FIXME
-                counter = 0
-                pygpx.format_timer(0)
-                timer.restart()
-                timer.stop()
-                if (persistentSettings.mapType !== "offline") {
-                    mapLoader.item.removeSource(track) 
-                } else {
-                    mapLoader.item.removeTrack()
+                id: save_dialogue
+                sportsComponent: sportsComp
+                title: i18n.tr("Select the type and the name of your activity")
+                save.onClicked: {
+                    PopupUtils.close(save_dialogue)
+                    pygpx.writeit(gpxx,trackName,sportsComponent.name[sportsComponent.selected])
+                    console.log(trackName)
+                    // console.log("----------restart------------")
+                    // counter & timer stuff used only here in Tracker -> why? FIXME
+                    counter = 0
+                    pygpx.format_timer(0)
+                    timer.restart()
+                    timer.stop()
+                    if (persistentSettings.mapType !== "offline") {
+                        mapLoader.item.removeSource(track) 
+                    } else {
+                        mapLoader.item.removeTrack()
+                    }
+                    //  listModel.append({"name": tf.displayText, "act_type": sportsComp.name[sportsComp.selected]})
+                    //   pygpx.addrun(tf.displayText)
+                    listModel.clear()
+                    // distfloat stuff used only here in Tracker -> why? FIXME
+                    var distfloat
+                    distfloat = parseFloat(dist.slice(0,-2))
+                    pygpx.get_runs(listModel)
+                    newrunEdge.collapse()
+                    newrunEdge.preloadContent = false
+                    newrunEdge.contentUrl = ""
+                    newrunEdge.contentUrl = Qt.resolvedUrl("Tracker.qml")
+                    // for some reason this needs to be set again when the page is opened again
+                    mapTypeParameter.value = "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
                 }
-                //  listModel.append({"name": tf.displayText, "act_type": sportsComp.name[sportsComp.selected]})
-                //   pygpx.addrun(tf.displayText)
-                listModel.clear()
-                // distfloat stuff used only here in Tracker -> why? FIXME
-                var distfloat
-                distfloat = parseFloat(dist.slice(0,-2))
-                pygpx.get_runs(listModel)
-                newrunEdge.collapse()
-                newrunEdge.preloadContent = false
-                newrunEdge.contentUrl = ""
-                newrunEdge.contentUrl = Qt.resolvedUrl("Tracker.qml")
-                // for some reason this needs to be set again when the page is opened again
-                mapTypeParameter.value = "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
-            }
-            cancel.onClicked: {
-                PopupUtils.close(save_dialogue)
-                am_running = true
-                timer.start()
-                sportsComp.selected=sportsComp.previous
-                // for some reason this needs to be set again when the page is opened again
-                mapTypeParameter.value = "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
-            }
+                cancel.onClicked: {
+                    PopupUtils.close(save_dialogue)
+                    am_running = true
+                    timer.start()
+                    sportsComp.selected=sportsComp.previous
+                    // for some reason this needs to be set again when the page is opened again
+                    mapTypeParameter.value = "https://tile.thunderforest.com/" + persistentSettings.mapType + "/%z/%x/%y.png?apikey=" + persistentSettings.myApiKey + "&fake=.png"
+                }
             }
         }
 
