@@ -21,7 +21,7 @@ jobs:
       matrix:
         arch: [all] # can also be if needed [amd64, arm64, armhf]
         appname: [activitytracker.cwayne18]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # ubuntu-latest -> this targets 26.04 from 19th of November 26
     # defining all build steps that should be executed
     steps:
       - name: Checkout
