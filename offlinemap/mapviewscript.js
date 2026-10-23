@@ -126,11 +126,16 @@ function drawTrack(coords) {
 
 // tool to delete a recorded track
 function removeTrack() {
+    if (map.getSource('track')) {
+        map.removeSource('track');
+    }
+
     if (map.getLayer('track-line')) {
         map.removeLayer('track-line');
     }
-    if (map.getSource('track')) {
-        map.removeSource('track');
+
+    if (map.getSource('center-circle')) {
+        map.removeSource('center-point');
     }
 
     if (map.getSource('center-point')) {
