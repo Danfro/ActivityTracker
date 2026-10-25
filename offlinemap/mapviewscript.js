@@ -54,6 +54,21 @@ map.on('error', function (e) {
     console.log('MapLibre error: ' + message);
 });
 
+// enable for debugging:
+// tap on the map and log all features under the finger
+// map.on('click', function (e) {
+//     var box = [[e.point.x - 10, e.point.y - 10], [e.point.x + 10, e.point.y + 10]];
+//     map.queryRenderedFeatures(box).forEach(function (f) {
+//         var p = f.properties || {};
+//         console.log('layer=' + f.layer.id + ' props=' + JSON.stringify(p));
+//         if (p.ref) {
+//             var codes = [];
+//             for (var i = 0; i < p.ref.length; i++) codes.push(p.ref.charCodeAt(i));
+//             console.log('ref charCodes=' + codes.join(','));
+//         }
+//     });
+// });
+
 // plot existing track, called from qml-side
 function showTrack(coords) {
     if (trackReady) {
