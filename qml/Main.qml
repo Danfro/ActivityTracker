@@ -451,6 +451,11 @@ MainView {
             onCommitCompleted: contentItem.openDialog = true
             preloadContent: false
             contentUrl: Qt.resolvedUrl("Tracker.qml")
+            Component.onCompleted: {
+                // without this the initial dialog to select the sports type is not shown
+                newrunEdge.preloadContent = true
+            }
+
         }//Bottom edge
 
     }//Page
