@@ -54,3 +54,7 @@ MapLibre: https://maplibre.org/maplibre-gl-js/
 OSM Scout Server: https://rinigus.github.io/osmscout-server/
 
 for providing tools and maps.
+
+## AI note
+
+Beside other sources, I do use AI (LLM) for debugging, research, suggestions and ocassionally for providing code snippets. AI will not be used for uncontrolled so called vibe coding. I do always review code and test my apps as good as possible. My aim is to provide a primarily human made working app and to use AI responsible.
