@@ -234,7 +234,7 @@ MainView {
                 }
                 return dist
             })
-        }
+        }//current_distance
         function format_timer(secs){
             call('geepeeex.stopwatchery', [counter], function(result){
                 timestring=result
@@ -247,8 +247,8 @@ MainView {
         id: mainPageComponent
         visible: true
         header: PageHeader {
-            title: i18n.tr("Recent Activities")
             id: mainPageComponentHeader
+            title: i18n.tr("Recent Activities")
             trailingActionBar.actions: [
                 Action {
                     text: i18n.tr("Settings")
@@ -271,7 +271,7 @@ MainView {
                         })//Import
                     }//trigger
                 }//Action
-            ]
+            ]//actions
             extension: Sections {
                 visible: filtered
                 height: visible ? implicitHeight : 0
@@ -316,8 +316,8 @@ MainView {
         }
 
         Rectangle {
-            visible : !(trackList.model.count > 0)
             id: rekt
+            visible: !(trackList.model.count > 0)
             anchors {
                 left: mainPageComponent.left
                 right: mainPageComponent.right
@@ -396,9 +396,9 @@ MainView {
                         }
                     }
                 ]
-                }//Trailing
+                }//trailing
             }//ListItem
-        }
+        }//ListView
 
         Component {
             id: infogpx
@@ -455,7 +455,6 @@ MainView {
                 // without this the initial dialog to select the sports type is not shown
                 newrunEdge.preloadContent = true
             }
-
         }//Bottom edge
 
     }//Page
@@ -468,6 +467,6 @@ MainView {
         }
     }
 
-    // do migration from former free map to now default offline map
+    // do migration from former Thunderforest free map to new default OSMscoutserver offline map
     Component.onCompleted: persistentSettings.mapType = persistentSettings.mapType.replace("free","offline")
 }
