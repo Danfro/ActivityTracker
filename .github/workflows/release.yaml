@@ -46,7 +46,7 @@ jobs:
       - name: Publish to Open Store
         # if a tag has been pushed, publish to OpenStore using the API key specified as Github secret with the last commit message (=changelog) as content
         env:
-          OPENSTORE_KEY: ${{ secrets.OPENSTORE_KEY }}
+          OPENSTORE_API_KEY: ${{ secrets.OPENSTORE_KEY }}
         run: | # grab the last commit message as changelog and publish | # do not add spaces infront and after a = | add changelog as last parameter | wrap changelog assignment in "" to cover multiline text
           CHANGELOG="${{ github.event.head_commit.message }}"
           clickable publish -- "$CHANGELOG"
